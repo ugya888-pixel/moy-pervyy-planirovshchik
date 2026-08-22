@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Персональный премиальный планировщик недели и дня">
+    <title>Премиальный планировщик</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%2323221f'/%3E%3Ccircle cx='32' cy='32' r='23' fill='none' stroke='%23b39456' stroke-width='2'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Georgia,serif' font-size='28' font-style='italic' fill='%23eee4cf'%3EP%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="viewport-warning" role="status">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 2.8 19h18.4L12 3Zm0 6v4m0 3.2v.1"/></svg>
+      <span data-i18n="viewport.warning">Для комфортной работы увеличьте окно минимум до 1280 px.</span>
+    </div>
+
+    <div class="app" id="app" hidden>
+      <aside class="sidebar" aria-label="Основная навигация">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span class="brand-copy">
+            <span class="brand-title" data-i18n="brand.title">Планировщик</span>
+            <span class="brand-caption" data-i18n="brand.caption">Private workspace</span>
+          </span>
+        </div>
+
+        <nav class="nav-list" aria-label="Разделы планировщика">
+          <button class="nav-item is-active" type="button" data-view-target="overview" aria-current="page">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v10h-6zM4 14h6v6H4zM14 18h6v2h-6z"/></svg>
+            <span data-i18n="nav.overview">Обзор</span>
+          </button>
+          <button class="nav-item" type="button" data-view-target="week">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4v3m14-3v3M3 9h18M5 6h14a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/></svg>
+            <span data-i18n="nav.week">Неделя</span>
+          </button>
+          <button class="nav-item" type="button" data-view-target="day">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4v3m14-3v3M3 9h18M5 6h14a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Zm3 7h3m-3 4h8"/></svg>
+            <span data-i18n="nav.day">День</span>
+          </button>
+          <button class="nav-item" type="button" data-view-target="ideal">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 1.7 5.2H19l-4.3 3.1 1.7 5.2-4.4-3.2-4.4 3.2 1.7-5.2L5 8.2h5.3L12 3ZM5 20h14"/></svg>
+            <span data-i18n="nav.ideal">Идеальная неделя</span>
+          </button>
+          <button class="nav-item" type="button" data-view-target="search">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+            <span data-i18n="nav.search">Поиск</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <button class="nav-item" type="button" data-view-target="settings">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.8 1.8 0 0 0 .4 2l.1.1-2.8 2.8-.1-.1a1.8 1.8 0 0 0-2-.4 1.8 1.8 0 0 0-1 1.6v.2h-4V21a1.8 1.8 0 0 0-1-1.6 1.8 1.8 0 0 0-2 .4l-.1.1-2.8-2.8.1-.1a1.8 1.8 0 0 0 .4-2A1.8 1.8 0 0 0 3 14H2.8v-4H3a1.8 1.8 0 0 0 1.6-1 1.8 1.8 0 0 0-.4-2l-.1-.1 2.8-2.8.1.1a1.8 1.8 0 0 0 2 .4A1.8 1.8 0 0 0 10 3v-.2h4V3a1.8 1.8 0 0 0 1 1.6 1.8 1.8 0 0 0 2-.4l.1-.1 2.8 2.8-.1.1a1.8 1.8 0 0 0-.4 2 1.8 1.8 0 0 0 1.6 1h.2v4H21a1.8 1.8 0 0 0-1.6 1Z"/></svg>
+            <span data-i18n="nav.settings">Настройки</span>
+          </button>
+          <button class="nav-item" type="button" data-view-target="help">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.8 9a2.4 2.4 0 1 1 3.6 2.1c-.9.5-1.4 1-1.4 2.1M12 17.4v.1"/></svg>
+            <span data-i18n="nav.help">Справка</span>
+          </button>
+          <button class="nav-item sidebar-toggle" id="sidebarToggle" type="button" aria-label="Свернуть боковую панель" aria-expanded="true">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m14 7-5 5 5 5"/></svg>
+            <span data-i18n="nav.collapse">Свернуть</span>
+          </button>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div class="topbar-heading">
+            <p class="eyebrow" data-i18n="topbar.workspace">Личное пространство</p>
+            <h1 id="viewTitle" data-i18n="nav.overview">Обзор</h1>
+          </div>
+
+          <div class="week-navigation" aria-label="Навигация по неделям">
+            <button class="icon-button" id="previousWeek" type="button" aria-label="Предыдущая неделя">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></svg>
+            </button>
+            <button class="week-label" id="weekLabel" type="button" aria-label="Выбрать дату"></button>
+            <button class="icon-button" id="nextWeek" type="button" aria-label="Следующая неделя">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+            </button>
+          </div>
+
+          <div class="topbar-actions">
+            <label class="date-picker" aria-label="Выбрать дату">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4v3m14-3v3M3 9h18M5 6h14a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/></svg>
+              <input id="datePicker" type="date">
+            </label>
+            <button class="text-button" id="todayButton" type="button" data-i18n="actions.today">Сегодня</button>
+            <button class="icon-button" id="themeQuickToggle" type="button" aria-label="Сменить тему">
+              <svg class="sun-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            </button>
+            <button class="language-toggle" id="languageToggle" type="button" aria-label="Сменить язык">EN</button>
+            <div class="save-status" id="saveStatus" role="status" aria-live="polite">
+              <span class="status-dot"></span>
+              <span data-i18n="save.saved">Сохранено</span>
+            </div>
+          </div>
+        </header>
+
+        <div class="week-strip" id="weekStrip" aria-label="Дни выбранной недели"></div>
+
+        <div class="view-container">
+          <section class="view is-active" id="view-overview" data-view="overview" aria-labelledby="viewTitle">
+            <div class="overview-hero">
+              <div>
+                <p class="section-kicker" id="greeting">Доброе утро</p>
+                <h2 data-i18n="overview.title">Спокойная ясность на всю неделю</h2>
+                <p class="hero-copy" data-i18n="overview.copy">Здесь появится целостная картина ваших целей, привычек и расписания. Начните с недельного обзора.</p>
+                <button class="primary-button" type="button" data-navigate="week">
+                  <span data-i18n="overview.openWeek">Открыть неделю</span>
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
+                </button>
+              </div>
+              <div class="progress-orbit" aria-label="Общий прогресс недели: 0 процентов">
+                <span class="orbit-value">0%</span>
+                <span class="orbit-caption" data-i18n="overview.progress">Прогресс недели</span>
+              </div>
+            </div>
+
+            <div class="metric-grid" aria-label="Сводные показатели">
+              <article class="metric-card">
+                <span class="metric-icon gold"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7L12 3Z"/></svg></span>
+                <div><strong>0 / 4</strong><span data-i18n="metrics.goals">Цели недели</span></div>
+              </article>
+              <article class="metric-card">
+                <span class="metric-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 12.5 10 16l8-9"/></svg></span>
+                <div><strong>0 / 3</strong><span data-i18n="metrics.habits">Привычки сегодня</span></div>
+              </article>
+              <article class="metric-card">
+                <span class="metric-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+                <div><strong>0 h</strong><span data-i18n="metrics.planned">Запланировано</span></div>
+              </article>
+              <article class="metric-card">
+                <span class="metric-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4v3m14-3v3M3 9h18M5 6h14a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/></svg></span>
+                <div><strong>18 h</strong><span data-i18n="metrics.free">Свободное время</span></div>
+              </article>
+            </div>
+
+            <div class="overview-grid">
+              <article class="panel goals-preview">
+                <div class="panel-header">
+                  <div><span class="panel-number">01</span><h3 data-i18n="overview.goalsTitle">Фокус недели</h3></div>
+                  <button class="ghost-button" type="button" data-navigate="week" data-i18n="actions.open">Открыть</button>
+                </div>
+                <div class="goal-slots" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="soft-empty">
+                  <p data-i18n="overview.goalsEmpty">Четыре главные цели помогут сохранить фокус на результате.</p>
+                </div>
+              </article>
+
+              <article class="panel habits-preview">
+                <div class="panel-header">
+                  <div><span class="panel-number">02</span><h3 data-i18n="overview.habitsTitle">Ритм привычек</h3></div>
+                  <button class="ghost-button" type="button" data-navigate="week" data-i18n="actions.open">Открыть</button>
+                </div>
+                <div class="habit-placeholder" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="soft-empty">
+                  <p data-i18n="overview.habitsEmpty">Три привычки и семь спокойных отметок на каждую неделю.</p>
+                </div>
+              </article>
+
+              <article class="panel day-preview">
+                <div class="panel-header">
+                  <div><span class="panel-number">03</span><h3 data-i18n="overview.dayTitle">Сегодня</h3></div>
+                  <button class="ghost-button" type="button" data-navigate="day" data-i18n="actions.open">Открыть</button>
+                </div>
+                <div class="timeline-empty">
+                  <span class="timeline-line"></span>
+                  <div>
+                    <strong data-i18n="overview.dayEmptyTitle">День свободен</strong>
+                    <p data-i18n="overview.dayEmpty">В расписании пока нет встреч и задач.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="view" id="view-week" data-view="week" aria-labelledby="viewTitle">
+            <div class="section-heading-row">
+              <div><p class="section-kicker" data-i18n="week.kicker">Стратегический обзор</p><h2 data-i18n="week.title">Неделя в одном фокусе</h2></div>
+              <button class="secondary-button" type="button" data-panel="week"><span data-i18n="actions.howItWorks">Как это работает</span></button>
+            </div>
+            <div class="goal-board" aria-label="Четыре цели недели">
+              <article class="empty-goal-card"><span>01</span><div><h3 data-i18n="week.goalPlaceholder">Цель недели</h3><p data-i18n="week.goalHint">Место для результата и его декомпозиции.</p></div></article>
+              <article class="empty-goal-card"><span>02</span><div><h3 data-i18n="week.goalPlaceholder">Цель недели</h3><p data-i18n="week.goalHint">Место для результата и его декомпозиции.</p></div></article>
+              <article class="empty-goal-card"><span>03</span><div><h3 data-i18n="week.goalPlaceholder">Цель недели</h3><p data-i18n="week.goalHint">Место для результата и его декомпозиции.</p></div></article>
+              <article class="empty-goal-card"><span>04</span><div><h3 data-i18n="week.goalPlaceholder">Цель недели</h3><p data-i18n="week.goalHint">Место для результата и его декомпозиции.</p></div></article>
+            </div>
+            <article class="panel habit-board">
+              <div class="panel-header"><div><span class="panel-number">03</span><h3 data-i18n="week.habitsTitle">Полезные привычки</h3></div></div>
+              <div class="habit-table" id="habitTablePlaceholder" aria-hidden="true"></div>
+              <p class="board-note" data-i18n="week.emptyNote">Неделя пока не заполнена. Здесь появятся четыре цели и три привычки.</p>
+            </article>
+          </section>
+
+          <section class="view" id="view-day" data-view="day" aria-labelledby="viewTitle">
+            <div class="section-heading-row">
+              <div><p class="section-kicker" id="dayKicker">Сегодня</p><h2 id="dayHeading">План дня</h2></div>
+              <button class="secondary-button" type="button" data-panel="day"><span data-i18n="actions.howItWorks">Как это работает</span></button>
+            </div>
+            <div class="day-layout-preview">
+              <article class="panel tasks-placeholder">
+                <div class="panel-header"><div><span class="panel-number">03</span><h3 data-i18n="day.mainTasks">Главные задачи</h3></div><span class="capacity">0 / 3</span></div>
+                <div class="task-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="panel-header secondary"><div><span class="panel-number">10</span><h3 data-i18n="day.otherTasks">Остальные задачи</h3></div><span class="capacity">0 / 10</span></div>
+                <div class="task-lines compact" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              </article>
+              <article class="panel schedule-placeholder">
+                <div class="schedule-head"><span data-i18n="day.time">Время</span><span data-i18n="day.fixed">Жёсткие встречи</span><span data-i18n="day.flexible">Гибкие задачи</span></div>
+                <div class="schedule-body" id="schedulePlaceholder" aria-hidden="true"></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="view" id="view-ideal" data-view="ideal" aria-labelledby="viewTitle">
+            <div class="section-heading-row">
+              <div><p class="section-kicker" data-i18n="ideal.kicker">Постоянный шаблон</p><h2 data-i18n="ideal.title">Архитектура идеальной недели</h2></div>
+              <button class="secondary-button" type="button" data-panel="ideal"><span data-i18n="actions.howItWorks">Как это работает</span></button>
+            </div>
+            <article class="panel ideal-placeholder">
+              <div class="ideal-head" id="idealHead"></div>
+              <div class="ideal-body">
+                <div class="ideal-grid" id="idealGridPlaceholder" aria-hidden="true"></div>
+                <div class="ideal-message"><span class="metric-icon gold"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 1.7 5.2H19l-4.3 3.1 1.7 5.2-4.4-3.2-4.4 3.2 1.7-5.2L5 8.2h5.3L12 3Z"/></svg></span><strong data-i18n="ideal.emptyTitle">Создайте эталонный ритм</strong><p data-i18n="ideal.emptyCopy">Постоянный шаблон поможет сравнивать планы с желаемой неделей.</p></div>
+              </div>
+            </article>
+          </section>
+
+          <section class="view" id="view-search" data-view="search" aria-labelledby="viewTitle">
+            <div class="search-page">
+              <p class="section-kicker" data-i18n="search.kicker">Все недели</p>
+              <h2 data-i18n="search.title">Найдите нужное мгновенно</h2>
+              <label class="search-field">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+                <input id="searchInput" type="search" data-i18n-placeholder="search.placeholder" placeholder="Задачи, цели, записи и хэштеги">
+              </label>
+              <div class="large-empty" id="searchEmpty">
+                <span class="empty-glyph"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></span>
+                <h3 data-i18n="search.emptyTitle">Пока искать нечего</h3>
+                <p data-i18n="search.emptyCopy">Когда в планировщике появятся данные, поиск соберёт их здесь.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="view" id="view-settings" data-view="settings" aria-labelledby="viewTitle">
+            <div class="section-heading-row settings-heading">
+              <div><p class="section-kicker" data-i18n="settings.kicker">Ваше пространство</p><h2 data-i18n="settings.title">Настройки интерфейса</h2></div>
+            </div>
+            <div class="settings-grid">
+              <article class="settings-card">
+                <span class="settings-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+                <div class="settings-copy"><h3 data-i18n="settings.appearance">Оформление</h3><p data-i18n="settings.appearanceCopy">Выберите подходящую тему.</p></div>
+                <label class="select-control"><span class="sr-only" data-i18n="settings.theme">Тема</span><select id="themeSelect"><option value="system" data-i18n="theme.system">Системная</option><option value="light" data-i18n="theme.light">Светлая</option><option value="dark" data-i18n="theme.dark">Тёмная</option></select></label>
+              </article>
+              <article class="settings-card">
+                <span class="settings-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.2 2.4 3.3 5.4 3.3 9S14.2 18.6 12 21c-2.2-2.4-3.3-5.4-3.3-9S9.8 5.4 12 3Z"/></svg></span>
+                <div class="settings-copy"><h3 data-i18n="settings.language">Язык</h3><p data-i18n="settings.languageCopy">Системные подписи на русском или английском.</p></div>
+                <label class="select-control"><span class="sr-only" data-i18n="settings.language">Язык</span><select id="languageSelect"><option value="ru">Русский</option><option value="en">English</option></select></label>
+              </article>
+              <article class="settings-card">
+                <span class="settings-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 10v4h3l4 4V6L8 10H5Zm11-1a4 4 0 0 1 0 6m2-8a7 7 0 0 1 0 10"/></svg></span>
+                <div class="settings-copy"><h3 data-i18n="settings.sound">Звук напоминаний</h3><p data-i18n="settings.soundCopy">По умолчанию выключен.</p></div>
+                <label class="switch"><input id="soundToggle" type="checkbox"><span aria-hidden="true"></span><span class="sr-only" data-i18n="settings.sound">Звук напоминаний</span></label>
+              </article>
+              <article class="settings-card">
+                <span class="settings-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM9 5v14"/></svg></span>
+                <div class="settings-copy"><h3 data-i18n="settings.sidebar">Боковая панель</h3><p data-i18n="settings.sidebarCopy">Компактный или полный вид.</p></div>
+                <button class="secondary-button" id="settingsSidebarToggle" type="button" data-i18n="settings.toggleSidebar">Изменить</button>
+              </article>
+            </div>
+            <article class="panel reset-onboarding">
+              <div><h3 data-i18n="settings.onboarding">Приветствие</h3><p data-i18n="settings.onboardingCopy">Посмотрите вводные экраны ещё раз.</p></div>
+              <button class="secondary-button" id="restartOnboarding" type="button" data-i18n="settings.restart">Повторить приветствие</button>
+            </article>
+          </section>
+
+          <section class="view" id="view-help" data-view="help" aria-labelledby="viewTitle">
+            <div class="section-heading-row">
+              <div><p class="section-kicker" data-i18n="help.kicker">Коротко и по делу</p><h2 data-i18n="help.title">Как устроен планировщик</h2></div>
+            </div>
+            <div class="help-grid">
+              <article class="help-card"><span>01</span><h3 data-i18n="help.overviewTitle">Начните с обзора</h3><p data-i18n="help.overviewCopy">Обзор собирает ключевые показатели недели и сегодняшнего дня.</p></article>
+              <article class="help-card"><span>02</span><h3 data-i18n="help.weekTitle">Сначала результат</h3><p data-i18n="help.weekCopy">Неделя держит четыре цели и три привычки в постоянном фокусе.</p></article>
+              <article class="help-card"><span>03</span><h3 data-i18n="help.dayTitle">Затем время</h3><p data-i18n="help.dayCopy">День разделяет жёсткие встречи и гибкие задачи.</p></article>
+              <article class="help-card"><span>04</span><h3 data-i18n="help.privateTitle">Данные остаются здесь</h3><p data-i18n="help.privateCopy">Планировщик хранит информацию только в браузере этого устройства.</p></article>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <div class="panel-scrim" id="panelScrim" hidden></div>
+      <aside class="context-panel" id="contextPanel" aria-labelledby="contextPanelTitle" aria-hidden="true">
+        <div class="context-panel-header">
+          <div><p class="eyebrow" data-i18n="panel.guide">Навигация по разделу</p><h2 id="contextPanelTitle">О неделе</h2></div>
+          <button class="icon-button" id="closeContextPanel" type="button" aria-label="Закрыть панель">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+        <div class="context-panel-body" id="contextPanelBody"></div>
+        <div class="context-panel-footer">
+          <button class="primary-button full-width" id="contextPanelDone" type="button" data-i18n="actions.understood">Понятно</button>
+        </div>
+      </aside>
+    </div>
+
+    <div class="onboarding" id="onboarding" role="dialog" aria-modal="true" aria-labelledby="onboardingTitle" hidden>
+      <div class="onboarding-shell">
+        <div class="onboarding-brand"><span class="brand-mark" aria-hidden="true">P</span><span data-i18n="brand.title">Планировщик</span></div>
+        <div class="onboarding-progress" aria-label="Шаг приветствия"><span class="is-active"></span><span></span><span></span></div>
+
+        <div class="onboarding-content">
+          <div class="onboarding-visual" aria-hidden="true">
+            <div class="visual-orbit"><span></span><span></span><span></span><strong>01</strong></div>
+            <p>06:00&nbsp;&nbsp;—&nbsp;&nbsp;24:00</p>
+          </div>
+          <div class="onboarding-copy">
+            <p class="section-kicker" id="onboardingKicker">Шаг 1 из 3</p>
+            <h1 id="onboardingTitle">Неделя, собранная вокруг главного</h1>
+            <p id="onboardingText">Четыре цели, три привычки и ясное расписание соединяются в одном спокойном рабочем пространстве.</p>
+            <div class="onboarding-settings" id="onboardingSettings" hidden>
+              <label><span data-i18n="settings.language">Язык</span><select id="onboardingLanguage"><option value="ru">Русский</option><option value="en">English</option></select></label>
+              <label><span data-i18n="settings.theme">Тема</span><select id="onboardingTheme"><option value="system" data-i18n="theme.system">Системная</option><option value="light" data-i18n="theme.light">Светлая</option><option value="dark" data-i18n="theme.dark">Тёмная</option></select></label>
+              <label class="sound-choice"><span><strong data-i18n="settings.sound">Звук напоминаний</strong><small data-i18n="settings.soundCopy">По умолчанию выключен.</small></span><span class="switch"><input id="onboardingSound" type="checkbox"><span aria-hidden="true"></span></span></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="onboarding-actions">
+          <button class="text-button" id="onboardingBack" type="button" data-i18n="actions.back" disabled>Назад</button>
+          <button class="primary-button" id="onboardingNext" type="button"><span data-i18n="actions.next">Далее</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="confirm-dialog" id="confirmDialog" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" hidden>
+      <div class="confirm-card">
+        <span class="confirm-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 2.8 19h18.4L12 3Zm0 6v4m0 3.2v.1"/></svg></span>
+        <h2 id="confirmTitle" data-i18n="confirm.restartTitle">Повторить приветствие?</h2>
+        <p id="confirmText" data-i18n="confirm.restartCopy">Настройки и данные сохранятся. Откроются только три вводных экрана.</p>
+        <div class="confirm-actions">
+          <button class="text-button" id="confirmCancel" type="button" data-i18n="actions.cancel">Отмена</button>
+          <button class="primary-button" id="confirmAccept" type="button" data-i18n="actions.continue">Продолжить</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
