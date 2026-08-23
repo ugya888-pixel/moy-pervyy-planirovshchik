@@ -113,7 +113,6 @@
                     <span data-i18n="actions.addGoal">Добавить цель</span>
                     <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
                   </button>
-                  <button class="text-button" type="button" data-navigate="week" data-i18n="overview.openWeek">Открыть неделю</button>
                 </div>
               </div>
               <div class="progress-orbit" id="weekProgressOrbit" aria-label="Общий прогресс недели: 0 процентов">
@@ -222,15 +221,21 @@
 
           <section class="view" id="view-ideal" data-view="ideal" aria-labelledby="viewTitle">
             <div class="section-heading-row">
-              <div><p class="section-kicker" data-i18n="ideal.kicker">Постоянный шаблон</p><h2 data-i18n="ideal.title">Архитектура идеальной недели</h2></div>
-              <div class="section-actions"><button class="primary-button" id="copyIdealWeek" type="button" data-i18n="ideal.copyToWeek">Скопировать в неделю</button><button class="secondary-button" type="button" data-panel="ideal"><span data-i18n="actions.howItWorks">Как это работает</span></button></div>
+              <div><p class="section-kicker" data-i18n="ideal.kicker">Выбранная календарная неделя</p><h2 data-i18n="ideal.title">Архитектура идеальной недели</h2></div>
+              <div class="section-actions"><button class="primary-button" id="copyIdealWeek" type="button" data-i18n="ideal.copyToWeek">Скопировать в будущую неделю</button><button class="secondary-button" type="button" data-panel="ideal"><span data-i18n="actions.howItWorks">Как это работает</span></button></div>
             </div>
             <article class="panel ideal-placeholder">
               <div class="ideal-head" id="idealHead"></div>
               <div class="ideal-body">
                 <div class="ideal-grid" id="idealScheduleScroll"><div class="interactive-schedule ideal-schedule" id="idealSchedule"></div></div>
-                <div class="ideal-message" id="idealEmpty"><span class="metric-icon gold"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 1.7 5.2H19l-4.3 3.1 1.7 5.2-4.4-3.2-4.4 3.2 1.7-5.2L5 8.2h5.3L12 3Z"/></svg></span><strong data-i18n="ideal.emptyTitle">Создайте эталонный ритм</strong><p data-i18n="ideal.emptyCopy">Постоянный шаблон поможет сравнивать планы с желаемой неделей.</p></div>
+                <div class="ideal-message" id="idealEmpty"><span class="metric-icon gold"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 1.7 5.2H19l-4.3 3.1 1.7 5.2-4.4-3.2-4.4 3.2 1.7-5.2L5 8.2h5.3L12 3Z"/></svg></span><strong data-i18n="ideal.emptyTitle">Создайте эталонный ритм</strong><p data-i18n="ideal.emptyCopy">План этой недели не изменяет предыдущие и будущие недели.</p></div>
               </div>
+            </article>
+            <article class="panel notes-panel">
+              <div class="panel-header"><div><span class="panel-number">∞</span><h3 data-i18n="notes.title">Заметки</h3></div><button class="mini-add-button" id="addNoteButton" type="button" data-i18n-aria="notes.add">+</button></div>
+              <p class="notes-intro" data-i18n="notes.copy">Общие заметки для всего приложения — без ограничения по количеству.</p>
+              <div class="notes-list" id="notesList"></div>
+              <button class="notes-empty" id="notesEmpty" type="button"><span data-i18n="notes.empty">Добавьте первую заметку</span><strong data-i18n="notes.add">Добавить заметку</strong></button>
             </article>
           </section>
 
@@ -242,6 +247,14 @@
                 <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
                 <input id="searchInput" type="search" data-i18n-placeholder="search.placeholder" placeholder="Задачи, цели, записи и хэштеги">
               </label>
+              <div class="search-filters" aria-label="Фильтры поиска">
+                <label><span data-i18n="search.type">Тип</span><select id="searchType"><option value="all" data-i18n="search.allTypes">Все типы</option><option value="goal" data-i18n="search.goals">Цели</option><option value="subtask" data-i18n="search.subtasks">Подзадачи</option><option value="habit" data-i18n="search.habits">Привычки</option><option value="task" data-i18n="search.tasks">Задачи</option><option value="fixed" data-i18n="search.meetings">Встречи</option><option value="flexible" data-i18n="search.flexible">Гибкие дела</option><option value="note" data-i18n="search.notes">Записи</option><option value="ideal" data-i18n="search.ideal">Идеальная неделя</option><option value="series" data-i18n="search.series">Серии</option></select></label>
+                <label><span data-i18n="search.completion">Выполнение</span><select id="searchCompletion"><option value="all" data-i18n="search.all">Все</option><option value="done" data-i18n="search.done">Выполнено</option><option value="open" data-i18n="search.open">Не выполнено</option></select></label>
+                <label><span data-i18n="search.dateFrom">С даты</span><input id="searchDateFrom" type="date"></label>
+                <label><span data-i18n="search.dateTo">По дату</span><input id="searchDateTo" type="date"></label>
+                <label class="search-tag-filter"><span data-i18n="search.tags">Хэштеги</span><input id="searchTags" type="text" placeholder="#фокус"></label>
+              </div>
+              <div class="search-results" id="searchResults"></div>
               <div class="large-empty" id="searchEmpty">
                 <span class="empty-glyph"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></span>
                 <h3 data-i18n="search.emptyTitle">Пока искать нечего</h3>
@@ -275,7 +288,27 @@
                 <div class="settings-copy"><h3 data-i18n="settings.sidebar">Боковая панель</h3><p data-i18n="settings.sidebarCopy">Компактный или полный вид.</p></div>
                 <button class="secondary-button" id="settingsSidebarToggle" type="button" data-i18n="settings.toggleSidebar">Изменить</button>
               </article>
+              <article class="settings-card">
+                <span class="settings-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4M8 21h8"/></svg></span>
+                <div class="settings-copy"><h3 data-i18n="settings.dictation">Диктовка</h3><p data-i18n="settings.dictationCopy">Язык и согласие на распознавание браузером.</p></div>
+                <label class="select-control"><span class="sr-only" data-i18n="settings.dictationLanguage">Язык диктовки</span><select id="speechLanguageSelect"><option value="auto">AUTO</option><option value="ru">RU</option><option value="en">EN</option></select></label>
+                <button class="secondary-button" id="speechConsentToggle" type="button" data-i18n="settings.giveConsent">Дать согласие</button>
+              </article>
             </div>
+            <article class="panel business-card-settings">
+              <div class="panel-header"><div><span class="panel-number">VIP</span><h3 data-i18n="card.title">Премиальная визитка</h3></div><div class="card-variant-switch"><button type="button" data-card-variant="light" data-i18n="theme.light">Светлая</button><button type="button" data-card-variant="dark" data-i18n="theme.dark">Тёмная</button></div></div>
+              <div class="business-card-layout">
+                <form class="business-card-form" id="businessCardForm" novalidate>
+                  <label><span data-i18n="card.name">Имя</span><input name="name" maxlength="120" required></label>
+                  <label><span data-i18n="card.company">Компания</span><input name="company" maxlength="160" required></label>
+                  <label><span>Telegram</span><input name="telegram" maxlength="100" required placeholder="@username"></label>
+                  <label><span>Email</span><input name="email" type="email" maxlength="254" required></label>
+                  <span class="form-error" id="businessCardError"></span>
+                  <button class="primary-button" type="submit" data-i18n="card.save">Сохранить визитку</button>
+                </form>
+                <div class="business-card-preview" id="businessCardPreview"></div>
+              </div>
+            </article>
             <article class="panel reset-onboarding">
               <div><h3 data-i18n="settings.onboarding">Приветствие</h3><p data-i18n="settings.onboardingCopy">Посмотрите вводные экраны ещё раз.</p></div>
               <button class="secondary-button" id="restartOnboarding" type="button" data-i18n="settings.restart">Повторить приветствие</button>
@@ -353,5 +386,14 @@
     </div>
 
     <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+
+    <div class="telegram-modal" id="telegramModal" role="dialog" aria-modal="true" aria-labelledby="telegramTitle" hidden>
+      <div class="telegram-shell">
+        <div class="telegram-head"><span class="telegram-mark"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 11 17-7-6.5 16-3.7-6.1L3 11Zm6.8 2.9L20 4"/></svg></span><div><p data-i18n="telegram.preview">Предпросмотр</p><h2 id="telegramTitle" data-i18n="telegram.title">Поделиться в Telegram</h2></div><button class="icon-button" id="closeTelegram" type="button" aria-label="Закрыть">×</button></div>
+        <div id="telegramPreviewBody"></div>
+        <div class="telegram-status"><span></span><strong data-i18n="telegram.later">Интеграция появится позже</strong></div>
+        <button class="primary-button full-width" id="telegramDone" type="button" data-i18n="actions.close">Закрыть</button>
+      </div>
+    </div>
   </body>
 </html>
