@@ -227,7 +227,7 @@
           <section class="view" id="view-ideal" data-view="ideal" aria-labelledby="viewTitle">
             <div class="section-heading-row">
               <div><p class="section-kicker" data-i18n="ideal.kicker">Выбранная календарная неделя</p><h2 data-i18n="ideal.title">Архитектура идеальной недели</h2></div>
-              <div class="section-actions"><button class="primary-button" id="copyIdealWeek" type="button" data-i18n="ideal.copyToWeek">Скопировать в будущую неделю</button><button class="secondary-button" type="button" data-panel="ideal"><span data-i18n="actions.howItWorks">Как это работает</span></button></div>
+              <div class="section-actions"><label class="scale-control"><span data-i18n="schedule.scale">Масштаб</span><select id="idealScheduleScale"><option value="compact" data-i18n="schedule.scaleCompact">Компактный</option><option value="standard" data-i18n="schedule.scaleStandard">Стандартный</option><option value="large" data-i18n="schedule.scaleLarge">Крупный</option></select></label><button class="primary-button" id="copyIdealWeek" type="button" data-i18n="ideal.copyToWeek">Скопировать в будущую неделю</button><button class="secondary-button" type="button" data-panel="ideal"><span data-i18n="actions.howItWorks">Как это работает</span></button></div>
             </div>
             <article class="panel ideal-placeholder">
               <div class="ideal-head" id="idealHead"></div>
@@ -299,6 +299,11 @@
                 <label class="select-control"><span class="sr-only" data-i18n="settings.dictationLanguage">Язык диктовки</span><select id="speechLanguageSelect"><option value="auto">AUTO</option><option value="ru">RU</option><option value="en">EN</option></select></label>
                 <button class="secondary-button" id="speechConsentToggle" type="button" data-i18n="settings.giveConsent">Дать согласие</button>
               </article>
+              <article class="settings-card">
+                <span class="settings-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16M7 4v16"/></svg></span>
+                <div class="settings-copy"><h3 data-i18n="settings.scheduleScale">Масштаб расписания</h3><p data-i18n="settings.scheduleScaleCopy">Единый размер сетки дня и идеальной недели.</p></div>
+                <label class="select-control"><span class="sr-only" data-i18n="schedule.scale">Масштаб</span><select id="settingsScheduleScale"><option value="compact" data-i18n="schedule.scaleCompact">Компактный</option><option value="standard" data-i18n="schedule.scaleStandard">Стандартный</option><option value="large" data-i18n="schedule.scaleLarge">Крупный</option></select></label>
+              </article>
             </div>
             <article class="panel business-card-settings task-style-panel">
               <div class="panel-header"><div><span class="panel-number">VIP</span><h3 data-i18n="card.title">Визитка</h3></div><div class="card-variant-switch"><button type="button" data-card-variant="light" data-i18n="theme.light">Светлая</button><button type="button" data-card-variant="dark" data-i18n="theme.dark">Тёмная</button></div></div>
@@ -318,9 +323,13 @@
               <div class="panel-header"><div><span class="panel-number">JSON</span><h3 data-i18n="data.title">Данные и резервные копии</h3></div></div>
               <p class="data-management-copy" data-i18n="data.copy">Все данные находятся только в этом браузере. Регулярно сохраняйте резервную копию.</p>
               <div class="storage-summary" id="storageSummary">
-                <div><strong data-i18n="data.storage">Хранилище</strong><span id="storageUsageText">0 КБ · 0%</span></div>
+                <div><strong data-i18n="data.structuredStorage">Данные планировщика</strong><span id="storageUsageText">0 КБ · 0%</span></div>
                 <div class="storage-meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="storageUsageBar"></span></div>
                 <small id="storageWeekCount">0 недель</small>
+              </div>
+              <div class="storage-summary file-storage-summary" id="fileStorageSummary">
+                <div><strong data-i18n="data.fileStorage">Связанные файлы</strong><span id="fileStorageUsageText">0 МБ</span></div>
+                <small id="fileStorageCount">0 файлов</small>
               </div>
               <div class="storage-warning" id="storageWarning" role="status" hidden></div>
               <div class="data-action-grid">

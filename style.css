@@ -297,7 +297,34 @@ svg {
 
 .sidebar-collapsed .nav-item {
   justify-content: center;
+  overflow: visible;
   padding-inline: 0;
+}
+
+.sidebar-collapsed .nav-item::after {
+  position: absolute;
+  z-index: 40;
+  left: calc(100% + 12px);
+  top: 50%;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-strong);
+  box-shadow: var(--shadow-soft);
+  color: var(--text);
+  content: attr(data-tooltip);
+  font-size: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-4px, -50%);
+  transition: opacity var(--transition), transform var(--transition);
+  white-space: nowrap;
+}
+
+.sidebar-collapsed .nav-item:hover::after,
+.sidebar-collapsed .nav-item:focus-visible::after {
+  opacity: 1;
+  transform: translate(0, -50%);
 }
 
 .sidebar-collapsed .sidebar-toggle svg {
@@ -1355,6 +1382,8 @@ svg {
   font-size: 10px;
 }
 
+.file-storage-summary { margin-top: 10px; }
+
 .data-action-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1676,7 +1705,7 @@ svg {
   margin-top: 22px;
 }
 
-.onboarding-settings > label:not(.sound-choice) {
+.onboarding-settings > label {
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -1687,31 +1716,6 @@ svg {
 
 .onboarding-settings select {
   width: 100%;
-}
-
-.sound-choice {
-  display: flex;
-  grid-column: 1 / -1;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 12px;
-  border: 1px solid var(--line);
-  border-radius: 11px;
-}
-
-.sound-choice > span:first-child {
-  display: flex;
-  flex-direction: column;
-}
-
-.sound-choice strong {
-  font-size: 11px;
-}
-
-.sound-choice small {
-  color: var(--text-muted);
-  font-size: 9px;
 }
 
 .confirm-dialog {
@@ -3039,6 +3043,20 @@ svg {
   font-size: 11px;
 }
 
+.search-result-group {
+  display: grid;
+  gap: 9px;
+  margin-top: 8px;
+}
+
+.search-result-group > h3 {
+  margin: 8px 0 0;
+  color: var(--text-soft);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
 .search-result-card {
   padding: 14px 16px;
   border: 1px solid var(--line);
@@ -3127,9 +3145,9 @@ svg {
 .business-card-preview > small { opacity: .72; }
 .business-card-extra { max-height: 140px; margin: 0; overflow: auto; white-space: pre-wrap; color: inherit; font-size: 11px; line-height: 1.45; opacity: .78; }
 
-.telegram-modal, .series-scope-overlay { position: fixed; z-index: 120; inset: 0; display: grid; place-items: center; padding: 24px; background: rgba(10,9,7,.58); backdrop-filter: blur(9px); }
+.telegram-modal { position: fixed; z-index: 120; inset: 0; display: grid; place-items: center; padding: 24px; background: rgba(10,9,7,.58); backdrop-filter: blur(9px); }
 .telegram-modal[hidden] { display: none; }
-.telegram-shell, .series-scope-dialog { width: min(520px, 100%); padding: 22px; border: 1px solid rgba(202,166,84,.42); border-radius: 18px; background: var(--surface); box-shadow: 0 30px 90px rgba(0,0,0,.32); }
+.telegram-shell { width: min(520px, 100%); padding: 22px; border: 1px solid rgba(202,166,84,.42); border-radius: 18px; background: var(--surface); box-shadow: 0 30px 90px rgba(0,0,0,.32); }
 .telegram-head { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
 .telegram-head > div { flex: 1; }
 .telegram-head p, .telegram-head h2 { margin: 0; }
@@ -3141,10 +3159,6 @@ svg {
 .telegram-entry-card small { color: var(--text-muted); }
 .telegram-status { display: flex; align-items: center; gap: 8px; margin: 14px 0; color: var(--text-muted); font-size: 10px; }
 .telegram-status span { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
-.series-scope-dialog h3, .series-scope-dialog p { margin-top: 0; }
-.series-scope-dialog p { color: var(--text-soft); }
-.scope-actions { display: grid; gap: 8px; }
-.reminder-toast button { display: block; width: 100%; margin-top: 7px; padding: 7px 0; border: 0; border-top: 1px solid var(--line); background: transparent; color: var(--text-soft); text-align: left; }
 
 @media (max-width: 1050px) {
   .search-filters { grid-template-columns: repeat(3, minmax(130px, 1fr)); }
