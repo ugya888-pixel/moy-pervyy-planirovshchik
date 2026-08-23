@@ -204,18 +204,18 @@
           <section class="view" id="view-day" data-view="day" aria-labelledby="viewTitle">
             <div class="section-heading-row">
               <div><p class="section-kicker" id="dayKicker">Сегодня</p><h2 id="dayHeading">План дня</h2></div>
-              <button class="secondary-button" type="button" data-panel="day"><span data-i18n="actions.howItWorks">Как это работает</span></button>
+              <div class="section-actions"><label class="scale-control"><span data-i18n="schedule.scale">Масштаб</span><select id="scheduleScale"><option value="compact" data-i18n="schedule.scaleCompact">Компактный</option><option value="standard" data-i18n="schedule.scaleStandard">Стандартный</option><option value="large" data-i18n="schedule.scaleLarge">Крупный</option></select></label><button class="secondary-button" type="button" data-panel="day"><span data-i18n="actions.howItWorks">Как это работает</span></button></div>
             </div>
             <div class="day-layout-preview">
               <article class="panel tasks-placeholder">
-                <div class="panel-header"><div><span class="panel-number">03</span><h3 data-i18n="day.mainTasks">Главные задачи</h3></div><span class="capacity">0 / 3</span></div>
-                <div class="task-lines" aria-hidden="true"><span></span><span></span><span></span></div>
-                <div class="panel-header secondary"><div><span class="panel-number">10</span><h3 data-i18n="day.otherTasks">Остальные задачи</h3></div><span class="capacity">0 / 10</span></div>
-                <div class="task-lines compact" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                <div class="panel-header"><div><span class="panel-number">03</span><h3 data-i18n="day.mainTasks">Главные задачи</h3></div><div class="task-list-actions"><span class="capacity" id="mainTaskCapacity">0 / 3</span><button class="mini-add-button" id="addMainTask" type="button" data-i18n-aria="task.addMain">+</button></div></div>
+                <div class="task-list" id="mainTaskList" data-list="main"></div>
+                <div class="panel-header secondary"><div><span class="panel-number">10</span><h3 data-i18n="day.otherTasks">Остальные задачи</h3></div><div class="task-list-actions"><span class="capacity" id="otherTaskCapacity">0 / 10</span><button class="mini-add-button" id="addOtherTask" type="button" data-i18n-aria="task.addOther">+</button></div></div>
+                <div class="task-list task-list-other" id="otherTaskList" data-list="other"></div>
               </article>
               <article class="panel schedule-placeholder">
-                <div class="schedule-head"><span data-i18n="day.time">Время</span><span data-i18n="day.fixed">Жёсткие встречи</span><span data-i18n="day.flexible">Гибкие задачи</span></div>
-                <div class="schedule-body" id="schedulePlaceholder" aria-hidden="true"></div>
+                <div class="schedule-head"><span data-i18n="day.time">Время</span><span data-i18n="day.fixed">Жёсткие встречи</span><span data-i18n="day.flexible">Гибкие дела</span></div>
+                <div class="schedule-scroll" id="dayScheduleScroll"><div class="interactive-schedule" id="daySchedule"></div></div>
               </article>
             </div>
           </section>
@@ -223,13 +223,13 @@
           <section class="view" id="view-ideal" data-view="ideal" aria-labelledby="viewTitle">
             <div class="section-heading-row">
               <div><p class="section-kicker" data-i18n="ideal.kicker">Постоянный шаблон</p><h2 data-i18n="ideal.title">Архитектура идеальной недели</h2></div>
-              <button class="secondary-button" type="button" data-panel="ideal"><span data-i18n="actions.howItWorks">Как это работает</span></button>
+              <div class="section-actions"><button class="primary-button" id="copyIdealWeek" type="button" data-i18n="ideal.copyToWeek">Скопировать в неделю</button><button class="secondary-button" type="button" data-panel="ideal"><span data-i18n="actions.howItWorks">Как это работает</span></button></div>
             </div>
             <article class="panel ideal-placeholder">
               <div class="ideal-head" id="idealHead"></div>
               <div class="ideal-body">
-                <div class="ideal-grid" id="idealGridPlaceholder" aria-hidden="true"></div>
-                <div class="ideal-message"><span class="metric-icon gold"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 1.7 5.2H19l-4.3 3.1 1.7 5.2-4.4-3.2-4.4 3.2 1.7-5.2L5 8.2h5.3L12 3Z"/></svg></span><strong data-i18n="ideal.emptyTitle">Создайте эталонный ритм</strong><p data-i18n="ideal.emptyCopy">Постоянный шаблон поможет сравнивать планы с желаемой неделей.</p></div>
+                <div class="ideal-grid" id="idealScheduleScroll"><div class="interactive-schedule ideal-schedule" id="idealSchedule"></div></div>
+                <div class="ideal-message" id="idealEmpty"><span class="metric-icon gold"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 1.7 5.2H19l-4.3 3.1 1.7 5.2-4.4-3.2-4.4 3.2 1.7-5.2L5 8.2h5.3L12 3Z"/></svg></span><strong data-i18n="ideal.emptyTitle">Создайте эталонный ритм</strong><p data-i18n="ideal.emptyCopy">Постоянный шаблон поможет сравнивать планы с желаемой неделей.</p></div>
               </div>
             </article>
           </section>
@@ -289,7 +289,7 @@
             <div class="help-grid">
               <article class="help-card"><span>01</span><h3 data-i18n="help.overviewTitle">Начните с обзора</h3><p data-i18n="help.overviewCopy">Обзор собирает ключевые показатели недели и сегодняшнего дня.</p></article>
               <article class="help-card"><span>02</span><h3 data-i18n="help.weekTitle">Сначала результат</h3><p data-i18n="help.weekCopy">Неделя держит четыре цели и три привычки в постоянном фокусе.</p></article>
-              <article class="help-card"><span>03</span><h3 data-i18n="help.dayTitle">Затем время</h3><p data-i18n="help.dayCopy">День разделяет жёсткие встречи и гибкие задачи.</p></article>
+              <article class="help-card"><span>03</span><h3 data-i18n="help.dayTitle">Затем время</h3><p data-i18n="help.dayCopy">День разделяет жёсткие встречи и гибкие дела.</p></article>
               <article class="help-card"><span>04</span><h3 data-i18n="help.privateTitle">Данные остаются здесь</h3><p data-i18n="help.privateCopy">Планировщик хранит информацию только в браузере этого устройства.</p></article>
             </div>
           </section>

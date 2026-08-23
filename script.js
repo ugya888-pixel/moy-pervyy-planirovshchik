@@ -61,7 +61,7 @@
       "day.otherTasks": "Остальные задачи",
       "day.time": "Время",
       "day.fixed": "Жёсткие встречи",
-      "day.flexible": "Гибкие задачи",
+      "day.flexible": "Гибкие дела",
       "ideal.kicker": "Постоянный шаблон",
       "ideal.title": "Архитектура идеальной недели",
       "ideal.emptyTitle": "Создайте эталонный ритм",
@@ -98,7 +98,7 @@
       "help.weekTitle": "Сначала результат",
       "help.weekCopy": "Неделя держит четыре цели и три привычки в постоянном фокусе.",
       "help.dayTitle": "Затем время",
-      "help.dayCopy": "День разделяет жёсткие встречи и гибкие задачи.",
+      "help.dayCopy": "День разделяет жёсткие встречи и гибкие дела.",
       "help.privateTitle": "Данные остаются здесь",
       "help.privateCopy": "Планировщик хранит информацию только в браузере этого устройства.",
       "panel.guide": "Навигация по разделу",
@@ -115,7 +115,7 @@
       "panel.day.2.title": "Десять остальных",
       "panel.day.2.copy": "Второй список собирает важные, но не главные действия.",
       "panel.day.3.title": "Два типа времени",
-      "panel.day.3.copy": "Встречи остаются жёсткими, а гибкие задачи можно перемещать.",
+      "panel.day.3.copy": "Встречи остаются жёсткими, а гибкие дела можно перемещать.",
       "panel.idealTitle": "Об идеальной неделе",
       "panel.ideal.1.title": "Постоянный шаблон",
       "panel.ideal.1.copy": "Он не зависит от календарных дат и хранит желаемый ритм.",
@@ -385,7 +385,31 @@
     "color.terracottaSuede": "Терракотовый замш",
     "color.midnightPurple": "Полуночный пурпур",
     "color.bitterChocolate": "Горький шоколад",
-    "color.nobleSage": "Благородный шалфей"
+    "color.nobleSage": "Благородный шалфей",
+    "task.addMain": "Добавить главную задачу", "task.addOther": "Добавить обычную задачу",
+    "task.new": "Новая задача", "task.edit": "Редактирование задачи", "task.title": "Заголовок", "task.text": "Основной текст",
+    "task.list": "Список", "task.main": "Главные", "task.other": "Остальные", "task.complete": "Отметить выполненной",
+    "task.schedule": "Запланировать", "task.moveList": "Переместить в другой список", "task.limitTitle": "Список уже заполнен",
+    "task.limitMain": "На день можно выбрать не больше трёх главных задач.", "task.limitOther": "На день можно добавить не больше десяти остальных задач.",
+    "task.errorTitle": "Введите заголовок задачи", "task.errorLong": "Заголовок должен быть не длиннее 300 символов",
+    "task.deleteTitle": "Удалить задачу?", "task.deleteCopy": "Задача и её блок в расписании будут удалены. Отмена доступна 7 секунд.",
+    "task.deletedTitle": "Задача удалена", "task.deletedCopy": "После закрытия страницы отмена будет недоступна.",
+    "task.emptyMain": "Добавьте до трёх главных результатов дня.", "task.emptyOther": "Добавьте остальные дела — до десяти строк.",
+    "schedule.scale": "Масштаб", "schedule.scaleCompact": "Компактный", "schedule.scaleStandard": "Стандартный", "schedule.scaleLarge": "Крупный",
+    "schedule.new": "Новая запись", "schedule.edit": "Редактирование записи", "schedule.title": "Заголовок", "schedule.description": "Описание",
+    "schedule.date": "Дата", "schedule.start": "Начало", "schedule.end": "Окончание", "schedule.column": "Колонка", "schedule.color": "Цвет",
+    "schedule.fixed": "Жёсткая встреча", "schedule.flexible": "Гибкое дело", "schedule.duplicate": "Дублировать", "schedule.unschedule": "Убрать из расписания",
+    "schedule.deleteTitle": "Удалить запись?", "schedule.deleteCopy": "Запись исчезнет из расписания. Отмена доступна 7 секунд.",
+    "schedule.deletedTitle": "Запись удалена", "schedule.deletedCopy": "После закрытия страницы отмена будет недоступна.",
+    "schedule.errorRange": "Выберите получасовой интервал в пределах 06:00–24:00; окончание должно быть позже начала.",
+    "schedule.conflict": "Время пересекается с другой записью", "schedule.conflictShort": "Конфликт времени", "schedule.dragHint": "Перетащите задачу сюда или нажмите на ячейку.",
+    "ideal.copyToWeek": "Скопировать в неделю", "ideal.new": "Элемент идеальной недели", "ideal.edit": "Редактирование шаблона",
+    "ideal.day": "День недели", "ideal.category": "Категория", "ideal.copyTitle": "Скопировать идеальную неделю", "ideal.targetWeek": "Неделя назначения",
+    "ideal.copyConfirm": "Элементы шаблона будут добавлены к существующему расписанию.", "ideal.copyDuplicate": "В эту неделю шаблон уже копировали. Возможны дубли.",
+    "ideal.copyDoneTitle": "Идеальная неделя скопирована", "ideal.copyDoneCopy": "Все элементы добавлены одним действием; его можно отменить 7 секунд.",
+    "ideal.copyEmptyTitle": "Шаблон пока пуст", "ideal.copyEmptyCopy": "Сначала добавьте хотя бы один элемент идеальной недели.",
+    "ideal.deletedTitle": "Элемент удалён", "ideal.deletedCopy": "Отмена доступна 7 секунд.",
+    "actions.duplicate": "Дублировать", "actions.moveOther": "В остальные", "actions.moveMain": "В главные"
   });
 
   Object.assign(TRANSLATIONS.en, {
@@ -477,7 +501,10 @@
     "color.terracottaSuede": "Terracotta suede",
     "color.midnightPurple": "Midnight purple",
     "color.bitterChocolate": "Bitter chocolate",
-    "color.nobleSage": "Noble sage"
+    "color.nobleSage": "Noble sage",
+    "task.addMain": "Add main task", "task.addOther": "Add other task", "task.new": "New task", "task.edit": "Edit task", "task.title": "Title", "task.text": "Main text", "task.list": "List", "task.main": "Main", "task.other": "Other", "task.complete": "Mark completed", "task.schedule": "Schedule", "task.moveList": "Move to another list", "task.limitTitle": "This list is full", "task.limitMain": "A day can have no more than three main tasks.", "task.limitOther": "A day can have no more than ten other tasks.", "task.errorTitle": "Enter a task title", "task.errorLong": "The title must be no longer than 300 characters", "task.deleteTitle": "Delete this task?", "task.deleteCopy": "The task and its schedule block will be deleted. Undo is available for 7 seconds.", "task.deletedTitle": "Task deleted", "task.deletedCopy": "Undo will be unavailable after closing the page.", "task.emptyMain": "Add up to three main outcomes for the day.", "task.emptyOther": "Add the rest of the day’s work — up to ten rows.",
+    "schedule.scale": "Scale", "schedule.scaleCompact": "Compact", "schedule.scaleStandard": "Standard", "schedule.scaleLarge": "Large", "schedule.new": "New entry", "schedule.edit": "Edit entry", "schedule.title": "Title", "schedule.description": "Description", "schedule.date": "Date", "schedule.start": "Start", "schedule.end": "End", "schedule.column": "Column", "schedule.color": "Colour", "schedule.fixed": "Fixed meeting", "schedule.flexible": "Flexible task", "schedule.duplicate": "Duplicate", "schedule.unschedule": "Remove from schedule", "schedule.deleteTitle": "Delete this entry?", "schedule.deleteCopy": "The entry will be removed from the schedule. Undo is available for 7 seconds.", "schedule.deletedTitle": "Entry deleted", "schedule.deletedCopy": "Undo will be unavailable after closing the page.", "schedule.errorRange": "Choose a 30-minute interval between 06:00 and 24:00; the end must be later than the start.", "schedule.conflict": "This time overlaps another entry", "schedule.conflictShort": "Time conflict", "schedule.dragHint": "Drop a task here or click the slot.",
+    "ideal.copyToWeek": "Copy to week", "ideal.new": "Ideal-week item", "ideal.edit": "Edit template item", "ideal.day": "Day of week", "ideal.category": "Category", "ideal.copyTitle": "Copy ideal week", "ideal.targetWeek": "Target week", "ideal.copyConfirm": "Template items will be added to the existing schedule.", "ideal.copyDuplicate": "This template was already copied to that week. Duplicates are possible.", "ideal.copyDoneTitle": "Ideal week copied", "ideal.copyDoneCopy": "All items were added as one action; it can be undone for 7 seconds.", "ideal.copyEmptyTitle": "The template is empty", "ideal.copyEmptyCopy": "Add at least one ideal-week item first.", "ideal.deletedTitle": "Item deleted", "ideal.deletedCopy": "Undo is available for 7 seconds.", "actions.duplicate": "Duplicate", "actions.moveOther": "Move to other", "actions.moveMain": "Move to main"
   });
 
   const I18nService = {
@@ -591,7 +618,8 @@
       settings: "premiumPlanner.settings",
       ui: "premiumPlanner.ui",
       weekIndex: "premiumPlanner.weekIndex",
-      habits: "premiumPlanner.habits"
+      habits: "premiumPlanner.habits",
+      idealWeek: "premiumPlanner.idealWeek"
     },
     queue: new Map(),
     timer: null,
@@ -614,7 +642,8 @@
           theme: "system",
           language,
           soundEnabled: false,
-          sidebarCollapsed: false
+          sidebarCollapsed: false,
+          scheduleScale: "standard"
         },
         ui: {
           view: "overview",
@@ -651,7 +680,8 @@
         theme: ["system", "light", "dark"].includes(settings.theme) ? settings.theme : defaults.settings.theme,
         language: ["ru", "en"].includes(settings.language) ? settings.language : defaults.settings.language,
         soundEnabled: Boolean(settings.soundEnabled),
-        sidebarCollapsed: Boolean(settings.sidebarCollapsed)
+        sidebarCollapsed: Boolean(settings.sidebarCollapsed),
+        scheduleScale: ["compact", "standard", "large"].includes(settings.scheduleScale) ? settings.scheduleScale : "standard"
       };
       const safeMeta = {
         ...defaults.meta,
@@ -665,6 +695,7 @@
       this.seedMissing(this.keys.settings, safeSettings);
       this.seedMissing(this.keys.ui, ui);
       this.seedMissing(this.keys.weekIndex, []);
+      this.seedMissing(this.keys.idealWeek, { schemaVersion: 1, items: [], copiedWeekStarts: [] });
 
       return { meta: safeMeta, settings: safeSettings, ui };
     },
@@ -773,9 +804,91 @@
         ...value,
         goals: goals.map((goal) => this.normalizeGoal(goal)),
         habitMarks: value.habitMarks && typeof value.habitMarks === "object" ? value.habitMarks : {},
-        days: value.days && typeof value.days === "object" ? value.days : {},
-        records: Array.isArray(value.records) ? value.records : []
+        days: Object.fromEntries(Object.entries(value.days && typeof value.days === "object" ? value.days : {}).map(([date, day]) => [date, this.normalizeDay(day, date)])),
+        records: Array.isArray(value.records) ? value.records.map((record) => this.normalizeRecord(record)).filter(Boolean) : []
       };
+    },
+
+    normalizeDay(day, date) {
+      const normalizeList = (items, list, limit) => (Array.isArray(items) ? items : []).slice(0, limit)
+        .map((task, index) => this.normalizeTask(task, date, list, index)).filter(Boolean);
+      return {
+        mainTasks: normalizeList(day?.mainTasks, "main", 3),
+        otherTasks: normalizeList(day?.otherTasks, "other", 10)
+      };
+    },
+
+    normalizeTask(task, date, list, position) {
+      if (!task || typeof task.title !== "string" || !task.title.trim()) return null;
+      return {
+        id: typeof task.id === "string" ? task.id : this.id(), title: task.title.slice(0, 300),
+        text: typeof task.text === "string" ? task.text.slice(0, 5000) : "", date, list, position,
+        isCompleted: Boolean(task.isCompleted), hashtags: Array.isArray(task.hashtags) ? task.hashtags : [],
+        goalId: task.goalId || null, habitId: task.habitId || null, fileNames: Array.isArray(task.fileNames) ? task.fileNames.slice(0, 10) : [],
+        scheduleRecordId: task.scheduleRecordId || null, reminders: task.reminders || null, recurrence: task.recurrence || null,
+        createdAt: task.createdAt || new Date().toISOString(), updatedAt: task.updatedAt || new Date().toISOString()
+      };
+    },
+
+    normalizeRecord(record) {
+      if (!record || typeof record.title !== "string" || !record.title.trim() || !DateService.fromISO(record.date)) return null;
+      if (!this.validateTimeRange(record.startTime, record.endTime).valid) return null;
+      return {
+        id: typeof record.id === "string" ? record.id : this.id(), title: record.title.slice(0, 300),
+        description: typeof record.description === "string" ? record.description.slice(0, 5000) : "", date: record.date,
+        startTime: record.startTime, endTime: record.endTime, column: record.column === "fixed" ? "fixed" : "flexible",
+        color: this.palette.includes(record.color) ? record.color : "royalIndigo", taskId: record.taskId || null,
+        hashtags: Array.isArray(record.hashtags) ? record.hashtags : [], goalId: record.goalId || null, habitId: record.habitId || null,
+        fileNames: Array.isArray(record.fileNames) ? record.fileNames.slice(0, 10) : [], reminders: record.reminders || null,
+        recurrence: record.recurrence || null, createdAt: record.createdAt || new Date().toISOString(), updatedAt: record.updatedAt || new Date().toISOString()
+      };
+    },
+
+    normalizeIdealWeek(value) {
+      const items = value?.schemaVersion === 1 && Array.isArray(value.items) ? value.items.map((item) => {
+        if (!item || typeof item.title !== "string" || !item.title.trim() || !this.validateTimeRange(item.startTime, item.endTime).valid) return null;
+        return { id: typeof item.id === "string" ? item.id : this.id(), dayOfWeek: Math.max(1, Math.min(7, Number(item.dayOfWeek) || 1)),
+          title: item.title.slice(0, 300), description: typeof item.description === "string" ? item.description.slice(0, 5000) : "",
+          startTime: item.startTime, endTime: item.endTime, color: this.palette.includes(item.color) ? item.color : "royalIndigo",
+          category: item.category === "hard" ? "hard" : "flexible", createdAt: item.createdAt || new Date().toISOString(), updatedAt: item.updatedAt || new Date().toISOString() };
+      }).filter(Boolean) : [];
+      return { schemaVersion: 1, items, copiedWeekStarts: Array.isArray(value?.copiedWeekStarts) ? value.copiedWeekStarts.filter((date) => DateService.fromISO(date)) : [] };
+    },
+
+    validateTimeRange(startTime, endTime) {
+      const start = this.timeToMinutes(startTime); const end = this.timeToMinutes(endTime);
+      const valid = Number.isFinite(start) && Number.isFinite(end) && start >= 360 && start < 1440 && end > start && end <= 1440 && start % 30 === 0 && end % 30 === 0;
+      return { valid, start, end };
+    },
+
+    minutesToTime(minutes) {
+      if (minutes === 1440) return "24:00";
+      return `${String(Math.floor(minutes / 60)).padStart(2, "0")}:${String(minutes % 60).padStart(2, "0")}`;
+    },
+
+    overlapLayout(records) {
+      const result = new Map();
+      const sorted = [...records].sort((a, b) => this.timeToMinutes(a.startTime) - this.timeToMinutes(b.startTime));
+      let group = [];
+      const flush = () => {
+        if (!group.length) return;
+        const lanes = [];
+        group.forEach((record) => {
+          const start = this.timeToMinutes(record.startTime); let lane = lanes.findIndex((end) => end <= start);
+          if (lane < 0) { lane = lanes.length; lanes.push(0); }
+          lanes[lane] = this.timeToMinutes(record.endTime); result.set(record.id, { lane, lanes: 0, conflict: false });
+        });
+        const laneCount = lanes.length;
+        group.forEach((record) => Object.assign(result.get(record.id), { lanes: laneCount, conflict: laneCount > 1 }));
+        group = [];
+      };
+      let groupEnd = -1;
+      sorted.forEach((record) => {
+        const start = this.timeToMinutes(record.startTime); const end = this.timeToMinutes(record.endTime);
+        if (group.length && start >= groupEnd) flush();
+        group.push(record); groupEnd = Math.max(groupEnd, end);
+      });
+      flush(); return result;
     },
 
     normalizeGoal(goal) {
@@ -936,6 +1049,11 @@
     draggedSubtask: null,
     habits: null,
     currentWeek: null,
+    idealWeek: null,
+    draggedTask: null,
+    draggedRecord: null,
+    draggedIdealItem: null,
+    scheduleScrolled: false,
 
     elements: {},
 
@@ -948,11 +1066,11 @@
       this.state.ui.selectedDate = DateService.todayISO();
       this.state.ui.selectedWeek = DateService.toISO(DateService.startOfWeek(new Date()));
       this.habits = PlannerDataService.normalizeHabits(StorageService.read(StorageService.keys.habits, null));
+      this.idealWeek = PlannerDataService.normalizeIdealWeek(StorageService.read(StorageService.keys.idealWeek, null));
       this.loadWeek(this.state.ui.selectedWeek);
 
       I18nService.setLanguage(this.state.settings.language);
       ThemeService.apply(this.state.settings.theme);
-      this.buildStaticPreviews();
       this.bindEvents();
       this.syncSettingsControls();
       this.applySidebarState(false);
@@ -1008,9 +1126,20 @@
         habitTable: byId("habitTable"),
         addHabitButton: byId("addHabitButton"),
         weekBoardNote: byId("weekBoardNote"),
-        schedulePlaceholder: byId("schedulePlaceholder"),
+        mainTaskCapacity: byId("mainTaskCapacity"),
+        otherTaskCapacity: byId("otherTaskCapacity"),
+        mainTaskList: byId("mainTaskList"),
+        otherTaskList: byId("otherTaskList"),
+        addMainTask: byId("addMainTask"),
+        addOtherTask: byId("addOtherTask"),
+        scheduleScale: byId("scheduleScale"),
+        dayScheduleScroll: byId("dayScheduleScroll"),
+        daySchedule: byId("daySchedule"),
         idealHead: byId("idealHead"),
-        idealGridPlaceholder: byId("idealGridPlaceholder"),
+        idealScheduleScroll: byId("idealScheduleScroll"),
+        idealSchedule: byId("idealSchedule"),
+        idealEmpty: byId("idealEmpty"),
+        copyIdealWeek: byId("copyIdealWeek"),
         searchInput: byId("searchInput"),
         searchEmpty: byId("searchEmpty"),
         panelScrim: byId("panelScrim"),
@@ -1038,36 +1167,6 @@
       };
     },
 
-    buildStaticPreviews() {
-      this.buildTimeGrid(this.elements.schedulePlaceholder, "schedule-row", 2);
-      this.buildTimeGrid(this.elements.idealGridPlaceholder, "ideal-grid-row", 7);
-    },
-
-    buildTimeGrid(container, rowClass, contentColumns) {
-      container.replaceChildren();
-      for (let totalMinutes = 6 * 60; totalMinutes < 24 * 60; totalMinutes += 30) {
-        const hour = Math.floor(totalMinutes / 60);
-        const minutes = totalMinutes % 60;
-        const row = document.createElement("div");
-        row.className = `${rowClass} ${minutes === 0 ? "is-first-half" : "is-second-half"}`;
-        const time = document.createElement("span");
-        time.className = "time-grid-label";
-        time.textContent = minutes === 0 ? `${String(hour).padStart(2, "0")}:00` : "";
-        row.append(time);
-        for (let column = 0; column < contentColumns; column += 1) row.append(document.createElement("span"));
-        container.append(row);
-      }
-
-      const endRow = document.createElement("div");
-      endRow.className = `${rowClass} time-grid-end`;
-      const endTime = document.createElement("span");
-      endTime.className = "time-grid-label";
-      endTime.textContent = "24:00";
-      endRow.append(endTime);
-      for (let column = 0; column < contentColumns; column += 1) endRow.append(document.createElement("span"));
-      container.append(endRow);
-    },
-
     bindEvents() {
       document.querySelectorAll("[data-view-target]").forEach((button) => {
         button.addEventListener("click", () => this.showView(button.dataset.viewTarget));
@@ -1082,6 +1181,29 @@
       this.elements.addHabitButton.addEventListener("click", () => this.addHabitFromFirstEmpty(this.elements.addHabitButton));
       this.elements.goalBoard.addEventListener("click", (event) => this.handleGoalBoardClick(event));
       this.elements.habitTable.addEventListener("click", (event) => this.handleHabitTableClick(event));
+      this.elements.addMainTask.addEventListener("click", () => this.openTaskEditor(null, "main", this.elements.addMainTask));
+      this.elements.addOtherTask.addEventListener("click", () => this.openTaskEditor(null, "other", this.elements.addOtherTask));
+      [this.elements.mainTaskList, this.elements.otherTaskList].forEach((list) => {
+        list.addEventListener("click", (event) => this.handleTaskClick(event));
+        list.addEventListener("dragstart", (event) => this.handleTaskDragStart(event));
+        list.addEventListener("dragover", (event) => this.handleTaskDragOver(event));
+        list.addEventListener("drop", (event) => this.handleTaskDrop(event));
+        list.addEventListener("dragend", () => { this.draggedTask = null; });
+      });
+      this.elements.daySchedule.addEventListener("click", (event) => this.handleScheduleClick(event));
+      this.elements.daySchedule.addEventListener("dragover", (event) => { if (event.target.closest("[data-slot-time]")) event.preventDefault(); });
+      this.elements.daySchedule.addEventListener("drop", (event) => this.handleScheduleDrop(event));
+      this.elements.daySchedule.addEventListener("dragstart", (event) => this.handleScheduleDragStart(event));
+      this.elements.daySchedule.addEventListener("dragend", () => { this.draggedRecord = null; this.draggedTask = null; });
+      this.elements.daySchedule.addEventListener("pointerdown", (event) => this.handleResizeStart(event, "record"));
+      this.elements.idealSchedule.addEventListener("click", (event) => this.handleIdealClick(event));
+      this.elements.idealSchedule.addEventListener("dragover", (event) => { if (event.target.closest("[data-slot-time]")) event.preventDefault(); });
+      this.elements.idealSchedule.addEventListener("drop", (event) => this.handleIdealDrop(event));
+      this.elements.idealSchedule.addEventListener("dragstart", (event) => this.handleIdealDragStart(event));
+      this.elements.idealSchedule.addEventListener("dragend", () => { this.draggedIdealItem = null; });
+      this.elements.idealSchedule.addEventListener("pointerdown", (event) => this.handleResizeStart(event, "ideal"));
+      this.elements.copyIdealWeek.addEventListener("click", () => this.openCopyIdealEditor(this.elements.copyIdealWeek));
+      this.elements.scheduleScale.addEventListener("change", (event) => this.updateScheduleScale(event.target.value));
       this.elements.goalBoard.addEventListener("dragstart", (event) => this.handlePlannerDragStart(event));
       this.elements.goalBoard.addEventListener("dragover", (event) => this.handlePlannerDragOver(event));
       this.elements.goalBoard.addEventListener("dragleave", (event) => event.target.closest(".is-drop-target")?.classList.remove("is-drop-target"));
@@ -1186,6 +1308,14 @@
         day.textContent = String(date.getDate());
         button.append(weekday, day);
         button.addEventListener("click", () => this.selectDate(iso));
+        button.addEventListener("dragover", (event) => { if (this.draggedRecord) event.preventDefault(); });
+        button.addEventListener("drop", (event) => {
+          if (!this.draggedRecord) return;
+          event.preventDefault();
+          const record = this.currentWeek.records.find((item) => item.id === this.draggedRecord);
+          if (record) this.moveScheduleRecord(record, iso, record.column, record.startTime);
+          this.draggedRecord = null;
+        });
         this.elements.weekStrip.append(button);
       });
     },
@@ -1247,6 +1377,8 @@
       this.renderGoals();
       this.renderHabits();
       this.renderOverview();
+      this.renderDay();
+      this.renderIdealWeek();
       const hasGoals = this.currentWeek.goals.some(Boolean);
       const hasHabits = this.habits.slots.some((slot) => PlannerDataService.effectiveHabitName(slot, this.currentWeek.weekStart).trim());
       this.elements.weekBoardNote.hidden = hasGoals || hasHabits;
@@ -1920,6 +2052,333 @@
       }, { titleKey: "subtask.deleteTitle", copyKey: "subtask.deleteCopy" });
     },
 
+    getDay(date = this.state.ui.selectedDate) {
+      if (!this.currentWeek.days[date]) this.currentWeek.days[date] = { mainTasks: [], otherTasks: [] };
+      return this.currentWeek.days[date];
+    },
+
+    saveIdealWeek(immediate = false) {
+      if (immediate) StorageService.writeNow(StorageService.keys.idealWeek, this.idealWeek);
+      else StorageService.schedule(StorageService.keys.idealWeek, this.idealWeek);
+    },
+
+    writeWeekDirect(week) {
+      week.updatedAt = new Date().toISOString();
+      StorageService.writeNow(StorageService.weekKey(week.weekStart), week);
+      const index = StorageService.read(StorageService.keys.weekIndex, []);
+      const safe = Array.isArray(index) ? index.filter((item) => typeof item?.weekStart === "string") : [];
+      const existing = safe.find((item) => item.weekStart === week.weekStart);
+      if (existing) existing.updatedAt = week.updatedAt; else safe.push({ weekStart: week.weekStart, updatedAt: week.updatedAt });
+      StorageService.writeNow(StorageService.keys.weekIndex, safe.sort((a, b) => a.weekStart.localeCompare(b.weekStart)));
+    },
+
+    renderDay() {
+      const day = this.getDay();
+      this.elements.mainTaskCapacity.textContent = `${day.mainTasks.length} / 3`;
+      this.elements.otherTaskCapacity.textContent = `${day.otherTasks.length} / 10`;
+      this.renderTaskList(this.elements.mainTaskList, day.mainTasks, "main", 3);
+      this.renderTaskList(this.elements.otherTaskList, day.otherTasks, "other", 10);
+      this.elements.scheduleScale.value = this.state.settings.scheduleScale;
+      this.elements.daySchedule.dataset.scale = this.state.settings.scheduleScale;
+      this.renderScheduleGrid();
+    },
+
+    renderTaskList(container, tasks, list, limit) {
+      container.replaceChildren();
+      tasks.forEach((task, index) => {
+        const row = document.createElement("article");
+        row.className = `day-task${task.isCompleted ? " is-completed" : ""}`;
+        row.dataset.taskId = task.id; row.dataset.list = list; row.dataset.index = String(index); row.draggable = true;
+        const check = document.createElement("button"); check.type = "button"; check.className = "task-check"; check.dataset.action = "toggle-task";
+        check.setAttribute("aria-label", I18nService.t("task.complete")); check.textContent = task.isCompleted ? "✓" : "";
+        const copy = document.createElement("button"); copy.type = "button"; copy.className = "task-copy"; copy.dataset.action = "edit-task";
+        const title = document.createElement("strong"); title.textContent = task.title;
+        const meta = document.createElement("span"); meta.textContent = task.scheduleRecordId ? "◷" : "⋮⋮";
+        copy.append(title, meta);
+        const actions = document.createElement("div"); actions.className = "task-row-actions";
+        actions.append(
+          this.createIconButton("task-up", "actions.moveUp", "m7 14 5-5 5 5", index === 0),
+          this.createIconButton("task-down", "actions.moveDown", "m7 10 5 5 5-5", index === tasks.length - 1),
+          this.createIconButton("move-task-list", list === "main" ? "actions.moveOther" : "actions.moveMain", "M7 7h10m0 0-3-3m3 3-3 3M17 17H7m0 0 3-3m-3 3 3 3"),
+          this.createIconButton("schedule-task", "task.schedule", "M5 3v3m14-3v3M4 9h16M5 5h14v15H5z"),
+          this.createIconButton("delete-task", "actions.delete", "M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13")
+        );
+        row.append(check, copy, actions); container.append(row);
+      });
+      for (let index = tasks.length; index < limit; index += 1) {
+        const empty = document.createElement("button"); empty.type = "button"; empty.className = "task-empty-row"; empty.dataset.addList = list;
+        empty.textContent = index === tasks.length ? I18nService.t(list === "main" ? "task.emptyMain" : "task.emptyOther") : "";
+        container.append(empty);
+      }
+    },
+
+    findTask(id) {
+      for (const [date, day] of Object.entries(this.currentWeek.days)) {
+        for (const list of ["main", "other"]) {
+          const key = `${list}Tasks`; const index = day[key].findIndex((task) => task.id === id);
+          if (index >= 0) return { task: day[key][index], date, list, key, index, day };
+        }
+      }
+      return null;
+    },
+
+    handleTaskClick(event) {
+      const empty = event.target.closest("[data-add-list]");
+      if (empty) { this.openTaskEditor(null, empty.dataset.addList, empty); return; }
+      const button = event.target.closest("button[data-action]"); if (!button) return;
+      const row = button.closest("[data-task-id]"); const found = this.findTask(row?.dataset.taskId); if (!found) return;
+      const { task, list, index } = found; const action = button.dataset.action;
+      if (action === "edit-task") this.openTaskEditor(task, list, button);
+      else if (action === "toggle-task") { task.isCompleted = !task.isCompleted; task.updatedAt = new Date().toISOString(); this.syncTaskRecord(task); this.saveWeek(); this.renderPlannerData(); }
+      else if (action === "task-up") this.reorderTask(found, index - 1);
+      else if (action === "task-down") this.reorderTask(found, index + 1);
+      else if (action === "move-task-list") this.moveTaskList(found, list === "main" ? "other" : "main");
+      else if (action === "schedule-task") {
+        const existing = this.currentWeek.records.find((record) => record.id === task.scheduleRecordId || record.taskId === task.id);
+        this.openRecordEditor(existing || null, existing ? null : { task, date: found.date, column: "flexible", startTime: "09:00" }, button);
+      }
+      else if (action === "delete-task") this.confirmDeleteTask(found);
+    },
+
+    reorderTask(found, targetIndex) {
+      const list = found.day[found.key]; if (targetIndex < 0 || targetIndex >= list.length) return;
+      const [task] = list.splice(found.index, 1); list.splice(targetIndex, 0, task); list.forEach((item, index) => { item.position = index; });
+      this.saveWeek(); this.renderPlannerData();
+    },
+
+    moveTaskList(found, targetList, targetIndex = null) {
+      const targetKey = `${targetList}Tasks`; const limit = targetList === "main" ? 3 : 10; const target = found.day[targetKey];
+      if (target.length >= limit) { this.showToast("task.limitTitle", targetList === "main" ? "task.limitMain" : "task.limitOther"); return false; }
+      found.day[found.key].splice(found.index, 1); const position = targetIndex === null ? target.length : Math.max(0, Math.min(target.length, targetIndex));
+      found.task.list = targetList; target.splice(position, 0, found.task);
+      [found.day.mainTasks, found.day.otherTasks].forEach((items) => items.forEach((item, index) => { item.position = index; }));
+      this.saveWeek(); this.renderPlannerData(); return true;
+    },
+
+    syncTaskRecord(task) {
+      const record = this.currentWeek.records.find((item) => item.id === task.scheduleRecordId || item.taskId === task.id);
+      if (record) { record.title = task.title; record.description = task.text; record.updatedAt = new Date().toISOString(); }
+    },
+
+    openTaskEditor(task, list, trigger) {
+      const day = this.getDay(); const target = day[`${list}Tasks`]; const limit = list === "main" ? 3 : 10;
+      if (!task && target.length >= limit) { this.showToast("task.limitTitle", list === "main" ? "task.limitMain" : "task.limitOther"); return; }
+      this.prepareEditor(task ? "task.edit" : "task.new", trigger);
+      const form = document.createElement("form"); form.className = "editor-form"; form.noValidate = true;
+      form.innerHTML = `<label class="form-field"><span>${I18nService.t("task.title")}</span><input name="title" maxlength="300" required><span class="form-error" data-error></span></label><label class="form-field"><span>${I18nService.t("task.text")}</span><textarea name="text" maxlength="5000"></textarea></label><label class="form-field"><span>${I18nService.t("task.list")}</span><select name="list"><option value="main">${I18nService.t("task.main")}</option><option value="other">${I18nService.t("task.other")}</option></select></label><label class="check-field"><input name="completed" type="checkbox"><span>${I18nService.t("task.complete")}</span></label>`;
+      form.elements.title.value = task?.title || ""; form.elements.text.value = task?.text || ""; form.elements.list.value = list; form.elements.completed.checked = Boolean(task?.isCompleted);
+      form.addEventListener("input", () => { this.panelDirty = true; });
+      form.addEventListener("submit", (event) => {
+        event.preventDefault(); const title = form.elements.title.value.trim(); const nextList = form.elements.list.value; const error = form.querySelector("[data-error]"); error.textContent = "";
+        if (!title) { error.textContent = I18nService.t("task.errorTitle"); return; }
+        if (title.length > 300) { error.textContent = I18nService.t("task.errorLong"); return; }
+        if (task) {
+          const found = this.findTask(task.id); if (!found) return;
+          if (nextList !== found.list && found.day[`${nextList}Tasks`].length >= (nextList === "main" ? 3 : 10)) { error.textContent = I18nService.t(nextList === "main" ? "task.limitMain" : "task.limitOther"); return; }
+          task.title = title; task.text = form.elements.text.value.slice(0, 5000); task.isCompleted = form.elements.completed.checked; task.updatedAt = new Date().toISOString();
+          if (nextList !== found.list) { found.day[found.key].splice(found.index, 1); task.list = nextList; found.day[`${nextList}Tasks`].push(task); }
+          this.syncTaskRecord(task);
+        } else {
+          const nextTarget = day[`${nextList}Tasks`]; const nextLimit = nextList === "main" ? 3 : 10;
+          if (nextTarget.length >= nextLimit) { error.textContent = I18nService.t(nextList === "main" ? "task.limitMain" : "task.limitOther"); return; }
+          nextTarget.push({ id: PlannerDataService.id(), title, text: form.elements.text.value.slice(0, 5000), date: this.state.ui.selectedDate, list: nextList, position: nextTarget.length, isCompleted: form.elements.completed.checked, hashtags: [], goalId: null, habitId: null, fileNames: [], scheduleRecordId: null, reminders: null, recurrence: null, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
+        }
+        [day.mainTasks, day.otherTasks].forEach((items) => items.forEach((item, index) => { item.position = index; }));
+        this.saveWeek(); this.renderPlannerData(); this.panelDirty = false; this.closeContextPanel(true);
+      });
+      this.elements.contextPanelBody.append(form); this.panelAction = () => form.requestSubmit(); window.setTimeout(() => form.elements.title.focus(), 0);
+    },
+
+    confirmDeleteTask(found) {
+      this.openConfirmation(() => {
+        const snapshot = structuredClone(this.currentWeek); found.day[found.key].splice(found.index, 1);
+        this.currentWeek.records = this.currentWeek.records.filter((record) => record.taskId !== found.task.id); this.saveWeek(true); this.renderPlannerData();
+        this.showUndoToast("task.deletedTitle", "task.deletedCopy", () => { if (this.currentWeek.weekStart !== snapshot.weekStart) return; this.currentWeek = snapshot; this.saveWeek(true); this.renderPlannerData(); });
+      }, { titleKey: "task.deleteTitle", copyKey: "task.deleteCopy" });
+    },
+
+    handleTaskDragStart(event) {
+      const row = event.target.closest("[data-task-id]"); if (!row) return; this.draggedTask = { id: row.dataset.taskId };
+      event.dataTransfer.effectAllowed = "move"; event.dataTransfer.setData("text/plain", `task:${row.dataset.taskId}`);
+    },
+
+    handleTaskDragOver(event) { if (event.target.closest(".task-list")) event.preventDefault(); },
+
+    handleTaskDrop(event) {
+      event.preventDefault(); const container = event.target.closest(".task-list"); if (!container || !this.draggedTask) return;
+      const found = this.findTask(this.draggedTask.id); if (!found) return; const targetList = container.dataset.list;
+      const targetRow = event.target.closest("[data-task-id]"); const targetIndex = targetRow ? Number(targetRow.dataset.index) : this.getDay()[`${targetList}Tasks`].length;
+      if (found.list === targetList) { const list = found.day[found.key]; const [task] = list.splice(found.index, 1); list.splice(Math.min(targetIndex, list.length), 0, task); list.forEach((item, index) => { item.position = index; }); this.saveWeek(); this.renderPlannerData(); }
+      else this.moveTaskList(found, targetList, targetIndex);
+      this.draggedTask = null;
+    },
+
+    scheduleRowHeight() { return ({ compact: 24, standard: 32, large: 42 })[this.state.settings.scheduleScale] || 32; },
+
+    buildScheduleTracks(container, columns, slotCallback) {
+      container.replaceChildren(); container.style.setProperty("--slot-height", `${this.scheduleRowHeight()}px`);
+      const rail = document.createElement("div"); rail.className = "schedule-time-rail";
+      for (let minute = 360; minute < 1440; minute += 30) { const label = document.createElement("span"); label.textContent = minute % 60 === 0 ? PlannerDataService.minutesToTime(minute) : ""; rail.append(label); }
+      const end = document.createElement("span"); end.className = "time-end"; end.textContent = "24:00"; rail.append(end); container.append(rail);
+      columns.forEach((column) => {
+        const track = document.createElement("div"); track.className = "schedule-track"; track.dataset.track = String(column);
+        for (let minute = 360; minute < 1440; minute += 30) { const slot = document.createElement("button"); slot.type = "button"; slot.className = `schedule-slot ${minute % 60 === 0 ? "is-hour" : "is-half"}`; slot.dataset.slotTime = PlannerDataService.minutesToTime(minute); slotCallback(slot, column); track.append(slot); }
+        const layer = document.createElement("div"); layer.className = "schedule-record-layer"; track.append(layer); container.append(track);
+      });
+    },
+
+    renderScheduleGrid() {
+      this.buildScheduleTracks(this.elements.daySchedule, ["fixed", "flexible"], (slot, column) => { slot.dataset.column = column; slot.setAttribute("aria-label", `${PlannerDataService.minutesToTime(PlannerDataService.timeToMinutes(slot.dataset.slotTime))}, ${I18nService.t(column === "fixed" ? "day.fixed" : "day.flexible")}`); });
+      ["fixed", "flexible"].forEach((column) => {
+        const records = this.currentWeek.records.filter((record) => record.date === this.state.ui.selectedDate && record.column === column); const layout = PlannerDataService.overlapLayout(records);
+        const layer = this.elements.daySchedule.querySelector(`[data-track="${column}"] .schedule-record-layer`);
+        records.forEach((record) => layer.append(this.createScheduleBlock(record, layout.get(record.id), "record")));
+      });
+      this.autoScrollSchedule(this.elements.dayScheduleScroll);
+    },
+
+    createScheduleBlock(item, layout, kind) {
+      const block = document.createElement("article"); block.className = `schedule-block ${kind === "ideal" ? (item.category === "hard" ? "is-fixed" : "is-flexible") : (item.column === "fixed" ? "is-fixed" : "is-flexible")}${layout?.conflict ? " has-conflict" : ""}`;
+      if (kind === "record" && item.taskId && this.findTask(item.taskId)?.task.isCompleted) block.classList.add("is-completed");
+      block.dataset[kind === "ideal" ? "idealId" : "recordId"] = item.id; block.draggable = true; block.style.setProperty("--record-color", this.goalColorValue(item.color));
+      const start = PlannerDataService.timeToMinutes(item.startTime); const end = PlannerDataService.timeToMinutes(item.endTime); const height = this.scheduleRowHeight();
+      block.style.top = `${(start - 360) / 30 * height + 1}px`; block.style.height = `${Math.max(22, (end - start) / 30 * height - 2)}px`;
+      const lanes = layout?.lanes || 1; const lane = layout?.lane || 0; block.style.left = `calc(${lane / lanes * 100}% + 3px)`; block.style.width = `calc(${100 / lanes}% - 6px)`;
+      const title = document.createElement("strong"); title.textContent = item.title; const time = document.createElement("span"); time.textContent = `${item.startTime}–${item.endTime}`;
+      block.append(title, time); if (layout?.conflict) { const warning = document.createElement("b"); warning.textContent = "!"; warning.title = I18nService.t("schedule.conflict"); block.append(warning); }
+      const handle = document.createElement("span"); handle.className = "resize-handle"; handle.dataset.resize = kind; handle.setAttribute("aria-label", I18nService.t("schedule.end")); block.append(handle); return block;
+    },
+
+    handleScheduleClick(event) {
+      if (event.target.closest(".resize-handle")) return; const block = event.target.closest("[data-record-id]");
+      if (block) { const record = this.currentWeek.records.find((item) => item.id === block.dataset.recordId); if (record) this.openRecordEditor(record, null, block); return; }
+      const slot = event.target.closest("[data-slot-time]"); if (slot) this.openRecordEditor(null, { date: this.state.ui.selectedDate, column: slot.dataset.column, startTime: slot.dataset.slotTime }, slot);
+    },
+
+    timeOptions(startOnly = false) {
+      let html = ""; for (let minute = startOnly ? 360 : 390; minute <= (startOnly ? 1410 : 1440); minute += 30) { const value = PlannerDataService.minutesToTime(minute); html += `<option value="${value}">${value}</option>`; } return html;
+    },
+
+    recordConflicts(record, ignoreId = null) {
+      const start = PlannerDataService.timeToMinutes(record.startTime); const end = PlannerDataService.timeToMinutes(record.endTime);
+      return this.currentWeek.records.some((item) => item.id !== ignoreId && item.date === record.date && item.column === record.column && start < PlannerDataService.timeToMinutes(item.endTime) && end > PlannerDataService.timeToMinutes(item.startTime));
+    },
+
+    openRecordEditor(record, defaults = null, trigger) {
+      const task = defaults?.task || (record?.taskId ? this.findTask(record.taskId)?.task : null); const startTime = defaults?.startTime || record?.startTime || "09:00";
+      const value = record || { title: task?.title || "", description: task?.text || "", date: defaults?.date || this.state.ui.selectedDate, startTime, endTime: PlannerDataService.minutesToTime(PlannerDataService.timeToMinutes(startTime) + 30), column: defaults?.column || "flexible", color: "royalIndigo", taskId: task?.id || null };
+      this.prepareEditor(record ? "schedule.edit" : "schedule.new", trigger); const form = document.createElement("form"); form.className = "editor-form"; form.noValidate = true;
+      form.innerHTML = `<label class="form-field"><span>${I18nService.t("schedule.title")}</span><input name="title" maxlength="300" required><span class="form-error" data-error="title"></span></label><label class="form-field"><span>${I18nService.t("schedule.description")}</span><textarea name="description" maxlength="5000"></textarea></label><label class="form-field"><span>${I18nService.t("schedule.date")}</span><input name="date" type="date" required></label><div class="form-two-columns"><label class="form-field"><span>${I18nService.t("schedule.start")}</span><select name="startTime">${this.timeOptions(true)}</select></label><label class="form-field"><span>${I18nService.t("schedule.end")}</span><select name="endTime">${this.timeOptions(false)}</select></label></div><label class="form-field"><span>${I18nService.t("schedule.column")}</span><select name="column"><option value="fixed">${I18nService.t("schedule.fixed")}</option><option value="flexible">${I18nService.t("schedule.flexible")}</option></select></label>${this.colorPaletteMarkup(value.color)}<span class="form-error" data-error="range"></span><p class="editor-note conflict-note" data-conflict hidden>${I18nService.t("schedule.conflict")}</p>`;
+      ["title", "description", "date", "startTime", "endTime", "column"].forEach((name) => { form.elements[name].value = value[name] || ""; });
+      const updateConflict = () => { const draft = { date: form.elements.date.value, column: form.elements.column.value, startTime: form.elements.startTime.value, endTime: form.elements.endTime.value }; form.querySelector("[data-conflict]").hidden = !this.recordConflicts(draft, record?.id); };
+      form.addEventListener("input", () => { this.panelDirty = true; updateConflict(); }); updateConflict();
+      form.addEventListener("submit", (event) => {
+        event.preventDefault(); const title = form.elements.title.value.trim(); const rangeError = form.querySelector('[data-error="range"]'); form.querySelector('[data-error="title"]').textContent = title ? "" : I18nService.t("task.errorTitle");
+        const range = PlannerDataService.validateTimeRange(form.elements.startTime.value, form.elements.endTime.value); rangeError.textContent = range.valid ? "" : I18nService.t("schedule.errorRange"); if (!title || !range.valid || !DateService.fromISO(form.elements.date.value)) return;
+        const next = { ...value, id: record?.id || PlannerDataService.id(), title, description: form.elements.description.value.slice(0, 5000), date: form.elements.date.value, startTime: form.elements.startTime.value, endTime: form.elements.endTime.value, column: form.elements.column.value, color: form.elements.color.value, taskId: task?.id || record?.taskId || null, createdAt: record?.createdAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
+        const destinationWeekStart = DateService.toISO(DateService.startOfWeek(DateService.fromISO(next.date)));
+        const taskLocation = task ? this.findTask(task.id) : null;
+        if (taskLocation && next.date !== taskLocation.date) {
+          const destinationWeek = destinationWeekStart === this.currentWeek.weekStart ? this.currentWeek : PlannerDataService.normalizeWeek(StorageService.read(StorageService.weekKey(destinationWeekStart), null), destinationWeekStart);
+          if (!destinationWeek.days[next.date]) destinationWeek.days[next.date] = { mainTasks: [], otherTasks: [] };
+          const targetList = destinationWeek.days[next.date][taskLocation.key]; const taskLimit = taskLocation.list === "main" ? 3 : 10;
+          if (targetList.length >= taskLimit) { rangeError.textContent = I18nService.t(taskLocation.list === "main" ? "task.limitMain" : "task.limitOther"); return; }
+          taskLocation.day[taskLocation.key].splice(taskLocation.index, 1); task.date = next.date; targetList.push(task); targetList.forEach((entry, index) => { entry.position = index; });
+        }
+        if (destinationWeekStart !== this.currentWeek.weekStart) {
+          const destinationWeek = PlannerDataService.normalizeWeek(StorageService.read(StorageService.weekKey(destinationWeekStart), null), destinationWeekStart);
+          if (task) {
+            if (!destinationWeek.days[next.date]) destinationWeek.days[next.date] = { mainTasks: [], otherTasks: [] };
+            const targetList = destinationWeek.days[next.date][`${task.list}Tasks`];
+            if (!targetList.some((entry) => entry.id === task.id)) targetList.push(task);
+          }
+          if (record) this.currentWeek.records = this.currentWeek.records.filter((entry) => entry.id !== record.id);
+          destinationWeek.records.push(next); this.saveWeek(true); this.writeWeekDirect(destinationWeek);
+          this.renderPlannerData(); this.panelDirty = false; this.closeContextPanel(true); return;
+        }
+        if (record) Object.assign(record, next); else this.currentWeek.records.push(next);
+        if (task) { task.scheduleRecordId = next.id; task.title = title; task.text = next.description; task.updatedAt = next.updatedAt; }
+        this.saveWeek(); this.renderPlannerData(); this.panelDirty = false; this.closeContextPanel(true);
+      });
+      if (record) {
+        const actions = document.createElement("div"); actions.className = "editor-action-row";
+        const duplicate = document.createElement("button"); duplicate.type = "button"; duplicate.className = "secondary-button"; duplicate.textContent = I18nService.t("actions.duplicate"); duplicate.addEventListener("click", () => this.duplicateRecord(record));
+        const remove = document.createElement("button"); remove.type = "button"; remove.className = "editor-danger"; remove.textContent = I18nService.t(record.taskId ? "schedule.unschedule" : "actions.delete"); remove.addEventListener("click", () => this.confirmDeleteRecord(record)); actions.append(duplicate, remove); form.append(actions);
+      }
+      this.elements.contextPanelBody.append(form); this.panelAction = () => form.requestSubmit(); window.setTimeout(() => form.elements.title.focus(), 0);
+    },
+
+    colorPaletteMarkup(selected) {
+      return `<fieldset class="color-palette form-field"><legend>${I18nService.t("schedule.color")}</legend>${PlannerDataService.palette.map((color) => `<label class="color-choice" title="${I18nService.t(`color.${color}`)}"><input type="radio" name="color" value="${color}" ${color === selected ? "checked" : ""}><span style="--choice-color:${this.goalColorValue(color)}"></span></label>`).join("")}</fieldset>`;
+    },
+
+    duplicateRecord(record) {
+      const copy = { ...structuredClone(record), id: PlannerDataService.id(), taskId: null, recurrence: null, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+      this.currentWeek.records.push(copy); this.saveWeek(); this.renderPlannerData(); this.panelDirty = false; this.closeContextPanel(true);
+    },
+
+    confirmDeleteRecord(record) {
+      this.openConfirmation(() => { const snapshot = structuredClone(this.currentWeek); this.currentWeek.records = this.currentWeek.records.filter((item) => item.id !== record.id); const task = record.taskId ? this.findTask(record.taskId)?.task : null; if (task) task.scheduleRecordId = null; this.saveWeek(true); this.renderPlannerData(); this.panelDirty = false; this.closeContextPanel(true); this.showUndoToast("schedule.deletedTitle", "schedule.deletedCopy", () => { if (this.currentWeek.weekStart !== snapshot.weekStart) return; this.currentWeek = snapshot; this.saveWeek(true); this.renderPlannerData(); }); }, { titleKey: "schedule.deleteTitle", copyKey: "schedule.deleteCopy" });
+    },
+
+    handleScheduleDragStart(event) { const block = event.target.closest("[data-record-id]"); if (!block) return; this.draggedRecord = block.dataset.recordId; event.dataTransfer.setData("text/plain", `record:${this.draggedRecord}`); event.dataTransfer.effectAllowed = "move"; },
+
+    handleScheduleDrop(event) {
+      const slot = event.target.closest("[data-slot-time]"); if (!slot) return; event.preventDefault();
+      if (this.draggedTask) { const found = this.findTask(this.draggedTask.id); if (found) { const existing = this.currentWeek.records.find((record) => record.taskId === found.task.id); if (existing) this.moveScheduleRecord(existing, this.state.ui.selectedDate, slot.dataset.column, slot.dataset.slotTime); else { const start = PlannerDataService.timeToMinutes(slot.dataset.slotTime); const record = { id: PlannerDataService.id(), title: found.task.title, description: found.task.text, date: this.state.ui.selectedDate, startTime: slot.dataset.slotTime, endTime: PlannerDataService.minutesToTime(start + 30), column: slot.dataset.column, color: "royalIndigo", taskId: found.task.id, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() }; found.task.scheduleRecordId = record.id; this.currentWeek.records.push(record); this.saveWeek(); this.renderPlannerData(); } } this.draggedTask = null; }
+      else if (this.draggedRecord) { const record = this.currentWeek.records.find((item) => item.id === this.draggedRecord); if (record) this.moveScheduleRecord(record, this.state.ui.selectedDate, slot.dataset.column, slot.dataset.slotTime); this.draggedRecord = null; }
+    },
+
+    moveScheduleRecord(record, date, column, startTime) {
+      const duration = PlannerDataService.timeToMinutes(record.endTime) - PlannerDataService.timeToMinutes(record.startTime); const end = PlannerDataService.timeToMinutes(startTime) + duration;
+      if (end > 1440) { this.showToast("task.limitTitle", "schedule.errorRange"); return false; }
+      if (record.taskId && date !== record.date) { const found = this.findTask(record.taskId); if (found) { const targetWeekStart = DateService.toISO(DateService.startOfWeek(DateService.fromISO(date))); if (targetWeekStart !== this.currentWeek.weekStart) { this.showToast("task.limitTitle", "task.limitOther"); return false; } const targetDay = this.getDay(date); const target = targetDay[found.key]; if (target.length >= (found.list === "main" ? 3 : 10)) { this.showToast("task.limitTitle", found.list === "main" ? "task.limitMain" : "task.limitOther"); return false; } found.day[found.key].splice(found.index, 1); found.task.date = date; target.push(found.task); } }
+      record.date = date; record.column = column; record.startTime = startTime; record.endTime = PlannerDataService.minutesToTime(end); record.updatedAt = new Date().toISOString(); this.saveWeek(); this.renderPlannerData(); return true;
+    },
+
+    updateScheduleScale(scale) { if (!["compact", "standard", "large"].includes(scale)) return; this.state.settings.scheduleScale = scale; this.saveSettings(); this.renderDay(); this.renderIdealWeek(); },
+
+    autoScrollSchedule(element) { if (!element) return; const now = new Date(); const minute = Math.max(360, Math.min(1410, now.getHours() * 60 + now.getMinutes())); const top = Math.max(0, (minute - 420) / 30 * this.scheduleRowHeight()); window.requestAnimationFrame(() => { element.scrollTop = top; }); },
+
+    renderIdealWeek() {
+      this.elements.idealSchedule.dataset.scale = this.state.settings.scheduleScale; this.buildScheduleTracks(this.elements.idealSchedule, [1, 2, 3, 4, 5, 6, 7], (slot, day) => { slot.dataset.day = String(day); });
+      for (let day = 1; day <= 7; day += 1) { const items = this.idealWeek.items.filter((item) => item.dayOfWeek === day); const layout = PlannerDataService.overlapLayout(items); const layer = this.elements.idealSchedule.querySelector(`[data-track="${day}"] .schedule-record-layer`); items.forEach((item) => layer.append(this.createScheduleBlock(item, layout.get(item.id), "ideal"))); }
+      this.elements.idealEmpty.hidden = this.idealWeek.items.length > 0; this.autoScrollSchedule(this.elements.idealScheduleScroll);
+    },
+
+    handleIdealClick(event) { if (event.target.closest(".resize-handle")) return; const block = event.target.closest("[data-ideal-id]"); if (block) { const item = this.idealWeek.items.find((value) => value.id === block.dataset.idealId); if (item) this.openIdealEditor(item, null, block); return; } const slot = event.target.closest("[data-slot-time]"); if (slot) this.openIdealEditor(null, { dayOfWeek: Number(slot.dataset.day), startTime: slot.dataset.slotTime }, slot); },
+
+    openIdealEditor(item, defaults, trigger) {
+      const startTime = defaults?.startTime || item?.startTime || "09:00"; const value = item || { title: "", description: "", dayOfWeek: defaults?.dayOfWeek || 1, startTime, endTime: PlannerDataService.minutesToTime(PlannerDataService.timeToMinutes(startTime) + 30), color: "royalIndigo", category: "flexible" };
+      this.prepareEditor(item ? "ideal.edit" : "ideal.new", trigger); const form = document.createElement("form"); form.className = "editor-form"; form.noValidate = true; const monday = new Date(2026, 0, 5); const locale = this.state.settings.language === "ru" ? "ru-RU" : "en-US";
+      form.innerHTML = `<label class="form-field"><span>${I18nService.t("schedule.title")}</span><input name="title" maxlength="300" required><span class="form-error" data-error="title"></span></label><label class="form-field"><span>${I18nService.t("schedule.description")}</span><textarea name="description" maxlength="5000"></textarea></label><label class="form-field"><span>${I18nService.t("ideal.day")}</span><select name="dayOfWeek">${Array.from({ length: 7 }, (_, index) => `<option value="${index + 1}">${new Intl.DateTimeFormat(locale, { weekday: "long" }).format(DateService.addDays(monday, index))}</option>`).join("")}</select></label><div class="form-two-columns"><label class="form-field"><span>${I18nService.t("schedule.start")}</span><select name="startTime">${this.timeOptions(true)}</select></label><label class="form-field"><span>${I18nService.t("schedule.end")}</span><select name="endTime">${this.timeOptions(false)}</select></label></div><label class="form-field"><span>${I18nService.t("ideal.category")}</span><select name="category"><option value="hard">${I18nService.t("schedule.fixed")}</option><option value="flexible">${I18nService.t("schedule.flexible")}</option></select></label>${this.colorPaletteMarkup(value.color)}<span class="form-error" data-error="range"></span>`;
+      ["title", "description", "dayOfWeek", "startTime", "endTime", "category"].forEach((name) => { form.elements[name].value = value[name]; }); form.addEventListener("input", () => { this.panelDirty = true; });
+      form.addEventListener("submit", (event) => { event.preventDefault(); const title = form.elements.title.value.trim(); const valid = PlannerDataService.validateTimeRange(form.elements.startTime.value, form.elements.endTime.value).valid; form.querySelector('[data-error="title"]').textContent = title ? "" : I18nService.t("task.errorTitle"); form.querySelector('[data-error="range"]').textContent = valid ? "" : I18nService.t("schedule.errorRange"); if (!title || !valid) return; const next = { ...value, id: item?.id || PlannerDataService.id(), title, description: form.elements.description.value.slice(0, 5000), dayOfWeek: Number(form.elements.dayOfWeek.value), startTime: form.elements.startTime.value, endTime: form.elements.endTime.value, category: form.elements.category.value, color: form.elements.color.value, createdAt: item?.createdAt || new Date().toISOString(), updatedAt: new Date().toISOString() }; if (item) Object.assign(item, next); else this.idealWeek.items.push(next); this.saveIdealWeek(); this.renderIdealWeek(); this.panelDirty = false; this.closeContextPanel(true); });
+      if (item) { const actions = document.createElement("div"); actions.className = "editor-action-row"; const duplicate = document.createElement("button"); duplicate.type = "button"; duplicate.className = "secondary-button"; duplicate.textContent = I18nService.t("actions.duplicate"); duplicate.addEventListener("click", () => { this.idealWeek.items.push({ ...structuredClone(item), id: PlannerDataService.id(), createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() }); this.saveIdealWeek(); this.renderIdealWeek(); this.panelDirty = false; this.closeContextPanel(true); }); const remove = document.createElement("button"); remove.type = "button"; remove.className = "editor-danger"; remove.textContent = I18nService.t("actions.delete"); remove.addEventListener("click", () => this.confirmDeleteIdeal(item)); actions.append(duplicate, remove); form.append(actions); }
+      this.elements.contextPanelBody.append(form); this.panelAction = () => form.requestSubmit(); window.setTimeout(() => form.elements.title.focus(), 0);
+    },
+
+    confirmDeleteIdeal(item) { this.openConfirmation(() => { const snapshot = structuredClone(this.idealWeek); this.idealWeek.items = this.idealWeek.items.filter((value) => value.id !== item.id); this.saveIdealWeek(true); this.renderIdealWeek(); this.panelDirty = false; this.closeContextPanel(true); this.showUndoToast("ideal.deletedTitle", "ideal.deletedCopy", () => { this.idealWeek = snapshot; this.saveIdealWeek(true); this.renderIdealWeek(); }); }, { titleKey: "schedule.deleteTitle", copyKey: "schedule.deleteCopy" }); },
+
+    handleIdealDragStart(event) { const block = event.target.closest("[data-ideal-id]"); if (!block) return; this.draggedIdealItem = block.dataset.idealId; event.dataTransfer.setData("text/plain", `ideal:${this.draggedIdealItem}`); },
+    handleIdealDrop(event) { const slot = event.target.closest("[data-slot-time]"); if (!slot || !this.draggedIdealItem) return; event.preventDefault(); const item = this.idealWeek.items.find((value) => value.id === this.draggedIdealItem); if (!item) return; const duration = PlannerDataService.timeToMinutes(item.endTime) - PlannerDataService.timeToMinutes(item.startTime); const end = PlannerDataService.timeToMinutes(slot.dataset.slotTime) + duration; if (end > 1440) { this.showToast("task.limitTitle", "schedule.errorRange"); return; } item.dayOfWeek = Number(slot.dataset.day); item.startTime = slot.dataset.slotTime; item.endTime = PlannerDataService.minutesToTime(end); item.updatedAt = new Date().toISOString(); this.saveIdealWeek(); this.renderIdealWeek(); this.draggedIdealItem = null; },
+
+    handleResizeStart(event, kind) {
+      const handle = event.target.closest(`[data-resize="${kind}"]`); if (!handle) return; event.preventDefault(); event.stopPropagation();
+      const block = handle.closest(kind === "ideal" ? "[data-ideal-id]" : "[data-record-id]"); const item = kind === "ideal" ? this.idealWeek.items.find((value) => value.id === block.dataset.idealId) : this.currentWeek.records.find((value) => value.id === block.dataset.recordId); if (!item) return;
+      const startY = event.clientY; const originalEnd = PlannerDataService.timeToMinutes(item.endTime); const start = PlannerDataService.timeToMinutes(item.startTime); const rowHeight = this.scheduleRowHeight();
+      const move = (moveEvent) => { const steps = Math.round((moveEvent.clientY - startY) / rowHeight); const next = Math.max(start + 30, Math.min(1440, originalEnd + steps * 30)); block.style.height = `${(next - start) / 30 * rowHeight - 2}px`; };
+      const up = (upEvent) => { window.removeEventListener("pointermove", move); window.removeEventListener("pointerup", up); const steps = Math.round((upEvent.clientY - startY) / rowHeight); item.endTime = PlannerDataService.minutesToTime(Math.max(start + 30, Math.min(1440, originalEnd + steps * 30))); item.updatedAt = new Date().toISOString(); if (kind === "ideal") { this.saveIdealWeek(); this.renderIdealWeek(); } else { this.saveWeek(); this.renderPlannerData(); } };
+      window.addEventListener("pointermove", move); window.addEventListener("pointerup", up, { once: true });
+    },
+
+    openCopyIdealEditor(trigger) {
+      if (!this.idealWeek.items.length) { this.showToast("ideal.copyEmptyTitle", "ideal.copyEmptyCopy"); return; }
+      this.prepareEditor("ideal.copyTitle", trigger); const form = document.createElement("form"); form.className = "editor-form"; form.innerHTML = `<label class="form-field"><span>${I18nService.t("ideal.targetWeek")}</span><input name="date" type="date" required></label><p class="editor-note" data-copy-note>${I18nService.t("ideal.copyConfirm")}</p>`; form.elements.date.value = this.state.ui.selectedWeek;
+      const update = (markDirty = true) => { const weekStart = DateService.toISO(DateService.startOfWeek(DateService.fromISO(form.elements.date.value) || new Date())); form.querySelector("[data-copy-note]").textContent = I18nService.t(this.idealWeek.copiedWeekStarts.includes(weekStart) ? "ideal.copyDuplicate" : "ideal.copyConfirm"); if (markDirty) this.panelDirty = true; }; form.addEventListener("input", () => update(true)); update(false);
+      form.addEventListener("submit", (event) => { event.preventDefault(); const date = DateService.fromISO(form.elements.date.value); if (!date) return; const weekStart = DateService.toISO(DateService.startOfWeek(date)); const target = weekStart === this.currentWeek.weekStart ? this.currentWeek : PlannerDataService.normalizeWeek(StorageService.read(StorageService.weekKey(weekStart), null), weekStart); const snapshot = structuredClone(target); const copiedBefore = [...this.idealWeek.copiedWeekStarts]; this.idealWeek.items.forEach((item) => { const recordDate = DateService.toISO(DateService.addDays(DateService.fromISO(weekStart), item.dayOfWeek - 1)); target.records.push({ id: PlannerDataService.id(), title: item.title, description: item.description, date: recordDate, startTime: item.startTime, endTime: item.endTime, column: item.category === "hard" ? "fixed" : "flexible", color: item.color, taskId: null, hashtags: [], goalId: null, habitId: null, fileNames: [], reminders: null, recurrence: null, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() }); }); if (!this.idealWeek.copiedWeekStarts.includes(weekStart)) this.idealWeek.copiedWeekStarts.push(weekStart); StorageService.writeNow(StorageService.weekKey(weekStart), target); const index = StorageService.read(StorageService.keys.weekIndex, []); if (!index.some((value) => value.weekStart === weekStart)) StorageService.writeNow(StorageService.keys.weekIndex, [...index, { weekStart, updatedAt: new Date().toISOString() }].sort((a, b) => a.weekStart.localeCompare(b.weekStart))); this.saveIdealWeek(true); if (weekStart === this.currentWeek.weekStart) this.currentWeek = target; this.renderPlannerData(); this.panelDirty = false; this.closeContextPanel(true); this.showUndoToast("ideal.copyDoneTitle", "ideal.copyDoneCopy", () => { StorageService.writeNow(StorageService.weekKey(weekStart), snapshot); this.idealWeek.copiedWeekStarts = copiedBefore; this.saveIdealWeek(true); if (weekStart === this.currentWeek.weekStart) this.currentWeek = snapshot; this.renderPlannerData(); }); }); this.elements.contextPanelBody.append(form); this.panelAction = () => form.requestSubmit();
+    },
+
     renderSearchState() {
       const hasQuery = this.elements.searchInput.value.trim().length > 0;
       const title = this.elements.searchEmpty.querySelector("h3");
@@ -1936,6 +2395,8 @@
       this.elements.themeQuickToggle.setAttribute("aria-label", I18nService.t("aria.changeTheme"));
       this.elements.languageToggle.setAttribute("aria-label", I18nService.t("aria.changeLanguage"));
       this.elements.closeContextPanel.setAttribute("aria-label", I18nService.t("aria.closePanel"));
+      this.elements.addMainTask.setAttribute("aria-label", I18nService.t("task.addMain"));
+      this.elements.addOtherTask.setAttribute("aria-label", I18nService.t("task.addOther"));
       this.elements.languageToggle.textContent = this.state.settings.language === "ru" ? "EN" : "RU";
       this.renderSidebarLabel();
     },
@@ -1958,6 +2419,7 @@
     showView(view, save = true) {
       const allowed = ["overview", "week", "day", "ideal", "search", "settings", "help"];
       const target = allowed.includes(view) ? view : "overview";
+      const previous = this.state.ui.view;
       this.state.ui.view = target;
       document.querySelectorAll(".view").forEach((section) => section.classList.toggle("is-active", section.dataset.view === target));
       document.querySelectorAll("[data-view-target]").forEach((button) => {
@@ -1967,6 +2429,7 @@
         else button.removeAttribute("aria-current");
       });
       this.elements.viewTitle.textContent = I18nService.t(`nav.${target}`);
+      if (previous !== target) window.scrollTo({ top: 0, behavior: "auto" });
       if (save) this.saveUI();
     },
 
@@ -2027,6 +2490,7 @@
       this.elements.onboardingTheme.value = this.state.settings.theme;
       this.elements.onboardingLanguage.value = this.state.settings.language;
       this.elements.onboardingSound.checked = this.state.settings.soundEnabled;
+      this.elements.scheduleScale.value = this.state.settings.scheduleScale;
     },
 
     saveSettings() {

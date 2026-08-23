@@ -914,6 +914,7 @@ svg {
 .day-layout-preview {
   display: grid;
   grid-template-columns: minmax(300px, 0.65fr) minmax(580px, 1.35fr);
+  align-items: stretch;
   gap: 14px;
 }
 
@@ -2317,4 +2318,345 @@ svg {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Stage 3: interactive day and ideal-week planning */
+.section-actions,
+.task-list-actions,
+.editor-action-row,
+.form-two-columns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scale-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.scale-control select,
+.form-field select {
+  min-height: 38px;
+  padding: 0 32px 0 11px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  background: var(--surface-soft);
+  color: var(--text);
+}
+
+.mini-add-button {
+  display: grid;
+  width: 29px;
+  height: 29px;
+  place-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 9px;
+  background: var(--surface-soft);
+  color: var(--gold-dark);
+  font-size: 18px;
+}
+
+.task-list {
+  display: grid;
+  gap: 7px;
+  margin: 15px 0 27px;
+}
+
+.task-list-other {
+  margin-bottom: 0;
+}
+
+.day-task,
+.task-empty-row {
+  min-height: 45px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--surface-soft);
+}
+
+.day-task {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) auto;
+  align-items: center;
+  padding: 5px 6px;
+  box-shadow: 0 3px 12px rgba(55, 45, 26, .03);
+}
+
+.day-task[draggable="true"] {
+  cursor: grab;
+}
+
+.day-task.is-completed {
+  opacity: .68;
+}
+
+.day-task.is-completed strong {
+  text-decoration: line-through;
+}
+
+.task-check {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--success);
+  font-size: 12px;
+}
+
+.task-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3px 6px;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+}
+
+.task-copy strong {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task-copy span {
+  color: var(--text-muted);
+  font-size: 9px;
+}
+
+.task-row-actions {
+  display: flex;
+  opacity: .42;
+  transition: opacity var(--transition);
+}
+
+.day-task:hover .task-row-actions,
+.day-task:focus-within .task-row-actions {
+  opacity: 1;
+}
+
+.task-row-actions .mini-icon-button {
+  width: 25px;
+  height: 25px;
+}
+
+.task-row-actions .mini-icon-button svg {
+  width: 12px;
+  height: 12px;
+}
+
+.task-empty-row {
+  padding: 0 12px;
+  border-style: dashed;
+  color: var(--text-muted);
+  font-size: 10px;
+  text-align: left;
+}
+
+.schedule-placeholder {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.schedule-scroll {
+  position: relative;
+  height: auto;
+  flex: 0 0 auto;
+  overflow: visible;
+}
+
+.ideal-grid {
+  position: relative;
+  height: 520px;
+  overflow: auto;
+  scrollbar-color: var(--line-strong) transparent;
+  scrollbar-width: thin;
+}
+
+.interactive-schedule {
+  --slot-height: 32px;
+  position: relative;
+  display: grid;
+  min-height: calc(var(--slot-height) * 36 + 24px);
+  grid-template-columns: 70px repeat(2, minmax(0, 1fr));
+}
+
+.interactive-schedule.ideal-schedule {
+  min-width: 800px;
+  grid-template-columns: 70px repeat(7, minmax(100px, 1fr));
+}
+
+.schedule-time-rail,
+.schedule-track {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(36, var(--slot-height)) 24px;
+}
+
+.schedule-time-rail {
+  z-index: 4;
+  background: var(--surface);
+}
+
+.schedule-time-rail > span {
+  padding: 5px 8px 0 0;
+  border-bottom: 1px dashed var(--line-strong);
+  color: var(--text-muted);
+  font-size: 9px;
+}
+
+.schedule-time-rail > span:nth-child(even) {
+  border-bottom-style: solid;
+}
+
+.schedule-track {
+  border-left: 1px solid var(--line);
+}
+
+.schedule-slot {
+  width: 100%;
+  min-height: var(--slot-height);
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+}
+
+.schedule-slot.is-hour {
+  border-bottom-style: dashed;
+  border-bottom-color: var(--line-strong);
+}
+
+.schedule-slot:hover {
+  background: color-mix(in srgb, var(--gold) 8%, transparent);
+}
+
+.schedule-record-layer {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  height: calc(var(--slot-height) * 36);
+  pointer-events: none;
+}
+
+.schedule-block {
+  position: absolute;
+  min-height: 22px;
+  padding: 5px 15px 7px 8px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--record-color) 42%, var(--line));
+  border-left: 3px solid var(--record-color);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--record-color) 12%, var(--surface));
+  box-shadow: 0 5px 16px rgba(29, 25, 16, .09);
+  color: var(--text);
+  cursor: grab;
+  pointer-events: auto;
+}
+
+.schedule-block.is-fixed {
+  background: color-mix(in srgb, var(--record-color) 18%, var(--surface));
+}
+
+.schedule-block.is-flexible {
+  border-style: dashed;
+}
+
+.schedule-block.is-completed {
+  opacity: .62;
+}
+
+.schedule-block.is-completed strong {
+  text-decoration: line-through;
+}
+
+.schedule-block strong,
+.schedule-block > span:not(.resize-handle) {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.schedule-block strong {
+  font-size: 10px;
+}
+
+.schedule-block > span:not(.resize-handle) {
+  color: var(--text-muted);
+  font-size: 8px;
+}
+
+.schedule-block > b {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  display: grid;
+  width: 13px;
+  height: 13px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--gold-soft);
+  color: var(--gold-dark);
+  font-size: 8px;
+}
+
+.resize-handle {
+  position: absolute;
+  inset: auto 3px 0;
+  height: 6px;
+  border-top: 1px solid color-mix(in srgb, var(--record-color) 55%, transparent);
+  cursor: ns-resize;
+}
+
+.ideal-placeholder {
+  min-height: 600px;
+}
+
+.ideal-body {
+  height: 520px;
+}
+
+.ideal-message {
+  pointer-events: none;
+}
+
+.form-two-columns > * {
+  flex: 1;
+}
+
+.check-field {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--text-soft);
+  font-size: 11px;
+}
+
+.editor-action-row {
+  align-items: stretch;
+}
+
+.editor-action-row > * {
+  flex: 1;
+}
+
+.conflict-note {
+  padding: 9px 11px;
+  border: 1px solid color-mix(in srgb, var(--gold) 40%, var(--line));
+  border-radius: 9px;
+  background: var(--gold-soft);
+  color: var(--gold-dark);
 }
