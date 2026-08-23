@@ -131,7 +131,7 @@
       "onboarding.2.title": "Ваши планы остаются вашими",
       "onboarding.2.copy": "Данные хранятся локально в этом браузере. Здесь нет аккаунта, облака или скрытой синхронизации.",
       "onboarding.3.title": "Настройте пространство под себя",
-      "onboarding.3.copy": "Выберите язык, оформление и решите, нужен ли звук будущих напоминаний.",
+      "onboarding.3.copy": "Выберите язык и оформление рабочего пространства.",
       "toast.timezoneTitle": "Часовой пояс изменился",
       "toast.timezoneCopy": "Сегодня и календарь пересчитаны. Сохранённое локальное время событий не сдвигается.",
       "toast.storageTitle": "Настройки восстановлены безопасно",
@@ -277,7 +277,7 @@
       "onboarding.2.title": "Your plans remain yours",
       "onboarding.2.copy": "Data is stored locally in this browser. There is no account, cloud or hidden synchronisation.",
       "onboarding.3.title": "Make the workspace your own",
-      "onboarding.3.copy": "Choose a language and theme, then decide whether future reminders should make a sound.",
+      "onboarding.3.copy": "Choose a language and the appearance of your workspace.",
       "toast.timezoneTitle": "Time zone changed",
       "toast.timezoneCopy": "Today and the calendar were recalculated. Saved local event times do not move.",
       "toast.storageTitle": "Settings restored safely",
@@ -513,7 +513,7 @@
     "actions.remove": "Убрать", "actions.openRecord": "Открыть запись",
     "record.newNote": "Новая запись", "record.editNote": "Редактирование записи", "record.tags": "Хэштеги", "record.tagsHint": "Кириллица, латиница, цифры и _. Пробел завершает тег.",
     "record.goal": "Связь с целью", "record.habit": "Связь с привычкой", "record.noLink": "Без связи", "record.files": "Связанные файлы",
-    "record.filesHint": "Сохраняется только название. Сам файл не прикрепляется", "record.chooseFiles": "Выбрать файлы", "record.fileLimit": "Можно сохранить до десяти уникальных названий.",
+    "record.filesHint": "Файл хранится только в этом браузере. В JSON-копию попадает только его название.", "record.chooseFiles": "Выбрать файлы", "record.fileLimit": "Можно сохранить до десяти уникальных файлов.",
     "record.reminders": "Напоминания", "record.reminder15": "За 15 минут", "record.reminderNow": "В момент начала", "record.noTimeNote": "Свободная запись хранится без размещения во временной сетке.",
     "recurrence.title": "Повторение", "recurrence.none": "Не повторять", "recurrence.daily": "Ежедневно", "recurrence.weekly": "Еженедельно", "recurrence.until": "Дата окончания",
     "recurrence.noEnd": "Без даты окончания", "recurrence.errorUntil": "Дата окончания не может быть раньше первой записи.", "recurrence.scopeTitle": "Какие записи изменить?",
@@ -532,7 +532,7 @@
 
   Object.assign(TRANSLATIONS.en, {
     "actions.addTask": "Task", "actions.addMeeting": "Meeting", "actions.addNote": "Note", "actions.shareTelegram": "Share to Telegram", "actions.remove": "Remove", "actions.openRecord": "Open entry",
-    "record.newNote": "New note", "record.editNote": "Edit note", "record.tags": "Hashtags", "record.tagsHint": "Letters, digits and _. A space completes a tag.", "record.goal": "Linked goal", "record.habit": "Linked habit", "record.noLink": "No link", "record.files": "Linked files", "record.filesHint": "Only the name is saved. The file itself is not attached", "record.chooseFiles": "Choose files", "record.fileLimit": "Up to ten unique names can be saved.", "record.reminders": "Reminders", "record.reminder15": "15 minutes before", "record.reminderNow": "At start time", "record.noTimeNote": "A free note is stored without a time-grid block.",
+    "record.newNote": "New note", "record.editNote": "Edit note", "record.tags": "Hashtags", "record.tagsHint": "Letters, digits and _. A space completes a tag.", "record.goal": "Linked goal", "record.habit": "Linked habit", "record.noLink": "No link", "record.files": "Linked files", "record.filesHint": "The file stays only in this browser. JSON backups contain its name only.", "record.chooseFiles": "Choose files", "record.fileLimit": "Up to ten unique files can be saved.", "record.reminders": "Reminders", "record.reminder15": "15 minutes before", "record.reminderNow": "At start time", "record.noTimeNote": "A free note is stored without a time-grid block.",
     "recurrence.title": "Repeat", "recurrence.none": "Do not repeat", "recurrence.daily": "Daily", "recurrence.weekly": "Weekly", "recurrence.until": "End date", "recurrence.noEnd": "No end date", "recurrence.errorUntil": "The end date cannot be before the first entry.", "recurrence.scopeTitle": "Which entries should change?", "recurrence.scopeCopy": "Choose the scope for this recurring series.", "recurrence.this": "This one only", "recurrence.following": "This and following", "recurrence.all": "Entire series", "recurrence.deleteTitle": "Delete recurring entry?", "recurrence.seriesLabel": "Series: {rule}",
     "search.type": "Type", "search.allTypes": "All types", "search.goals": "Goals", "search.subtasks": "Subtasks", "search.habits": "Habits", "search.tasks": "Tasks", "search.meetings": "Meetings", "search.flexible": "Flexible activities", "search.notes": "Notes", "search.ideal": "Ideal week", "search.series": "Series", "search.completion": "Completion", "search.all": "All", "search.done": "Completed", "search.open": "Not completed", "search.dateFrom": "From", "search.dateTo": "To", "search.tags": "Hashtags", "search.results": "Found: {count}", "search.noMatches": "Nothing found", "search.recent": "All saved data",
     "settings.dictation": "Dictation", "settings.dictationCopy": "Language and browser recognition consent.", "settings.dictationLanguage": "Dictation language", "settings.giveConsent": "Give consent", "settings.revokeConsent": "Revoke consent", "speech.button": "Dictate", "speech.stop": "Stop dictation", "speech.consentTitle": "Allow dictation?", "speech.consentCopy": "Chrome may send speech to its recognition provider. Audio is not stored in the planner.", "speech.offlineTitle": "Dictation is unavailable offline", "speech.offlineCopy": "Connect to the internet or continue typing.", "speech.unavailableTitle": "Dictation unavailable", "speech.unavailableCopy": "This browser or its current permissions cannot recognise speech. Your typed text is preserved.", "speech.listening": "Listening…", "speech.revokedTitle": "Consent revoked", "speech.revokedCopy": "The microphone will not start until consent is given again.",
@@ -547,13 +547,15 @@
     "panel.ideal.1.title": "Отдельная неделя", "panel.ideal.1.copy": "Идеальная неделя относится только к выбранной календарной неделе.", "panel.ideal.3.copy": "Все элементы можно вручную скопировать в одну выбранную будущую идеальную неделю.",
     "notes.title": "Заметки", "notes.kicker": "Общее пространство", "notes.listTitle": "Все заметки", "notes.add": "Добавить заметку", "notes.empty": "Добавьте первую заметку",
     "notes.new": "Новая заметка", "notes.edit": "Редактирование заметки", "notes.noteTitle": "Заголовок", "notes.description": "Описание", "notes.tags": "Хэштеги", "notes.deleteTitle": "Удалить заметку?", "notes.deleteCopy": "Заметка будет удалена. Отмена доступна в течение 7 секунд.", "notes.deletedTitle": "Заметка удалена", "notes.deletedCopy": "Удаление можно отменить в течение 7 секунд.",
+    "search.chooseTag": "Выбрать хэштег", "search.chooseTagPlaceholder": "Из сохранённых",
+    "record.fileTooLarge": "Размер одного файла не должен превышать 25 МБ.", "record.fileSaveError": "Не удалось сохранить файл в браузере", "record.fileSaveErrorCopy": "Освободите место или выберите файл меньшего размера.", "record.fileUnavailable": "Файл недоступен", "record.fileUnavailableCopy": "В браузере сохранилось только его название. Выберите файл заново.", "record.fileDownload": "Скачать файл",
     "data.title": "Данные и резервные копии", "data.copy": "Все данные находятся только в этом браузере. Регулярно сохраняйте резервную копию.", "data.storage": "Хранилище", "data.export": "Экспортировать JSON", "data.import": "Импортировать JSON", "data.clearWeek": "Очистить выбранную неделю", "data.clearOld": "Очистить старые недели", "data.clearAll": "Удалить все данные", "data.olderThan": "Недели старше даты", "data.weeks": "{count} недель", "data.oldWeeks": "Будет удалено: {count}", "data.warning80": "Хранилище заполнено на 80%. Сохраните копию и очистите старые недели.", "data.warning95": "Хранилище почти заполнено. Новые длинные записи могут не сохраниться.",
     "backup.title": "Сначала сохраните копию", "backup.copy": "Перед необратимым действием скачайте полный JSON-файл.", "backup.download": "Скачать текущую копию", "backup.saved": "Резервная копия сохранена", "backup.deletePhrase": "Введите «УДАЛИТЬ ВСЕ»", "backup.downloaded": "Скачивание запущено", "backup.downloadedCopy": "Проверьте файл и подтвердите его сохранение.",
     "import.invalidTitle": "Файл не подходит", "import.invalidCopy": "Выберите полный JSON-экспорт этого планировщика версии 1.", "import.confirmTitle": "Заменить все данные?", "import.confirmCopy": "Текущие данные будут полностью заменены выбранной копией.", "import.doneTitle": "Данные восстановлены", "import.doneCopy": "Резервная копия успешно импортирована.", "import.rollbackTitle": "Импорт отменён", "import.rollbackCopy": "Ошибка записи. Предыдущие данные восстановлены.",
     "clear.weekTitle": "Очистить выбранную неделю?", "clear.weekCopy": "Цели, привычки, задачи, расписание и идеальная неделя будут удалены.", "clear.weekDoneTitle": "Неделя очищена", "clear.weekDoneCopy": "Отмена доступна 7 секунд. После закрытия страницы отмена будет недоступна.", "clear.oldTitle": "Очистить старые недели?", "clear.oldCopy": "Выбранные недельные данные будут удалены без автоматического восстановления.", "clear.oldEmptyTitle": "Нет старых недель", "clear.oldEmptyCopy": "Выберите более позднюю дату или оставьте данные без изменений.", "clear.allTitle": "Удалить все данные?", "clear.allCopy": "Планировщик вернётся к приветствию. Восстановление возможно только из JSON-копии.",
     "recovery.kicker": "Безопасное восстановление", "recovery.title": "Локальные данные повреждены", "recovery.copy": "Планировщик не заменил повреждённые данные. Скачайте исходную копию или восстановите корректный JSON.", "recovery.download": "Скачать повреждённую копию", "recovery.retry": "Повторить попытку", "recovery.reset": "Начать заново", "recovery.resetTitle": "Удалить повреждённые данные?", "recovery.resetCopy": "Сначала скачайте исходную копию. Затем приложение создаст пустой планировщик.",
     "toast.quotaTitle": "Недостаточно места", "toast.quotaCopy": "Изменения остаются в этой вкладке. Экспортируйте данные и очистите старые недели.",
-    "help.goalsTitle": "Цели и привычки", "help.goalsCopy": "Четыре цели используют ручной прогресс без подзадач и автоматический — с ними. Привычка циклично меняет три состояния.", "help.tasksTitle": "Задачи и перенос", "help.tasksCopy": "В день помещаются три главные и десять остальных задач. Перетаскивание можно заменить кнопками перемещения.", "help.recurrenceTitle": "Повторения и напоминания", "help.recurrenceCopy": "Серии бывают ежедневными и еженедельными. Напоминания работают только пока страница открыта.", "help.integrationsTitle": "Файлы, Telegram и диктовка", "help.integrationsCopy": "Сохраняются только имена файлов, Telegram показывает превью без отправки, а диктовка может обращаться к сервису Chrome.", "help.backupTitle": "Резервное копирование", "help.backupCopy": "Экспорт сохраняет полный JSON. Импорт и очистка доступны только после подтверждённой резервной копии."
+    "help.goalsTitle": "Цели и привычки", "help.goalsCopy": "Четыре цели используют ручной прогресс без подзадач и автоматический — с ними. Привычка циклично меняет три состояния в любой неделе.", "help.tasksTitle": "Задачи и перенос", "help.tasksCopy": "В день помещаются три главные и десять остальных задач. Каждой задаче можно назначить время, цвет, хэштеги и файлы.", "help.recurrenceTitle": "Повторения и напоминания", "help.recurrenceCopy": "Серии бывают ежедневными и еженедельными. Напоминания работают только пока страница открыта.", "help.integrationsTitle": "Файлы, Telegram и диктовка", "help.integrationsCopy": "Файлы хранятся локально в браузере, Telegram показывает превью без отправки, а диктовка может обращаться к сервису Chrome.", "help.backupTitle": "Резервное копирование", "help.backupCopy": "Экспорт сохраняет JSON без содержимого файлов. Импорт и очистка доступны только после подтверждённой резервной копии."
   });
 
   Object.assign(TRANSLATIONS.en, {
@@ -564,13 +566,15 @@
     "panel.ideal.1.title": "One calendar week", "panel.ideal.1.copy": "The ideal week belongs only to the selected calendar week.", "panel.ideal.3.copy": "All items can be copied manually into one selected future ideal week.",
     "notes.title": "Notes", "notes.kicker": "Shared space", "notes.listTitle": "All notes", "notes.add": "Add note", "notes.empty": "Add your first note",
     "notes.new": "New note", "notes.edit": "Edit note", "notes.noteTitle": "Title", "notes.description": "Description", "notes.tags": "Hashtags", "notes.deleteTitle": "Delete note?", "notes.deleteCopy": "The note will be deleted. Undo is available for 7 seconds.", "notes.deletedTitle": "Note deleted", "notes.deletedCopy": "Deletion can be undone for 7 seconds.",
+    "search.chooseTag": "Choose hashtag", "search.chooseTagPlaceholder": "From saved tags",
+    "record.fileTooLarge": "Each file must be no larger than 25 MB.", "record.fileSaveError": "The file could not be saved in this browser", "record.fileSaveErrorCopy": "Free up storage or choose a smaller file.", "record.fileUnavailable": "File unavailable", "record.fileUnavailableCopy": "Only its name is stored in this browser. Choose the file again.", "record.fileDownload": "Download file",
     "data.title": "Data and backups", "data.copy": "All data stays in this browser. Save a backup regularly.", "data.storage": "Storage", "data.export": "Export JSON", "data.import": "Import JSON", "data.clearWeek": "Clear selected week", "data.clearOld": "Clear old weeks", "data.clearAll": "Delete all data", "data.olderThan": "Weeks older than", "data.weeks": "{count} weeks", "data.oldWeeks": "Will be deleted: {count}", "data.warning80": "Storage is 80% full. Save a backup and clear old weeks.", "data.warning95": "Storage is almost full. New long entries may not be saved.",
     "backup.title": "Save a backup first", "backup.copy": "Download a complete JSON file before this irreversible action.", "backup.download": "Download current backup", "backup.saved": "The backup is saved", "backup.deletePhrase": "Enter “DELETE ALL”", "backup.downloaded": "Download started", "backup.downloadedCopy": "Check the file and confirm that it was saved.",
     "import.invalidTitle": "This file cannot be used", "import.invalidCopy": "Choose a complete version 1 JSON export from this planner.", "import.confirmTitle": "Replace all data?", "import.confirmCopy": "Current data will be completely replaced by the selected backup.", "import.doneTitle": "Data restored", "import.doneCopy": "The backup was imported successfully.", "import.rollbackTitle": "Import cancelled", "import.rollbackCopy": "A write failed. Previous data was restored.",
     "clear.weekTitle": "Clear the selected week?", "clear.weekCopy": "Goals, habits, tasks, schedule and ideal week will be deleted.", "clear.weekDoneTitle": "Week cleared", "clear.weekDoneCopy": "Undo is available for 7 seconds. It will not be available after closing the page.", "clear.oldTitle": "Clear old weeks?", "clear.oldCopy": "The selected weekly data will be deleted without automatic recovery.", "clear.oldEmptyTitle": "No old weeks", "clear.oldEmptyCopy": "Choose a later date or leave the data unchanged.", "clear.allTitle": "Delete all data?", "clear.allCopy": "The planner will return to the welcome guide. Recovery is possible only from a JSON backup.",
     "recovery.kicker": "Safe recovery", "recovery.title": "Local data is damaged", "recovery.copy": "The planner did not replace damaged data. Download the raw copy or restore a valid JSON file.", "recovery.download": "Download damaged copy", "recovery.retry": "Try again", "recovery.reset": "Start over", "recovery.resetTitle": "Delete damaged data?", "recovery.resetCopy": "Download the raw copy first. The app will then create an empty planner.",
     "toast.quotaTitle": "Not enough storage", "toast.quotaCopy": "Changes remain in this tab. Export data and clear old weeks.",
-    "help.goalsTitle": "Goals and habits", "help.goalsCopy": "Four goals use manual progress without subtasks and automatic progress with them. A habit cycles through three states.", "help.tasksTitle": "Tasks and moving", "help.tasksCopy": "Each day holds three main and ten other tasks. Move buttons are an alternative to drag and drop.", "help.recurrenceTitle": "Repeats and reminders", "help.recurrenceCopy": "Series can repeat daily or weekly. Reminders work only while the page is open.", "help.integrationsTitle": "Files, Telegram and dictation", "help.integrationsCopy": "Only file names are stored, Telegram shows a preview without sending, and dictation may use Chrome's service.", "help.backupTitle": "Backups", "help.backupCopy": "Export saves a complete JSON file. Import and clearing require a confirmed backup first."
+    "help.goalsTitle": "Goals and habits", "help.goalsCopy": "Four goals use manual progress without subtasks and automatic progress with them. A habit cycles through three states in any week.", "help.tasksTitle": "Tasks and moving", "help.tasksCopy": "Each day holds three main and ten other tasks. Every task can have a time, colour, hashtags and files.", "help.recurrenceTitle": "Repeats and reminders", "help.recurrenceCopy": "Series can repeat daily or weekly. Reminders work only while the page is open.", "help.integrationsTitle": "Files, Telegram and dictation", "help.integrationsCopy": "Files are stored locally in the browser, Telegram shows a preview without sending, and dictation may use Chrome's service.", "help.backupTitle": "Backups", "help.backupCopy": "JSON exports exclude file contents. Import and clearing require a confirmed backup first."
   });
 
   const I18nService = {
@@ -987,6 +991,128 @@
     }
   };
 
+  const FileStorageService = {
+    databaseName: "premiumPlanner.files",
+    storeName: "files",
+    maxFileBytes: 25 * 1024 * 1024,
+    databasePromise: null,
+
+    entryId(ownerKey, name) {
+      return JSON.stringify([ownerKey, name]);
+    },
+
+    open() {
+      if (this.databasePromise) return this.databasePromise;
+      this.databasePromise = new Promise((resolve, reject) => {
+        if (!window.indexedDB) { reject(new Error("IndexedDB is unavailable")); return; }
+        const request = window.indexedDB.open(this.databaseName, 1);
+        request.onupgradeneeded = () => {
+          const database = request.result;
+          const store = database.objectStoreNames.contains(this.storeName)
+            ? request.transaction.objectStore(this.storeName)
+            : database.createObjectStore(this.storeName, { keyPath: "id" });
+          if (!store.indexNames.contains("ownerKey")) store.createIndex("ownerKey", "ownerKey", { unique: false });
+        };
+        request.onsuccess = () => {
+          const database = request.result;
+          database.onversionchange = () => database.close();
+          resolve(database);
+        };
+        request.onerror = () => reject(request.error || new Error("IndexedDB open failed"));
+        request.onblocked = () => reject(new Error("IndexedDB is blocked"));
+      }).catch((error) => {
+        this.databasePromise = null;
+        throw error;
+      });
+      return this.databasePromise;
+    },
+
+    async list(ownerKey) {
+      const database = await this.open();
+      return new Promise((resolve, reject) => {
+        const transaction = database.transaction(this.storeName, "readonly");
+        const request = transaction.objectStore(this.storeName).index("ownerKey").getAll(ownerKey);
+        request.onsuccess = () => resolve(request.result || []);
+        request.onerror = () => reject(request.error || new Error("IndexedDB read failed"));
+      });
+    },
+
+    async get(ownerKey, name) {
+      const database = await this.open();
+      return new Promise((resolve, reject) => {
+        const transaction = database.transaction(this.storeName, "readonly");
+        const request = transaction.objectStore(this.storeName).get(this.entryId(ownerKey, name));
+        request.onsuccess = () => resolve(request.result || null);
+        request.onerror = () => reject(request.error || new Error("IndexedDB read failed"));
+      });
+    },
+
+    async syncOwner(ownerKey, finalNames, pendingFiles = new Map()) {
+      for (const file of pendingFiles.values()) {
+        if (file.size > this.maxFileBytes) throw new RangeError("FILE_TOO_LARGE");
+      }
+      const database = await this.open();
+      const existing = await this.list(ownerKey);
+      const allowed = new Set(finalNames);
+      return new Promise((resolve, reject) => {
+        const transaction = database.transaction(this.storeName, "readwrite");
+        const store = transaction.objectStore(this.storeName);
+        existing.forEach((entry) => { if (!allowed.has(entry.name)) store.delete(entry.id); });
+        pendingFiles.forEach((file, name) => {
+          if (!allowed.has(name)) return;
+          store.put({
+            id: this.entryId(ownerKey, name), ownerKey, name,
+            type: file.type || "application/octet-stream", size: file.size,
+            lastModified: file.lastModified || Date.now(), blob: file,
+            createdAt: new Date().toISOString()
+          });
+        });
+        transaction.oncomplete = () => resolve(true);
+        transaction.onerror = () => reject(transaction.error || new Error("IndexedDB write failed"));
+        transaction.onabort = () => reject(transaction.error || new Error("IndexedDB transaction aborted"));
+      });
+    },
+
+    async deleteOwners(ownerKeys) {
+      const keys = [...new Set(ownerKeys.filter(Boolean))];
+      if (!keys.length) return;
+      const database = await this.open();
+      const groups = await Promise.all(keys.map((ownerKey) => this.list(ownerKey)));
+      await new Promise((resolve, reject) => {
+        const transaction = database.transaction(this.storeName, "readwrite");
+        const store = transaction.objectStore(this.storeName);
+        groups.flat().forEach((entry) => store.delete(entry.id));
+        transaction.oncomplete = () => resolve(true);
+        transaction.onerror = () => reject(transaction.error || new Error("IndexedDB delete failed"));
+      });
+    },
+
+    async copyOwner(sourceOwnerKey, targetOwnerKey) {
+      const entries = await this.list(sourceOwnerKey);
+      if (!entries.length) return;
+      const database = await this.open();
+      await new Promise((resolve, reject) => {
+        const transaction = database.transaction(this.storeName, "readwrite");
+        const store = transaction.objectStore(this.storeName);
+        entries.forEach((entry) => store.put({ ...entry, id: this.entryId(targetOwnerKey, entry.name), ownerKey: targetOwnerKey, createdAt: new Date().toISOString() }));
+        transaction.oncomplete = () => resolve(true);
+        transaction.onerror = () => reject(transaction.error || new Error("IndexedDB copy failed"));
+      });
+    },
+
+    clear() {
+      if (this.databasePromise) this.databasePromise.then((database) => database.close()).catch(() => {});
+      this.databasePromise = null;
+      return new Promise((resolve, reject) => {
+        if (!window.indexedDB) { resolve(); return; }
+        const request = window.indexedDB.deleteDatabase(this.databaseName);
+        request.onsuccess = () => resolve();
+        request.onerror = () => reject(request.error || new Error("IndexedDB delete failed"));
+        request.onblocked = () => reject(new Error("IndexedDB delete blocked"));
+      });
+    }
+  };
+
   const ThemeService = {
     media: window.matchMedia("(prefers-color-scheme: dark)"),
 
@@ -1236,15 +1362,8 @@
     },
 
     habitAvailability(weekStart) {
-      const today = DateService.todayISO();
-      const end = DateService.toISO(DateService.addDays(DateService.fromISO(weekStart), 6));
-      if (weekStart > today) return [];
-      const last = end < today ? end : today;
-      const days = [];
-      for (let date = DateService.fromISO(weekStart); DateService.toISO(date) <= last; date = DateService.addDays(date, 1)) {
-        days.push(DateService.toISO(date));
-      }
-      return days;
+      const start = DateService.fromISO(weekStart);
+      return start ? Array.from({ length: 7 }, (_, index) => DateService.toISO(DateService.addDays(start, index))) : [];
     },
 
     timeToMinutes(value) {
@@ -1439,7 +1558,6 @@
       this.elements.app.hidden = false;
       this.renderBusinessCard();
       this.observeEditorForms();
-      ReminderService.start(this);
 
       this.checkTimeZone();
       if (StorageService.faults.length) {
@@ -1466,7 +1584,6 @@
         saveStatus: byId("saveStatus"),
         themeSelect: byId("themeSelect"),
         languageSelect: byId("languageSelect"),
-        soundToggle: byId("soundToggle"),
         settingsSidebarToggle: byId("settingsSidebarToggle"),
         restartOnboarding: byId("restartOnboarding"),
         exportDataButton: byId("exportDataButton"),
@@ -1529,6 +1646,7 @@
         searchDateFrom: byId("searchDateFrom"),
         searchDateTo: byId("searchDateTo"),
         searchTags: byId("searchTags"),
+        searchTagSelect: byId("searchTagSelect"),
         searchResults: byId("searchResults"),
         speechLanguageSelect: byId("speechLanguageSelect"),
         speechConsentToggle: byId("speechConsentToggle"),
@@ -1554,7 +1672,6 @@
         onboardingNext: byId("onboardingNext"),
         onboardingLanguage: byId("onboardingLanguage"),
         onboardingTheme: byId("onboardingTheme"),
-        onboardingSound: byId("onboardingSound"),
         confirmDialog: byId("confirmDialog"),
         confirmTitle: byId("confirmTitle"),
         confirmText: byId("confirmText"),
@@ -1641,8 +1758,15 @@
       });
       this.elements.themeSelect.addEventListener("change", (event) => this.updateTheme(event.target.value));
       this.elements.languageSelect.addEventListener("change", (event) => this.updateLanguage(event.target.value));
-      this.elements.soundToggle.addEventListener("change", (event) => this.updateSound(event.target.checked));
       [this.elements.searchInput, this.elements.searchType, this.elements.searchCompletion, this.elements.searchDateFrom, this.elements.searchDateTo, this.elements.searchTags].forEach((control) => control.addEventListener("input", () => this.scheduleSearch()));
+      this.elements.searchTagSelect.addEventListener("change", () => {
+        const tag = this.elements.searchTagSelect.value;
+        if (!tag) return;
+        const selected = PlannerDataService.normalizeHashtags(`${this.elements.searchTags.value} #${tag}`);
+        this.elements.searchTags.value = selected.map((value) => `#${value}`).join(" ");
+        this.elements.searchTagSelect.value = "";
+        this.scheduleSearch();
+      });
       this.elements.searchResults.addEventListener("click", (event) => this.handleSearchResultClick(event));
       this.elements.speechLanguageSelect.addEventListener("change", (event) => { this.state.settings.speechLanguage = event.target.value; this.saveSettings(); });
       this.elements.speechConsentToggle.addEventListener("click", () => this.toggleSpeechConsent());
@@ -1693,7 +1817,6 @@
       });
       this.elements.onboardingLanguage.addEventListener("change", (event) => this.updateLanguage(event.target.value, false));
       this.elements.onboardingTheme.addEventListener("change", (event) => this.updateTheme(event.target.value, false));
-      this.elements.onboardingSound.addEventListener("change", (event) => this.updateSound(event.target.checked, false));
 
       ThemeService.media.addEventListener("change", () => {
         if (this.state.settings.theme === "system") ThemeService.apply("system");
@@ -2011,9 +2134,9 @@
           button.className = `habit-mark is-${state}`;
           button.dataset.action = "cycle-habit";
           button.dataset.date = iso;
-          button.disabled = !name || iso > DateService.todayISO();
+          button.disabled = !name;
           const stateLabel = I18nService.t(`habit.state.${state}`);
-          button.title = button.disabled && iso > DateService.todayISO() ? I18nService.t("habit.future") : stateLabel;
+          button.title = stateLabel;
           button.setAttribute("aria-label", `${name || I18nService.t("week.habit")} · ${DateService.dayHeading(date, language)} · ${stateLabel}`);
           if (state !== "unmarked") {
             const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -2242,7 +2365,7 @@
     cycleHabit(index, date) {
       const slot = this.habits.slots[index];
       const name = PlannerDataService.effectiveHabitName(slot, this.currentWeek.weekStart).trim();
-      if (!name || date > DateService.todayISO()) return;
+      if (!name || !DateService.fromISO(date)) return;
       const states = ["unmarked", "done", "missed"];
       const current = this.currentWeek.habitMarks?.[slot.id]?.[date] || "unmarked";
       const next = states[(states.indexOf(current) + 1) % states.length];
@@ -2666,21 +2789,68 @@
       return `<label class="form-field"><span>${I18nService.t("record.tags")}</span><input name="hashtags" list="knownHashtags" autocomplete="off"><small>${I18nService.t("record.tagsHint")}</small></label><datalist id="knownHashtags">${this.knownHashtags().map((tag) => `<option value="#${tag}"></option>`).join("")}</datalist><fieldset class="form-field linked-files"><legend>${I18nService.t("record.files")}</legend><label class="file-picker secondary-button"><span>${I18nService.t("record.chooseFiles")}</span><input name="files" type="file" multiple></label><div class="linked-file-list" data-file-list></div><small>${I18nService.t("record.filesHint")}</small><span class="form-error" data-error="files"></span></fieldset>`;
     },
 
-    setupUniversalFields(form, entity = {}) {
+    fileOwnerKey(kind, id) {
+      return id ? `${kind}:${id}` : "";
+    },
+
+    weekFileOwnerKeys(week) {
+      const tasks = Object.values(week?.days || {}).flatMap((day) => [...(day.mainTasks || []), ...(day.otherTasks || [])]);
+      const taskOwners = tasks.map((task) => this.fileOwnerKey("task", task.id));
+      const recordOwners = (week?.records || []).filter((record) => !record.taskId).map((record) => this.fileOwnerKey("record", record.id));
+      return [...taskOwners, ...recordOwners];
+    },
+
+    setupUniversalFields(form, entity = {}, ownerKey = "") {
       entity = entity || {};
       form.elements.hashtags.value = (entity.hashtags || []).map((tag) => `#${tag.replace(/^#/, "")}`).join(" ");
       form.dataset.fileNames = JSON.stringify((entity.fileNames || []).slice(0, 10));
+      form.pendingFiles = new Map();
+      form.fileChanges = false;
+      form.dataset.fileOwner = ownerKey;
       const renderFiles = () => {
         const names = JSON.parse(form.dataset.fileNames || "[]"); const list = form.querySelector("[data-file-list]"); list.replaceChildren();
-        names.forEach((name) => { const row = document.createElement("span"); row.className = "linked-file-chip"; const text = document.createElement("span"); text.textContent = name; const remove = document.createElement("button"); remove.type = "button"; remove.dataset.removeFile = name; remove.setAttribute("aria-label", `${I18nService.t("actions.remove")}: ${name}`); remove.textContent = "×"; row.append(text, remove); list.append(row); });
+        names.forEach((name) => {
+          const row = document.createElement("span"); row.className = "linked-file-chip";
+          const download = document.createElement("button"); download.type = "button"; download.className = "linked-file-download"; download.dataset.downloadFile = name; download.title = I18nService.t("record.fileDownload"); download.textContent = name;
+          const remove = document.createElement("button"); remove.type = "button"; remove.dataset.removeFile = name; remove.setAttribute("aria-label", `${I18nService.t("actions.remove")}: ${name}`); remove.textContent = "×";
+          row.append(download, remove); list.append(row);
+        });
       };
       form.elements.files.addEventListener("change", () => {
-        const current = JSON.parse(form.dataset.fileNames || "[]"); const incoming = [...form.elements.files.files].map((file) => file.name); const merged = PlannerDataService.mergeFileNames(current, incoming);
-        form.querySelector('[data-error="files"]').textContent = merged.overflow ? I18nService.t("record.fileLimit") : "";
-        form.dataset.fileNames = JSON.stringify(merged.names); form.elements.files.value = ""; this.panelDirty = true; renderFiles();
+        const selected = [...form.elements.files.files]; const oversized = selected.filter((file) => file.size > FileStorageService.maxFileBytes); const allowedFiles = selected.filter((file) => file.size <= FileStorageService.maxFileBytes);
+        const current = JSON.parse(form.dataset.fileNames || "[]"); const merged = PlannerDataService.mergeFileNames(current, allowedFiles.map((file) => file.name));
+        form.querySelector('[data-error="files"]').textContent = oversized.length ? I18nService.t("record.fileTooLarge") : merged.overflow ? I18nService.t("record.fileLimit") : "";
+        allowedFiles.forEach((file) => { if (merged.names.includes(file.name)) form.pendingFiles.set(file.name, file); });
+        form.dataset.fileNames = JSON.stringify(merged.names); form.elements.files.value = ""; form.fileChanges = true; this.panelDirty = true; renderFiles();
       });
-      form.addEventListener("click", (event) => { const button = event.target.closest("[data-remove-file]"); if (!button) return; form.dataset.fileNames = JSON.stringify(JSON.parse(form.dataset.fileNames || "[]").filter((name) => name !== button.dataset.removeFile)); this.panelDirty = true; renderFiles(); });
+      form.addEventListener("click", async (event) => {
+        const remove = event.target.closest("[data-remove-file]");
+        if (remove) { form.pendingFiles.delete(remove.dataset.removeFile); form.dataset.fileNames = JSON.stringify(JSON.parse(form.dataset.fileNames || "[]").filter((name) => name !== remove.dataset.removeFile)); form.fileChanges = true; this.panelDirty = true; renderFiles(); return; }
+        const download = event.target.closest("[data-download-file]");
+        if (download) await this.downloadLinkedFile(form, download.dataset.downloadFile);
+      });
       renderFiles();
+    },
+
+    async downloadLinkedFile(form, name) {
+      let source = form.pendingFiles?.get(name) || null;
+      if (!source && form.dataset.fileOwner) {
+        try { source = (await FileStorageService.get(form.dataset.fileOwner, name))?.blob || null; }
+        catch { source = null; }
+      }
+      if (!source) { this.showToast("record.fileUnavailable", "record.fileUnavailableCopy", "error", 6500); return; }
+      const url = URL.createObjectURL(source); const link = document.createElement("a"); link.href = url; link.download = name; document.body.append(link); link.click(); link.remove(); window.setTimeout(() => URL.revokeObjectURL(url), 0);
+    },
+
+    async persistUniversalFiles(form) {
+      if (!form.fileChanges) return true;
+      const names = JSON.parse(form.dataset.fileNames || "[]");
+      try { await FileStorageService.syncOwner(form.dataset.fileOwner, names, form.pendingFiles); return true; }
+      catch (error) {
+        form.querySelector('[data-error="files"]').textContent = error instanceof RangeError ? I18nService.t("record.fileTooLarge") : I18nService.t("record.fileSaveError");
+        if (!(error instanceof RangeError)) this.showToast("record.fileSaveError", "record.fileSaveErrorCopy", "error", 7000);
+        return false;
+      }
     },
 
     readUniversalFields(form) {
@@ -2690,29 +2860,36 @@
     openTaskEditor(task, list, trigger) {
       const day = this.getDay(); const target = day[`${list}Tasks`]; const limit = list === "main" ? 3 : 10;
       if (!task && target.length >= limit) { this.showToast("task.limitTitle", list === "main" ? "task.limitMain" : "task.limitOther"); return; }
+      const taskId = task?.id || PlannerDataService.id();
+      const scheduledRecord = task ? this.currentWeek.records.find((record) => record.id === task.scheduleRecordId || record.taskId === task.id) : null;
+      const startTime = scheduledRecord?.startTime || "09:00";
       this.prepareEditor(task ? "task.edit" : "task.new", trigger);
       const form = document.createElement("form"); form.className = "editor-form"; form.noValidate = true;
-      form.innerHTML = `<label class="form-field"><span>${I18nService.t("task.title")}</span><input name="title" maxlength="300" required><span class="form-error" data-error></span></label><label class="form-field"><span>${I18nService.t("task.text")}</span><textarea name="text" maxlength="10000"></textarea></label><label class="form-field"><span>${I18nService.t("task.list")}</span><select name="list"><option value="main">${I18nService.t("task.main")}</option><option value="other">${I18nService.t("task.other")}</option></select></label><label class="check-field"><input name="completed" type="checkbox"><span>${I18nService.t("task.complete")}</span></label>${this.relationFieldsMarkup()}`;
-      form.elements.title.value = task?.title || ""; form.elements.text.value = task?.text || ""; form.elements.list.value = list; form.elements.completed.checked = Boolean(task?.isCompleted);
-      this.setupUniversalFields(form, task);
+      form.innerHTML = `<label class="form-field"><span>${I18nService.t("task.title")}</span><input name="title" maxlength="300" required><span class="form-error" data-error="title"></span></label><label class="form-field"><span>${I18nService.t("task.text")}</span><textarea name="text" maxlength="10000"></textarea></label><label class="form-field"><span>${I18nService.t("schedule.date")}</span><input name="date" type="date" required></label><div class="form-two-columns"><label class="form-field"><span>${I18nService.t("schedule.start")}</span><select name="startTime">${this.timeOptions(true)}</select></label><label class="form-field"><span>${I18nService.t("schedule.end")}</span><select name="endTime">${this.timeOptions(false)}</select></label></div>${this.colorPaletteMarkup(scheduledRecord?.color || "royalIndigo")}<span class="form-error" data-error="range"></span><label class="form-field"><span>${I18nService.t("task.list")}</span><select name="list"><option value="main">${I18nService.t("task.main")}</option><option value="other">${I18nService.t("task.other")}</option></select></label><label class="check-field"><input name="completed" type="checkbox"><span>${I18nService.t("task.complete")}</span></label>${this.relationFieldsMarkup()}`;
+      form.elements.title.value = task?.title || ""; form.elements.text.value = task?.text || ""; form.elements.date.value = task?.date || this.state.ui.selectedDate; form.elements.startTime.value = startTime; form.elements.endTime.value = scheduledRecord?.endTime || PlannerDataService.minutesToTime(PlannerDataService.timeToMinutes(startTime) + 30); form.elements.list.value = list; form.elements.completed.checked = Boolean(task?.isCompleted);
+      this.setupUniversalFields(form, task, this.fileOwnerKey("task", taskId));
       form.addEventListener("input", () => { this.panelDirty = true; });
-      form.addEventListener("submit", (event) => {
-        event.preventDefault(); const title = form.elements.title.value.trim(); const nextList = form.elements.list.value; const error = form.querySelector("[data-error]"); error.textContent = "";
-        if (!title) { error.textContent = I18nService.t("task.errorTitle"); return; }
-        if (title.length > 300) { error.textContent = I18nService.t("task.errorLong"); return; }
-        if (task) {
-          const found = this.findTask(task.id); if (!found) return;
-          if (nextList !== found.list && found.day[`${nextList}Tasks`].length >= (nextList === "main" ? 3 : 10)) { error.textContent = I18nService.t(nextList === "main" ? "task.limitMain" : "task.limitOther"); return; }
-          Object.assign(task, { title, text: form.elements.text.value.slice(0, 10000), isCompleted: form.elements.completed.checked, ...this.readUniversalFields(form), updatedAt: new Date().toISOString() });
-          if (nextList !== found.list) { found.day[found.key].splice(found.index, 1); task.list = nextList; found.day[`${nextList}Tasks`].push(task); }
-          this.syncTaskRecord(task);
-        } else {
-          const nextTarget = day[`${nextList}Tasks`]; const nextLimit = nextList === "main" ? 3 : 10;
-          if (nextTarget.length >= nextLimit) { error.textContent = I18nService.t(nextList === "main" ? "task.limitMain" : "task.limitOther"); return; }
-          nextTarget.push({ id: PlannerDataService.id(), title, text: form.elements.text.value.slice(0, 10000), date: this.state.ui.selectedDate, list: nextList, position: nextTarget.length, isCompleted: form.elements.completed.checked, ...this.readUniversalFields(form), scheduleRecordId: null, reminders: null, recurrence: null, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
-        }
-        [day.mainTasks, day.otherTasks].forEach((items) => items.forEach((item, index) => { item.position = index; }));
-        this.saveWeek(); this.renderPlannerData(); this.panelDirty = false; this.closeContextPanel(true);
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault(); const title = form.elements.title.value.trim(); const nextList = form.elements.list.value; const date = form.elements.date.value; const titleError = form.querySelector('[data-error="title"]'); const rangeError = form.querySelector('[data-error="range"]'); titleError.textContent = ""; rangeError.textContent = "";
+        if (!title) { titleError.textContent = I18nService.t("task.errorTitle"); return; }
+        if (title.length > 300) { titleError.textContent = I18nService.t("task.errorLong"); return; }
+        const range = PlannerDataService.validateTimeRange(form.elements.startTime.value, form.elements.endTime.value);
+        if (!DateService.fromISO(date) || !range.valid) { rangeError.textContent = I18nService.t("schedule.errorRange"); return; }
+        const destinationWeekStart = DateService.toISO(DateService.startOfWeek(DateService.fromISO(date)));
+        const destinationWeek = destinationWeekStart === this.currentWeek.weekStart ? this.currentWeek : PlannerDataService.normalizeWeek(StorageService.read(StorageService.weekKey(destinationWeekStart), null), destinationWeekStart);
+        if (!destinationWeek.days[date]) destinationWeek.days[date] = { mainTasks: [], otherTasks: [] };
+        const destinationList = destinationWeek.days[date][`${nextList}Tasks`]; const found = task ? this.findTask(task.id) : null; const alreadyInDestination = destinationList.some((item) => item.id === taskId); const nextLimit = nextList === "main" ? 3 : 10;
+        if (!alreadyInDestination && destinationList.length >= nextLimit) { titleError.textContent = I18nService.t(nextList === "main" ? "task.limitMain" : "task.limitOther"); return; }
+        if (!await this.persistUniversalFiles(form)) return;
+        const now = new Date().toISOString(); const universal = this.readUniversalFields(form); const recordId = scheduledRecord?.id || PlannerDataService.id();
+        const nextTask = { id: taskId, title, text: form.elements.text.value.slice(0, 10000), date, list: nextList, position: destinationList.length, isCompleted: form.elements.completed.checked, ...universal, scheduleRecordId: recordId, reminders: null, recurrence: null, createdAt: task?.createdAt || now, updatedAt: now };
+        const nextRecord = { id: recordId, title, description: nextTask.text, date, type: "flexible", startTime: form.elements.startTime.value, endTime: form.elements.endTime.value, column: "flexible", color: form.elements.color.value, taskId, hashtags: [...nextTask.hashtags], fileNames: [...nextTask.fileNames], goalId: null, habitId: null, reminders: null, recurrence: null, seriesId: null, createdAt: scheduledRecord?.createdAt || now, updatedAt: now };
+        if (found) { found.day[found.key].splice(found.index, 1); this.currentWeek.records = this.currentWeek.records.filter((item) => item.id !== scheduledRecord?.id && item.taskId !== taskId); }
+        destinationList.push(nextTask); destinationWeek.records.push(nextRecord);
+        const normalizePositions = (week) => Object.values(week.days).forEach((entry) => [entry.mainTasks, entry.otherTasks].forEach((items) => items.forEach((item, index) => { item.position = index; })));
+        normalizePositions(this.currentWeek); if (destinationWeek !== this.currentWeek) normalizePositions(destinationWeek);
+        this.saveWeek(); if (destinationWeek !== this.currentWeek) this.writeWeekDirect(destinationWeek);
+        this.renderPlannerData(); this.renderSearchResults(); this.panelDirty = false; this.closeContextPanel(true);
       });
       this.elements.contextPanelBody.append(form); this.panelAction = () => form.requestSubmit(); window.setTimeout(() => form.elements.title.focus(), 0);
     },
@@ -2721,7 +2898,7 @@
       this.openConfirmation(() => {
         const snapshot = structuredClone(this.currentWeek); found.day[found.key].splice(found.index, 1);
         this.currentWeek.records = this.currentWeek.records.filter((record) => record.taskId !== found.task.id); this.saveWeek(true); this.renderPlannerData();
-        this.showUndoToast("task.deletedTitle", "task.deletedCopy", () => { if (this.currentWeek.weekStart !== snapshot.weekStart) return; this.currentWeek = snapshot; this.saveWeek(true); this.renderPlannerData(); });
+        this.showUndoToast("task.deletedTitle", "task.deletedCopy", () => { if (this.currentWeek.weekStart !== snapshot.weekStart) return; this.currentWeek = snapshot; this.saveWeek(true); this.renderPlannerData(); }, () => FileStorageService.deleteOwners([this.fileOwnerKey("task", found.task.id)]).catch(() => {}));
       }, { titleKey: "task.deleteTitle", copyKey: "task.deleteCopy" });
     },
 
@@ -2798,31 +2975,30 @@
       const series = record?.seriesId ? this.seriesCollection.items.find((item) => item.id === record.seriesId) : null;
       const task = defaults?.task || (record?.taskId ? this.findTask(record.taskId)?.task : null); const isNote = (defaults?.type || record?.type) === "note";
       const startTime = defaults?.startTime || record?.startTime || "09:00";
-      const value = record || { title: task?.title || "", description: task?.text || "", date: defaults?.date || this.state.ui.selectedDate, type: isNote ? "note" : (defaults?.column || "flexible"), startTime: isNote ? null : startTime, endTime: isNote ? null : PlannerDataService.minutesToTime(PlannerDataService.timeToMinutes(startTime) + 30), column: isNote ? null : (defaults?.column || "flexible"), color: "royalIndigo", taskId: task?.id || null, hashtags: [...(task?.hashtags || [])], fileNames: [...(task?.fileNames || [])], goalId: null, habitId: null, reminders: { before15: false, atStart: false } };
+      const recordId = record?.isRecurrenceInstance ? PlannerDataService.id() : (record?.id || PlannerDataService.id());
+      const value = record || { id: recordId, title: task?.title || "", description: task?.text || "", date: defaults?.date || this.state.ui.selectedDate, type: isNote ? "note" : (defaults?.column || "flexible"), startTime: isNote ? null : startTime, endTime: isNote ? null : PlannerDataService.minutesToTime(PlannerDataService.timeToMinutes(startTime) + 30), column: isNote ? null : (defaults?.column || "flexible"), color: "royalIndigo", taskId: task?.id || null, hashtags: [...(task?.hashtags || [])], fileNames: [...(task?.fileNames || [])], goalId: null, habitId: null, reminders: null, recurrence: null };
       this.prepareEditor(isNote ? (record ? "record.editNote" : "record.newNote") : (record ? "schedule.edit" : "schedule.new"), trigger);
       const form = document.createElement("form"); form.className = "editor-form"; form.noValidate = true;
-      const timeFields = isNote ? `<p class="editor-note">${I18nService.t("record.noTimeNote")}</p>` : `<div class="form-two-columns"><label class="form-field"><span>${I18nService.t("schedule.start")}</span><select name="startTime">${this.timeOptions(true)}</select></label><label class="form-field"><span>${I18nService.t("schedule.end")}</span><select name="endTime">${this.timeOptions(false)}</select></label></div><label class="form-field"><span>${I18nService.t("schedule.column")}</span><select name="column"><option value="fixed">${I18nService.t("schedule.fixed")}</option><option value="flexible">${I18nService.t("schedule.flexible")}</option></select></label>${this.colorPaletteMarkup(value.color)}<fieldset class="form-field reminder-options"><legend>${I18nService.t("record.reminders")}</legend><label class="check-field"><input name="reminder15" type="checkbox"><span>${I18nService.t("record.reminder15")}</span></label><label class="check-field"><input name="reminderNow" type="checkbox"><span>${I18nService.t("record.reminderNow")}</span></label></fieldset><span class="form-error" data-error="range"></span><p class="editor-note conflict-note" data-conflict hidden>${I18nService.t("schedule.conflict")}</p>`;
-      form.innerHTML = `<label class="form-field"><span>${I18nService.t("schedule.title")}</span><input name="title" maxlength="300" required><span class="form-error" data-error="title"></span></label><label class="form-field"><span>${I18nService.t("schedule.description")}</span><textarea name="description" maxlength="10000"></textarea></label><label class="form-field"><span>${I18nService.t("schedule.date")}</span><input name="date" type="date" required></label>${timeFields}${this.relationFieldsMarkup()}<fieldset class="form-field recurrence-fields"><legend>${I18nService.t("recurrence.title")}</legend><select name="recurrence"><option value="none">${I18nService.t("recurrence.none")}</option><option value="daily">${I18nService.t("recurrence.daily")}</option><option value="weekly">${I18nService.t("recurrence.weekly")}</option></select><label class="form-field" data-until-field hidden><span>${I18nService.t("recurrence.until")}</span><input name="until" type="date"></label><span class="form-error" data-error="until"></span></fieldset><button type="button" class="telegram-share-button" data-telegram-share>${I18nService.t("actions.shareTelegram")}<small>${I18nService.t("telegram.later")}</small></button>`;
+      const timeFields = isNote ? `<p class="editor-note">${I18nService.t("record.noTimeNote")}</p>` : `<div class="form-two-columns"><label class="form-field"><span>${I18nService.t("schedule.start")}</span><select name="startTime">${this.timeOptions(true)}</select></label><label class="form-field"><span>${I18nService.t("schedule.end")}</span><select name="endTime">${this.timeOptions(false)}</select></label></div><label class="form-field"><span>${I18nService.t("schedule.column")}</span><select name="column"><option value="fixed">${I18nService.t("schedule.fixed")}</option><option value="flexible">${I18nService.t("schedule.flexible")}</option></select></label>${this.colorPaletteMarkup(value.color)}<span class="form-error" data-error="range"></span><p class="editor-note conflict-note" data-conflict hidden>${I18nService.t("schedule.conflict")}</p>`;
+      form.innerHTML = `<label class="form-field"><span>${I18nService.t("schedule.title")}</span><input name="title" maxlength="300" required><span class="form-error" data-error="title"></span></label><label class="form-field"><span>${I18nService.t("schedule.description")}</span><textarea name="description" maxlength="10000"></textarea></label><label class="form-field"><span>${I18nService.t("schedule.date")}</span><input name="date" type="date" required></label>${timeFields}${this.relationFieldsMarkup()}<button type="button" class="telegram-share-button" data-telegram-share>${I18nService.t("actions.shareTelegram")}<small>${I18nService.t("telegram.later")}</small></button>`;
       ["title", "description", "date"].forEach((name) => { form.elements[name].value = value[name] || ""; });
-      if (!isNote) { ["startTime", "endTime", "column"].forEach((name) => { form.elements[name].value = value[name] || ""; }); form.elements.reminder15.checked = Boolean(value.reminders?.before15); form.elements.reminderNow.checked = Boolean(value.reminders?.atStart); }
-      form.elements.recurrence.value = series?.rule || "none"; form.elements.until.value = series?.until || ""; this.setupUniversalFields(form, value);
+      if (!isNote) ["startTime", "endTime", "column"].forEach((name) => { form.elements[name].value = value[name] || ""; });
+      const ownerKey = task ? this.fileOwnerKey("task", task.id) : series ? this.fileOwnerKey("series", series.id) : this.fileOwnerKey("record", recordId);
+      this.setupUniversalFields(form, value, ownerKey);
       const updateDynamic = () => {
-        form.querySelector("[data-until-field]").hidden = form.elements.recurrence.value === "none";
         if (!isNote) { const draft = { date: form.elements.date.value, column: form.elements.column.value, startTime: form.elements.startTime.value, endTime: form.elements.endTime.value }; form.querySelector("[data-conflict]").hidden = !this.recordConflicts(draft, record?.id); }
       };
       form.addEventListener("input", () => { this.panelDirty = true; updateDynamic(); }); updateDynamic();
       form.querySelector("[data-telegram-share]").addEventListener("click", () => this.openTelegramPreview({ title: form.elements.title.value.trim(), description: form.elements.description.value, date: form.elements.date.value, startTime: isNote ? null : form.elements.startTime.value, endTime: isNote ? null : form.elements.endTime.value, hashtags: PlannerDataService.normalizeHashtags(form.elements.hashtags.value), fileNames: JSON.parse(form.dataset.fileNames || "[]"), color: form.elements.color?.value || "royalIndigo" }));
-      form.addEventListener("submit", (event) => {
-        event.preventDefault(); const title = form.elements.title.value.trim(); const date = form.elements.date.value; const recurrence = form.elements.recurrence.value; const until = form.elements.until.value || null;
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault(); const title = form.elements.title.value.trim(); const date = form.elements.date.value;
         form.querySelector('[data-error="title"]').textContent = title ? "" : I18nService.t("task.errorTitle");
         const validRange = isNote || PlannerDataService.validateTimeRange(form.elements.startTime.value, form.elements.endTime.value).valid;
         if (!isNote) form.querySelector('[data-error="range"]').textContent = validRange ? "" : I18nService.t("schedule.errorRange");
-        form.querySelector('[data-error="until"]').textContent = recurrence !== "none" && until && until < date ? I18nService.t("recurrence.errorUntil") : "";
-        if (!title || !DateService.fromISO(date) || !validRange || (recurrence !== "none" && until && until < date)) return;
-        const next = { ...value, id: record?.isRecurrenceInstance ? PlannerDataService.id() : (record?.id || PlannerDataService.id()), title, description: form.elements.description.value.slice(0, 10000), date, type: isNote ? "note" : form.elements.column.value, startTime: isNote ? null : form.elements.startTime.value, endTime: isNote ? null : form.elements.endTime.value, column: isNote ? null : form.elements.column.value, color: isNote ? "royalIndigo" : form.elements.color.value, taskId: task?.id || record?.taskId || null, ...this.readUniversalFields(form), reminders: isNote ? null : { before15: form.elements.reminder15.checked, atStart: form.elements.reminderNow.checked }, recurrence: recurrence === "none" ? null : recurrence, createdAt: record?.createdAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
+        if (!title || !DateService.fromISO(date) || !validRange || !await this.persistUniversalFiles(form)) return;
+        const next = { ...value, id: recordId, title, description: form.elements.description.value.slice(0, 10000), date, type: isNote ? "note" : form.elements.column.value, startTime: isNote ? null : form.elements.startTime.value, endTime: isNote ? null : form.elements.endTime.value, column: isNote ? null : form.elements.column.value, color: isNote ? "royalIndigo" : form.elements.color.value, taskId: task?.id || record?.taskId || null, ...this.readUniversalFields(form), reminders: null, recurrence: null, createdAt: record?.createdAt || new Date().toISOString(), updatedAt: new Date().toISOString() };
         const finish = () => { this.renderPlannerData(); this.renderSearchResults(); this.panelDirty = false; this.closeContextPanel(true); };
-        if (series) { this.chooseSeriesScope(record.recurrenceDate, (scope) => { this.applySeriesEdit(series, record.recurrenceDate, next, recurrence, until, scope); this.saveSeries(); finish(); }); return; }
-        if (recurrence !== "none") { if (record) this.currentWeek.records = this.currentWeek.records.filter((item) => item.id !== record.id); if (task) task.scheduleRecordId = null; this.seriesCollection.items.push(this.recordToSeries({ ...next, taskId: null }, recurrence, until)); this.saveSeries(); this.saveWeek(); finish(); return; }
+        if (series) { this.chooseSeriesScope(record.recurrenceDate, (scope) => { this.applySeriesEdit(series, record.recurrenceDate, next, series.rule, series.until, scope); this.saveSeries(); finish(); }); return; }
         if (this.saveRegularRecord(record, next, task)) finish();
       });
       if (record) {
@@ -2879,8 +3055,11 @@
       return `<fieldset class="color-palette form-field"><legend>${I18nService.t("schedule.color")}</legend>${PlannerDataService.palette.map((color) => `<label class="color-choice" title="${I18nService.t(`color.${color}`)}"><input type="radio" name="color" value="${color}" ${color === selected ? "checked" : ""}><span style="--choice-color:${this.goalColorValue(color)}"></span></label>`).join("")}</fieldset>`;
     },
 
-    duplicateRecord(record) {
+    async duplicateRecord(record) {
       const copy = { ...structuredClone(record), id: PlannerDataService.id(), taskId: null, recurrence: null, seriesId: null, isRecurrenceInstance: false, recurrenceDate: null, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+      const sourceOwner = record.taskId ? this.fileOwnerKey("task", record.taskId) : record.seriesId ? this.fileOwnerKey("series", record.seriesId) : this.fileOwnerKey("record", record.id);
+      try { if ((record.fileNames || []).length) await FileStorageService.copyOwner(sourceOwner, this.fileOwnerKey("record", copy.id)); }
+      catch { this.showToast("record.fileSaveError", "record.fileSaveErrorCopy", "error", 7000); return; }
       this.saveRegularRecord(null, copy, null); this.renderPlannerData(); this.renderSearchResults(); this.panelDirty = false; this.closeContextPanel(true);
     },
 
@@ -2892,17 +3071,17 @@
           else if (scope === "following") series.until = RecurrenceService.previousDate(series, record.recurrenceDate);
           else this.seriesCollection.items = this.seriesCollection.items.filter((item) => item.id !== series.id);
           this.saveSeries(true); this.renderPlannerData(); this.renderSearchResults(); this.panelDirty = false; this.closeContextPanel(true);
-          this.showUndoToast("schedule.deletedTitle", "schedule.deletedCopy", () => { this.seriesCollection = snapshot; this.saveSeries(true); this.renderPlannerData(); this.renderSearchResults(); });
+          this.showUndoToast("schedule.deletedTitle", "schedule.deletedCopy", () => { this.seriesCollection = snapshot; this.saveSeries(true); this.renderPlannerData(); this.renderSearchResults(); }, scope === "all" ? () => FileStorageService.deleteOwners([this.fileOwnerKey("series", record.seriesId)]).catch(() => {}) : null);
         }), { titleKey: "recurrence.deleteTitle", copyKey: "recurrence.scopeCopy" }); return;
       }
-      this.openConfirmation(() => { const snapshot = structuredClone(this.currentWeek); this.currentWeek.records = this.currentWeek.records.filter((item) => item.id !== record.id); const task = record.taskId ? this.findTask(record.taskId)?.task : null; if (task) task.scheduleRecordId = null; this.saveWeek(true); this.renderPlannerData(); this.renderSearchResults(); this.panelDirty = false; this.closeContextPanel(true); this.showUndoToast("schedule.deletedTitle", "schedule.deletedCopy", () => { if (this.currentWeek.weekStart !== snapshot.weekStart) return; this.currentWeek = snapshot; this.saveWeek(true); this.renderPlannerData(); this.renderSearchResults(); }); }, { titleKey: "schedule.deleteTitle", copyKey: "schedule.deleteCopy" });
+      this.openConfirmation(() => { const snapshot = structuredClone(this.currentWeek); this.currentWeek.records = this.currentWeek.records.filter((item) => item.id !== record.id); const task = record.taskId ? this.findTask(record.taskId)?.task : null; if (task) task.scheduleRecordId = null; this.saveWeek(true); this.renderPlannerData(); this.renderSearchResults(); this.panelDirty = false; this.closeContextPanel(true); this.showUndoToast("schedule.deletedTitle", "schedule.deletedCopy", () => { if (this.currentWeek.weekStart !== snapshot.weekStart) return; this.currentWeek = snapshot; this.saveWeek(true); this.renderPlannerData(); this.renderSearchResults(); }, task ? null : () => FileStorageService.deleteOwners([this.fileOwnerKey("record", record.id)]).catch(() => {})); }, { titleKey: "schedule.deleteTitle", copyKey: "schedule.deleteCopy" });
     },
 
     handleScheduleDragStart(event) { const block = event.target.closest("[data-record-id]"); if (!block) return; this.draggedRecord = block.dataset.recordId; event.dataTransfer.setData("text/plain", `record:${this.draggedRecord}`); event.dataTransfer.effectAllowed = "move"; },
 
     handleScheduleDrop(event) {
       const slot = event.target.closest("[data-slot-time]"); if (!slot) return; event.preventDefault();
-      if (this.draggedTask) { const found = this.findTask(this.draggedTask.id); if (found) { const existing = this.currentWeek.records.find((record) => record.taskId === found.task.id); if (existing) this.moveScheduleRecord(existing, this.state.ui.selectedDate, slot.dataset.column, slot.dataset.slotTime); else { const start = PlannerDataService.timeToMinutes(slot.dataset.slotTime); const record = { id: PlannerDataService.id(), title: found.task.title, description: found.task.text, date: this.state.ui.selectedDate, startTime: slot.dataset.slotTime, endTime: PlannerDataService.minutesToTime(start + 30), column: slot.dataset.column, color: "royalIndigo", taskId: found.task.id, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() }; found.task.scheduleRecordId = record.id; this.currentWeek.records.push(record); this.saveWeek(); this.renderPlannerData(); } } this.draggedTask = null; }
+      if (this.draggedTask) { const found = this.findTask(this.draggedTask.id); if (found) { const existing = this.currentWeek.records.find((record) => record.taskId === found.task.id); if (existing) this.moveScheduleRecord(existing, this.state.ui.selectedDate, slot.dataset.column, slot.dataset.slotTime); else { const start = PlannerDataService.timeToMinutes(slot.dataset.slotTime); const record = { id: PlannerDataService.id(), title: found.task.title, description: found.task.text, date: this.state.ui.selectedDate, type: slot.dataset.column, startTime: slot.dataset.slotTime, endTime: PlannerDataService.minutesToTime(start + 30), column: slot.dataset.column, color: "royalIndigo", taskId: found.task.id, hashtags: [...(found.task.hashtags || [])], fileNames: [...(found.task.fileNames || [])], reminders: null, recurrence: null, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() }; found.task.scheduleRecordId = record.id; this.currentWeek.records.push(record); this.saveWeek(); this.renderPlannerData(); } } this.draggedTask = null; }
       else if (this.draggedRecord) { const record = this.recordsForDate(this.state.ui.selectedDate).find((item) => item.id === this.draggedRecord); if (record) this.moveScheduleRecord(record, this.state.ui.selectedDate, slot.dataset.column, slot.dataset.slotTime); this.draggedRecord = null; }
     },
 
@@ -2990,9 +3169,25 @@
 
     renderSearchState() { this.renderSearchResults(); },
 
+    renderSearchTagOptions() {
+      const select = this.elements.searchTagSelect;
+      if (!select) return;
+      const placeholder = document.createElement("option");
+      placeholder.value = "";
+      placeholder.textContent = I18nService.t("search.chooseTagPlaceholder");
+      select.replaceChildren(placeholder);
+      this.knownHashtags().forEach((tag) => {
+        const option = document.createElement("option");
+        option.value = tag;
+        option.textContent = `#${tag}`;
+        select.append(option);
+      });
+    },
+
     renderSearchResults() {
       if (!this.elements.searchResults) return;
       StorageService.flush();
+      this.renderSearchTagOptions();
       const filters = { query: this.elements.searchInput.value, type: this.elements.searchType.value, completion: this.elements.searchCompletion.value, from: this.elements.searchDateFrom.value, to: this.elements.searchDateTo.value, tags: this.elements.searchTags.value };
       const results = SearchService.filter(SearchService.collect(this.habits, this.seriesCollection, this.notes), filters).slice(0, 200);
       this.elements.searchResults.replaceChildren(); this.elements.searchEmpty.hidden = results.length > 0;
@@ -3188,10 +3383,8 @@
     syncSettingsControls() {
       this.elements.themeSelect.value = this.state.settings.theme;
       this.elements.languageSelect.value = this.state.settings.language;
-      this.elements.soundToggle.checked = this.state.settings.soundEnabled;
       this.elements.onboardingTheme.value = this.state.settings.theme;
       this.elements.onboardingLanguage.value = this.state.settings.language;
-      this.elements.onboardingSound.checked = this.state.settings.soundEnabled;
       this.elements.scheduleScale.value = this.state.settings.scheduleScale;
       this.elements.speechLanguageSelect.value = this.state.settings.speechLanguage;
       this.elements.speechConsentToggle.textContent = I18nService.t(this.state.settings.speechConsent ? "settings.revokeConsent" : "settings.giveConsent");
@@ -3341,10 +3534,11 @@
     },
 
     confirmImport() {
-      this.openConfirmation(() => {
+      this.openConfirmation(async () => {
         const result = StorageService.replaceAll(this.importCandidate);
         this.importCandidate = null;
         if (!result.ok) { this.showToast("import.rollbackTitle", "import.rollbackCopy", "error", 8000); return; }
+        try { await FileStorageService.clear(); } catch { this.showToast("record.fileSaveError", "record.fileSaveErrorCopy", "error", 7000); }
         this.elements.recoveryScreen.hidden = true;
         this.reloadFromStorage();
         this.showToast("import.doneTitle", "import.doneCopy");
@@ -3387,7 +3581,7 @@
         this.loadWeek(weekStart);
         this.renderPlannerData();
         this.renderStorageUsage();
-      });
+      }, () => FileStorageService.deleteOwners(this.weekFileOwnerKeys(previousRaw ? JSON.parse(previousRaw) : null)).catch(() => {}));
     },
 
     requestClearOldWeeks(trigger) {
@@ -3398,6 +3592,7 @@
 
     clearOldWeeks(weeks) {
       const index = StorageService.read(StorageService.keys.weekIndex, []);
+      const fileOwners = weeks.flatMap((weekStart) => this.weekFileOwnerKeys(PlannerDataService.normalizeWeek(StorageService.read(StorageService.weekKey(weekStart), null), weekStart)));
       this.excludeRecurringWeeks(weeks);
       if (!StorageService.removeKeys(weeks.map((weekStart) => StorageService.weekKey(weekStart)))) return;
       StorageService.writeNow(StorageService.keys.weekIndex, index.filter((item) => !weeks.includes(item?.weekStart)));
@@ -3406,15 +3601,17 @@
       this.renderPlannerData();
       this.renderSearchState();
       this.renderStorageUsage();
+      FileStorageService.deleteOwners(fileOwners).catch(() => this.showToast("record.fileSaveError", "record.fileSaveErrorCopy", "error", 7000));
     },
 
     requestClearAllData(trigger) {
       this.openBackupWorkflow(() => this.openConfirmation(() => this.clearAllData(), { titleKey: "clear.allTitle", copyKey: "clear.allCopy" }), { requireDeletePhrase: true, focusTarget: trigger });
     },
 
-    clearAllData() {
+    async clearAllData() {
       StorageService.queue.clear();
       if (!StorageService.removeKeys(StorageService.appKeys(true))) return;
+      try { await FileStorageService.clear(); } catch { this.showToast("record.fileSaveError", "record.fileSaveErrorCopy", "error", 7000); }
       this.reloadFromStorage();
       this.showOnboarding(0);
     },
@@ -3429,9 +3626,10 @@
 
     requestRecoveryReset() {
       if (!this.corruptDownloaded) return;
-      this.openConfirmation(() => {
+      this.openConfirmation(async () => {
         StorageService.queue.clear();
         if (!StorageService.removeKeys(StorageService.appKeys(true))) return;
+        try { await FileStorageService.clear(); } catch { this.showToast("record.fileSaveError", "record.fileSaveErrorCopy", "error", 7000); }
         this.elements.recoveryScreen.hidden = true;
         this.elements.app.inert = false;
         this.reloadFromStorage();
@@ -3593,7 +3791,7 @@
       window.setTimeout(() => toast.remove(), duration);
     },
 
-    showUndoToast(titleKey, copyKey, callback) {
+    showUndoToast(titleKey, copyKey, callback, onExpire = null) {
       const toast = document.createElement("div");
       toast.className = "toast has-action";
       toast.setAttribute("role", "status");
@@ -3619,12 +3817,13 @@
         toast.remove();
         callback();
       });
-      close.addEventListener("click", () => { active = false; toast.remove(); });
+      const expire = () => { if (!active) return; active = false; toast.remove(); onExpire?.(); };
+      close.addEventListener("click", expire);
       actions.append(undo, close);
       copy.append(title, text, actions);
       toast.append(copy);
       this.elements.toastRegion.append(toast);
-      window.setTimeout(() => { active = false; toast.remove(); }, 7000);
+      window.setTimeout(expire, 7000);
     }
   };
 

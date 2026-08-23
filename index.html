@@ -258,11 +258,12 @@
                 <input id="searchInput" type="search" data-i18n-placeholder="search.placeholder" placeholder="Задачи, цели, заметки и хэштеги">
               </label>
               <div class="search-filters" aria-label="Фильтры поиска">
-                <label><span data-i18n="search.type">Тип</span><select id="searchType"><option value="all" data-i18n="search.allTypes">Все типы</option><option value="goal" data-i18n="search.goals">Цели</option><option value="subtask" data-i18n="search.subtasks">Подзадачи</option><option value="habit" data-i18n="search.habits">Привычки</option><option value="task" data-i18n="search.tasks">Задачи</option><option value="fixed" data-i18n="search.meetings">Встречи</option><option value="flexible" data-i18n="search.flexible">Гибкие дела</option><option value="note" data-i18n="search.notes">Заметки</option><option value="ideal" data-i18n="search.ideal">Идеальная неделя</option><option value="series" data-i18n="search.series">Серии</option></select></label>
+                <label><span data-i18n="search.type">Тип</span><select id="searchType"><option value="all" data-i18n="search.allTypes">Все типы</option><option value="goal" data-i18n="search.goals">Цели</option><option value="subtask" data-i18n="search.subtasks">Подзадачи</option><option value="habit" data-i18n="search.habits">Привычки</option><option value="task" data-i18n="search.tasks">Задачи</option><option value="fixed" data-i18n="search.meetings">Встречи</option><option value="flexible" data-i18n="search.flexible">Гибкие дела</option><option value="note" data-i18n="search.notes">Заметки</option><option value="ideal" data-i18n="search.ideal">Идеальная неделя</option></select></label>
                 <label><span data-i18n="search.completion">Выполнение</span><select id="searchCompletion"><option value="all" data-i18n="search.all">Все</option><option value="done" data-i18n="search.done">Выполнено</option><option value="open" data-i18n="search.open">Не выполнено</option></select></label>
                 <label><span data-i18n="search.dateFrom">С даты</span><input id="searchDateFrom" type="date"></label>
                 <label><span data-i18n="search.dateTo">По дату</span><input id="searchDateTo" type="date"></label>
                 <label class="search-tag-filter"><span data-i18n="search.tags">Хэштеги</span><input id="searchTags" type="text" placeholder="#фокус"></label>
+                <label><span data-i18n="search.chooseTag">Выбрать хэштег</span><select id="searchTagSelect"><option value="" data-i18n="search.chooseTagPlaceholder">Из сохранённых</option></select></label>
               </div>
               <div class="search-results" id="searchResults"></div>
               <div class="large-empty" id="searchEmpty">
@@ -287,11 +288,6 @@
                 <span class="settings-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.2 2.4 3.3 5.4 3.3 9S14.2 18.6 12 21c-2.2-2.4-3.3-5.4-3.3-9S9.8 5.4 12 3Z"/></svg></span>
                 <div class="settings-copy"><h3 data-i18n="settings.language">Язык</h3><p data-i18n="settings.languageCopy">Системные подписи на русском или английском.</p></div>
                 <label class="select-control"><span class="sr-only" data-i18n="settings.language">Язык</span><select id="languageSelect"><option value="ru">Русский</option><option value="en">English</option></select></label>
-              </article>
-              <article class="settings-card">
-                <span class="settings-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 10v4h3l4 4V6L8 10H5Zm11-1a4 4 0 0 1 0 6m2-8a7 7 0 0 1 0 10"/></svg></span>
-                <div class="settings-copy"><h3 data-i18n="settings.sound">Звук напоминаний</h3><p data-i18n="settings.soundCopy">По умолчанию выключен.</p></div>
-                <label class="switch"><input id="soundToggle" type="checkbox"><span aria-hidden="true"></span><span class="sr-only" data-i18n="settings.sound">Звук напоминаний</span></label>
               </article>
               <article class="settings-card">
                 <span class="settings-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM9 5v14"/></svg></span>
@@ -355,9 +351,8 @@
               <article class="help-card"><span>04</span><h3 data-i18n="help.privateTitle">Данные остаются здесь</h3><p data-i18n="help.privateCopy">Планировщик хранит информацию только в браузере этого устройства.</p></article>
               <article class="help-card"><span>05</span><h3 data-i18n="help.goalsTitle">Цели и привычки</h3><p data-i18n="help.goalsCopy">Четыре цели используют ручной прогресс без подзадач и автоматический — с ними. Привычка циклично меняет три состояния.</p></article>
               <article class="help-card"><span>06</span><h3 data-i18n="help.tasksTitle">Задачи и перенос</h3><p data-i18n="help.tasksCopy">В день помещаются три главные и десять остальных задач. Перетаскивание можно заменить кнопками перемещения.</p></article>
-              <article class="help-card"><span>07</span><h3 data-i18n="help.recurrenceTitle">Повторения и напоминания</h3><p data-i18n="help.recurrenceCopy">Серии бывают ежедневными и еженедельными. Напоминания работают только пока страница открыта.</p></article>
-              <article class="help-card"><span>08</span><h3 data-i18n="help.integrationsTitle">Файлы, Telegram и диктовка</h3><p data-i18n="help.integrationsCopy">Сохраняются только имена файлов, Telegram показывает превью без отправки, а диктовка может обращаться к сервису Chrome.</p></article>
-              <article class="help-card"><span>09</span><h3 data-i18n="help.backupTitle">Резервное копирование</h3><p data-i18n="help.backupCopy">Экспорт сохраняет полный JSON. Импорт и очистка доступны только после подтверждённой резервной копии.</p></article>
+              <article class="help-card"><span>07</span><h3 data-i18n="help.integrationsTitle">Файлы, Telegram и диктовка</h3><p data-i18n="help.integrationsCopy">Файлы хранятся локально в браузере, Telegram показывает превью без отправки, а диктовка может обращаться к сервису Chrome.</p></article>
+              <article class="help-card"><span>08</span><h3 data-i18n="help.backupTitle">Резервное копирование</h3><p data-i18n="help.backupCopy">Экспорт сохраняет полный JSON без содержимого файлов. Импорт и очистка доступны только после подтверждённой резервной копии.</p></article>
             </div>
           </section>
         </div>
@@ -395,7 +390,6 @@
             <div class="onboarding-settings" id="onboardingSettings" hidden>
               <label><span data-i18n="settings.language">Язык</span><select id="onboardingLanguage"><option value="ru">Русский</option><option value="en">English</option></select></label>
               <label><span data-i18n="settings.theme">Тема</span><select id="onboardingTheme"><option value="system" data-i18n="theme.system">Системная</option><option value="light" data-i18n="theme.light">Светлая</option><option value="dark" data-i18n="theme.dark">Тёмная</option></select></label>
-              <label class="sound-choice"><span><strong data-i18n="settings.sound">Звук напоминаний</strong><small data-i18n="settings.soundCopy">По умолчанию выключен.</small></span><span class="switch"><input id="onboardingSound" type="checkbox"><span aria-hidden="true"></span></span></label>
             </div>
           </div>
         </div>
