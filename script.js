@@ -546,7 +546,14 @@
     "ideal.copyConfirm": "Все элементы этой идеальной недели будут добавлены в выбранную будущую идеальную неделю.", "ideal.copyDuplicate": "В выбранной идеальной неделе уже есть элементы. К ним будут добавлены новые.", "ideal.copyFutureError": "Выберите неделю позже текущей.",
     "panel.ideal.1.title": "Отдельная неделя", "panel.ideal.1.copy": "Идеальная неделя относится только к выбранной календарной неделе.", "panel.ideal.3.copy": "Все элементы можно вручную скопировать в одну выбранную будущую идеальную неделю.",
     "notes.title": "Заметки", "notes.kicker": "Общее пространство", "notes.listTitle": "Все заметки", "notes.copy": "Общие заметки для всего приложения — без ограничения по количеству.", "notes.add": "Добавить заметку", "notes.empty": "Добавьте первую заметку",
-    "notes.new": "Новая заметка", "notes.edit": "Редактирование заметки", "notes.noteTitle": "Заголовок", "notes.description": "Описание", "notes.tags": "Хэштеги", "notes.deleteTitle": "Удалить заметку?", "notes.deleteCopy": "Заметка будет удалена. Отмена доступна в течение 7 секунд.", "notes.deletedTitle": "Заметка удалена", "notes.deletedCopy": "Удаление можно отменить в течение 7 секунд."
+    "notes.new": "Новая заметка", "notes.edit": "Редактирование заметки", "notes.noteTitle": "Заголовок", "notes.description": "Описание", "notes.tags": "Хэштеги", "notes.deleteTitle": "Удалить заметку?", "notes.deleteCopy": "Заметка будет удалена. Отмена доступна в течение 7 секунд.", "notes.deletedTitle": "Заметка удалена", "notes.deletedCopy": "Удаление можно отменить в течение 7 секунд.",
+    "data.title": "Данные и резервные копии", "data.copy": "Все данные находятся только в этом браузере. Регулярно сохраняйте резервную копию.", "data.storage": "Хранилище", "data.export": "Экспортировать JSON", "data.import": "Импортировать JSON", "data.clearWeek": "Очистить выбранную неделю", "data.clearOld": "Очистить старые недели", "data.clearAll": "Удалить все данные", "data.olderThan": "Недели старше даты", "data.weeks": "{count} недель", "data.oldWeeks": "Будет удалено: {count}", "data.warning80": "Хранилище заполнено на 80%. Сохраните копию и очистите старые недели.", "data.warning95": "Хранилище почти заполнено. Новые длинные записи могут не сохраниться.",
+    "backup.title": "Сначала сохраните копию", "backup.copy": "Перед необратимым действием скачайте полный JSON-файл.", "backup.download": "Скачать текущую копию", "backup.saved": "Резервная копия сохранена", "backup.deletePhrase": "Введите «УДАЛИТЬ ВСЕ»", "backup.downloaded": "Скачивание запущено", "backup.downloadedCopy": "Проверьте файл и подтвердите его сохранение.",
+    "import.invalidTitle": "Файл не подходит", "import.invalidCopy": "Выберите полный JSON-экспорт этого планировщика версии 1.", "import.confirmTitle": "Заменить все данные?", "import.confirmCopy": "Текущие данные будут полностью заменены выбранной копией.", "import.doneTitle": "Данные восстановлены", "import.doneCopy": "Резервная копия успешно импортирована.", "import.rollbackTitle": "Импорт отменён", "import.rollbackCopy": "Ошибка записи. Предыдущие данные восстановлены.",
+    "clear.weekTitle": "Очистить выбранную неделю?", "clear.weekCopy": "Цели, привычки, задачи, расписание и идеальная неделя будут удалены.", "clear.weekDoneTitle": "Неделя очищена", "clear.weekDoneCopy": "Отмена доступна 7 секунд. После закрытия страницы отмена будет недоступна.", "clear.oldTitle": "Очистить старые недели?", "clear.oldCopy": "Выбранные недельные данные будут удалены без автоматического восстановления.", "clear.oldEmptyTitle": "Нет старых недель", "clear.oldEmptyCopy": "Выберите более позднюю дату или оставьте данные без изменений.", "clear.allTitle": "Удалить все данные?", "clear.allCopy": "Планировщик вернётся к приветствию. Восстановление возможно только из JSON-копии.",
+    "recovery.kicker": "Безопасное восстановление", "recovery.title": "Локальные данные повреждены", "recovery.copy": "Планировщик не заменил повреждённые данные. Скачайте исходную копию или восстановите корректный JSON.", "recovery.download": "Скачать повреждённую копию", "recovery.retry": "Повторить попытку", "recovery.reset": "Начать заново", "recovery.resetTitle": "Удалить повреждённые данные?", "recovery.resetCopy": "Сначала скачайте исходную копию. Затем приложение создаст пустой планировщик.",
+    "toast.quotaTitle": "Недостаточно места", "toast.quotaCopy": "Изменения остаются в этой вкладке. Экспортируйте данные и очистите старые недели.",
+    "help.goalsTitle": "Цели и привычки", "help.goalsCopy": "Четыре цели используют ручной прогресс без подзадач и автоматический — с ними. Привычка циклично меняет три состояния.", "help.tasksTitle": "Задачи и перенос", "help.tasksCopy": "В день помещаются три главные и десять остальных задач. Перетаскивание можно заменить кнопками перемещения.", "help.recurrenceTitle": "Повторения и напоминания", "help.recurrenceCopy": "Серии бывают ежедневными и еженедельными. Напоминания работают только пока страница открыта.", "help.integrationsTitle": "Файлы, Telegram и диктовка", "help.integrationsCopy": "Сохраняются только имена файлов, Telegram показывает превью без отправки, а диктовка может обращаться к сервису Chrome.", "help.backupTitle": "Резервное копирование", "help.backupCopy": "Экспорт сохраняет полный JSON. Импорт и очистка доступны только после подтверждённой резервной копии."
   });
 
   Object.assign(TRANSLATIONS.en, {
@@ -556,7 +563,14 @@
     "ideal.copyConfirm": "All items from this ideal week will be added to the selected future ideal week.", "ideal.copyDuplicate": "The selected ideal week already has items. New ones will be added.", "ideal.copyFutureError": "Choose a week later than the current one.",
     "panel.ideal.1.title": "One calendar week", "panel.ideal.1.copy": "The ideal week belongs only to the selected calendar week.", "panel.ideal.3.copy": "All items can be copied manually into one selected future ideal week.",
     "notes.title": "Notes", "notes.kicker": "Shared space", "notes.listTitle": "All notes", "notes.copy": "Shared notes for the whole app, with no item limit.", "notes.add": "Add note", "notes.empty": "Add your first note",
-    "notes.new": "New note", "notes.edit": "Edit note", "notes.noteTitle": "Title", "notes.description": "Description", "notes.tags": "Hashtags", "notes.deleteTitle": "Delete note?", "notes.deleteCopy": "The note will be deleted. Undo is available for 7 seconds.", "notes.deletedTitle": "Note deleted", "notes.deletedCopy": "Deletion can be undone for 7 seconds."
+    "notes.new": "New note", "notes.edit": "Edit note", "notes.noteTitle": "Title", "notes.description": "Description", "notes.tags": "Hashtags", "notes.deleteTitle": "Delete note?", "notes.deleteCopy": "The note will be deleted. Undo is available for 7 seconds.", "notes.deletedTitle": "Note deleted", "notes.deletedCopy": "Deletion can be undone for 7 seconds.",
+    "data.title": "Data and backups", "data.copy": "All data stays in this browser. Save a backup regularly.", "data.storage": "Storage", "data.export": "Export JSON", "data.import": "Import JSON", "data.clearWeek": "Clear selected week", "data.clearOld": "Clear old weeks", "data.clearAll": "Delete all data", "data.olderThan": "Weeks older than", "data.weeks": "{count} weeks", "data.oldWeeks": "Will be deleted: {count}", "data.warning80": "Storage is 80% full. Save a backup and clear old weeks.", "data.warning95": "Storage is almost full. New long entries may not be saved.",
+    "backup.title": "Save a backup first", "backup.copy": "Download a complete JSON file before this irreversible action.", "backup.download": "Download current backup", "backup.saved": "The backup is saved", "backup.deletePhrase": "Enter “DELETE ALL”", "backup.downloaded": "Download started", "backup.downloadedCopy": "Check the file and confirm that it was saved.",
+    "import.invalidTitle": "This file cannot be used", "import.invalidCopy": "Choose a complete version 1 JSON export from this planner.", "import.confirmTitle": "Replace all data?", "import.confirmCopy": "Current data will be completely replaced by the selected backup.", "import.doneTitle": "Data restored", "import.doneCopy": "The backup was imported successfully.", "import.rollbackTitle": "Import cancelled", "import.rollbackCopy": "A write failed. Previous data was restored.",
+    "clear.weekTitle": "Clear the selected week?", "clear.weekCopy": "Goals, habits, tasks, schedule and ideal week will be deleted.", "clear.weekDoneTitle": "Week cleared", "clear.weekDoneCopy": "Undo is available for 7 seconds. It will not be available after closing the page.", "clear.oldTitle": "Clear old weeks?", "clear.oldCopy": "The selected weekly data will be deleted without automatic recovery.", "clear.oldEmptyTitle": "No old weeks", "clear.oldEmptyCopy": "Choose a later date or leave the data unchanged.", "clear.allTitle": "Delete all data?", "clear.allCopy": "The planner will return to the welcome guide. Recovery is possible only from a JSON backup.",
+    "recovery.kicker": "Safe recovery", "recovery.title": "Local data is damaged", "recovery.copy": "The planner did not replace damaged data. Download the raw copy or restore a valid JSON file.", "recovery.download": "Download damaged copy", "recovery.retry": "Try again", "recovery.reset": "Start over", "recovery.resetTitle": "Delete damaged data?", "recovery.resetCopy": "Download the raw copy first. The app will then create an empty planner.",
+    "toast.quotaTitle": "Not enough storage", "toast.quotaCopy": "Changes remain in this tab. Export data and clear old weeks.",
+    "help.goalsTitle": "Goals and habits", "help.goalsCopy": "Four goals use manual progress without subtasks and automatic progress with them. A habit cycles through three states.", "help.tasksTitle": "Tasks and moving", "help.tasksCopy": "Each day holds three main and ten other tasks. Move buttons are an alternative to drag and drop.", "help.recurrenceTitle": "Repeats and reminders", "help.recurrenceCopy": "Series can repeat daily or weekly. Reminders work only while the page is open.", "help.integrationsTitle": "Files, Telegram and dictation", "help.integrationsCopy": "Only file names are stored, Telegram shows a preview without sending, and dictation may use Chrome's service.", "help.backupTitle": "Backups", "help.backupCopy": "Export saves a complete JSON file. Import and clearing require a confirmed backup first."
   });
 
   const I18nService = {
@@ -665,6 +679,8 @@
   };
 
   const StorageService = {
+    prefix: "premiumPlanner.",
+    budgetBytes: 4 * 1024 * 1024,
     keys: {
       meta: "premiumPlanner.meta",
       settings: "premiumPlanner.settings",
@@ -673,13 +689,16 @@
       habits: "premiumPlanner.habits",
       idealWeek: "premiumPlanner.idealWeek",
       series: "premiumPlanner.series",
-      notes: "premiumPlanner.notes"
+      notes: "premiumPlanner.notes",
+      businessCard: "premiumPlanner.businessCard",
+      recovery: "premiumPlanner.recovery"
     },
     queue: new Map(),
     timer: null,
     faults: [],
     onStatus: () => {},
     onError: () => {},
+    onUsage: () => {},
 
     defaults() {
       const language = navigator.language?.toLowerCase().startsWith("ru") ? "ru" : "en";
@@ -711,27 +730,59 @@
       };
     },
 
+    recordFault(key, raw, error) {
+      if (!this.faults.some((fault) => fault.key === key)) this.faults.push({ key, raw, error });
+    },
+
+    audit() {
+      this.faults = [];
+      let keys;
+      try { keys = this.appKeys(); }
+      catch (error) { this.recordFault(this.prefix, null, error); return; }
+      keys.forEach((key) => {
+        let raw = null;
+        try {
+          raw = localStorage.getItem(key);
+          const parsed = JSON.parse(raw);
+          if (parsed && typeof parsed === "object" && "schemaVersion" in parsed && parsed.schemaVersion !== 1) throw new Error(`Unsupported schema version in ${key}`);
+          if (key === this.keys.weekIndex && !Array.isArray(parsed)) throw new Error(`Invalid index payload in ${key}`);
+          const objectKeys = [this.keys.meta, this.keys.settings, this.keys.ui, this.keys.habits, this.keys.idealWeek, this.keys.series, this.keys.notes, this.keys.businessCard];
+          if (objectKeys.includes(key) && (!parsed || typeof parsed !== "object" || Array.isArray(parsed))) throw new Error(`Invalid object payload in ${key}`);
+          if (key.startsWith(`${this.prefix}week.`)) {
+            const weekStart = key.slice(`${this.prefix}week.`.length);
+            if (!parsed || typeof parsed !== "object" || parsed.schemaVersion !== 1 || parsed.weekStart !== weekStart) throw new Error(`Invalid week payload in ${key}`);
+          }
+        } catch (error) { this.recordFault(key, raw, error); }
+      });
+    },
+
     read(key, fallback) {
       let raw;
       try {
         raw = localStorage.getItem(key);
       } catch (error) {
-        this.faults.push({ key, error });
+        this.recordFault(key, null, error);
         return structuredClone(fallback);
       }
       if (raw === null) return structuredClone(fallback);
       try {
-        return JSON.parse(raw);
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed === "object" && "schemaVersion" in parsed && parsed.schemaVersion !== 1) {
+          throw new Error(`Unsupported schema version in ${key}`);
+        }
+        return parsed;
       } catch (error) {
-        this.faults.push({ key, error });
+        this.recordFault(key, raw, error);
         return structuredClone(fallback);
       }
     },
 
     initialize() {
+      this.audit();
       const defaults = this.defaults();
       const meta = this.read(this.keys.meta, defaults.meta);
       const settings = this.read(this.keys.settings, defaults.settings);
+      const businessCard = this.read(this.keys.businessCard, settings.businessCard || defaults.settings.businessCard);
       this.read(this.keys.weekIndex, []);
 
       const safeSettings = {
@@ -744,10 +795,10 @@
         speechConsent: Boolean(settings.speechConsent),
         cardVariant: settings.cardVariant === "dark" ? "dark" : "light",
         businessCard: {
-          name: typeof settings.businessCard?.name === "string" ? settings.businessCard.name.slice(0, 120) : "",
-          company: typeof settings.businessCard?.company === "string" ? settings.businessCard.company.slice(0, 160) : "",
-          telegram: typeof settings.businessCard?.telegram === "string" ? settings.businessCard.telegram.slice(0, 100) : "",
-          email: typeof settings.businessCard?.email === "string" ? settings.businessCard.email.slice(0, 254) : ""
+          name: typeof businessCard?.name === "string" ? businessCard.name.slice(0, 120) : "",
+          company: typeof businessCard?.company === "string" ? businessCard.company.slice(0, 160) : "",
+          telegram: typeof businessCard?.telegram === "string" ? businessCard.telegram.slice(0, 100) : "",
+          email: typeof businessCard?.email === "string" ? businessCard.email.slice(0, 254) : ""
         }
       };
       const safeMeta = {
@@ -762,9 +813,11 @@
       this.seedMissing(this.keys.settings, safeSettings);
       this.seedMissing(this.keys.ui, ui);
       this.seedMissing(this.keys.weekIndex, []);
+      this.seedMissing(this.keys.habits, { schemaVersion: 1, slots: [] });
       this.seedMissing(this.keys.idealWeek, { schemaVersion: 1, items: [], copiedWeekStarts: [] });
       this.seedMissing(this.keys.series, { schemaVersion: 1, items: [] });
       this.seedMissing(this.keys.notes, { schemaVersion: 1, items: [] });
+      this.seedMissing(this.keys.businessCard, safeSettings.businessCard);
 
       return { meta: safeMeta, settings: safeSettings, ui };
     },
@@ -773,7 +826,7 @@
       try {
         if (localStorage.getItem(key) === null) localStorage.setItem(key, JSON.stringify(value));
       } catch (error) {
-        this.faults.push({ key, error });
+        this.recordFault(key, null, error);
       }
     },
 
@@ -785,10 +838,12 @@
     },
 
     writeNow(key, value) {
-      this.queue.delete(key);
+      this.queue.set(key, structuredClone(value));
       try {
         localStorage.setItem(key, JSON.stringify(value));
+        this.queue.delete(key);
         this.onStatus("saved");
+        this.onUsage(this.usage());
         return true;
       } catch (error) {
         this.onStatus("error");
@@ -801,6 +856,117 @@
       return `premiumPlanner.week.${weekStart}`;
     },
 
+    appKeys(includeRecovery = false) {
+      const keys = [];
+      for (let index = 0; index < localStorage.length; index += 1) {
+        const key = localStorage.key(index);
+        if (key?.startsWith(this.prefix) && (includeRecovery || key !== this.keys.recovery)) keys.push(key);
+      }
+      return keys.sort();
+    },
+
+    rawSnapshot(includeRecovery = false) {
+      const entries = {};
+      this.appKeys(includeRecovery).forEach((key) => { entries[key] = localStorage.getItem(key); });
+      return entries;
+    },
+
+    parsedSnapshot() {
+      const entries = {};
+      this.appKeys().forEach((key) => {
+        const raw = localStorage.getItem(key);
+        entries[key] = JSON.parse(raw);
+      });
+      this.queue.forEach((value, key) => { entries[key] = structuredClone(value); });
+      return entries;
+    },
+
+    backup() {
+      this.flush();
+      return { product: "premiumPlanner", schemaVersion: 1, exportedAt: new Date().toISOString(), data: this.parsedSnapshot() };
+    },
+
+    validateBackup(value) {
+      const fail = (reason) => ({ valid: false, reason });
+      if (!value || typeof value !== "object" || Array.isArray(value)) return fail("root");
+      if (value.product !== "premiumPlanner" || value.schemaVersion !== 1 || !value.data || typeof value.data !== "object" || Array.isArray(value.data)) return fail("version");
+      const required = [this.keys.meta, this.keys.settings, this.keys.ui, this.keys.weekIndex, this.keys.habits, this.keys.series, this.keys.notes];
+      if (!required.every((key) => Object.prototype.hasOwnProperty.call(value.data, key))) return fail("incomplete");
+      if (!Array.isArray(value.data[this.keys.weekIndex])) return fail("weekIndex");
+      const indexedWeeks = value.data[this.keys.weekIndex].map((item) => item?.weekStart);
+      if (indexedWeeks.some((weekStart) => !DateService.fromISO(weekStart) || !Object.prototype.hasOwnProperty.call(value.data, this.weekKey(weekStart)))) return fail("weekIndex");
+      const objectKeys = [this.keys.meta, this.keys.settings, this.keys.ui, this.keys.habits, this.keys.series, this.keys.notes];
+      if (!objectKeys.every((key) => value.data[key] && typeof value.data[key] === "object" && !Array.isArray(value.data[key]))) return fail("types");
+      if (value.data[this.keys.meta].schemaVersion !== 1 || value.data[this.keys.habits].schemaVersion !== 1 || value.data[this.keys.series].schemaVersion !== 1 || value.data[this.keys.notes].schemaVersion !== 1) return fail("schema");
+      for (const [key, entry] of Object.entries(value.data)) {
+        if (!key.startsWith(this.prefix) || key === this.keys.recovery) return fail("key");
+        if (key.startsWith(`${this.prefix}week.`)) {
+          const weekStart = key.slice(`${this.prefix}week.`.length);
+          if (!DateService.fromISO(weekStart) || !entry || typeof entry !== "object" || entry.schemaVersion !== 1 || entry.weekStart !== weekStart) return fail("week");
+          if (!indexedWeeks.includes(weekStart)) return fail("weekIndex");
+        }
+      }
+      const data = structuredClone(value.data);
+      if (!data[this.keys.businessCard]) data[this.keys.businessCard] = structuredClone(data[this.keys.settings].businessCard || { name: "", company: "", telegram: "", email: "" });
+      if (!data[this.keys.businessCard] || typeof data[this.keys.businessCard] !== "object" || Array.isArray(data[this.keys.businessCard])) return fail("businessCard");
+      return { valid: true, data };
+    },
+
+    replaceAll(entries) {
+      const previous = this.rawSnapshot(true);
+      const previousQueue = new Map([...this.queue.entries()].map(([key, value]) => [key, structuredClone(value)]));
+      this.queue.clear();
+      clearTimeout(this.timer);
+      this.timer = null;
+      try {
+        this.appKeys(true).forEach((key) => localStorage.removeItem(key));
+        Object.entries(entries).forEach(([key, value]) => localStorage.setItem(key, JSON.stringify(value)));
+        this.onStatus("saved");
+        this.onUsage(this.usage());
+        return { ok: true, rolledBack: false };
+      } catch (error) {
+        let rolledBack = false;
+        try {
+          this.appKeys(true).forEach((key) => localStorage.removeItem(key));
+          Object.entries(previous).forEach(([key, raw]) => localStorage.setItem(key, raw));
+          previousQueue.forEach((value, key) => this.queue.set(key, value));
+          rolledBack = true;
+        } catch (rollbackError) {
+          this.recordFault(this.keys.recovery, null, rollbackError);
+        }
+        this.onStatus("error");
+        this.onError(error);
+        return { ok: false, rolledBack };
+      }
+    },
+
+    removeKeys(keys) {
+      try {
+        keys.forEach((key) => localStorage.removeItem(key));
+        this.onStatus("saved");
+        this.onUsage(this.usage());
+        return true;
+      } catch (error) {
+        this.onStatus("error");
+        this.onError(error);
+        return false;
+      }
+    },
+
+    usage() {
+      let bytes = 0;
+      this.appKeys().forEach((key) => { bytes += (key.length + (localStorage.getItem(key)?.length || 0)) * 2; });
+      const index = this.read(this.keys.weekIndex, []);
+      const weeks = Array.isArray(index) ? index.filter((item) => DateService.fromISO(item?.weekStart)).length : 0;
+      return { bytes, percent: Math.min(100, bytes / this.budgetBytes * 100), weeks };
+    },
+
+    corruptSnapshot() {
+      const entries = {};
+      this.faults.forEach(({ key, raw }) => { if (typeof raw === "string") entries[key] = raw; });
+      return { product: "premiumPlanner-corrupt", capturedAt: new Date().toISOString(), entries };
+    },
+
     flush() {
       if (!this.queue.size) return true;
       clearTimeout(this.timer);
@@ -810,6 +976,7 @@
         pending.forEach(([key, value]) => localStorage.setItem(key, JSON.stringify(value)));
         this.queue.clear();
         this.onStatus("saved");
+        this.onUsage(this.usage());
         return true;
       } catch (error) {
         this.onStatus("error");
@@ -869,7 +1036,7 @@
       if (!value || value.schemaVersion !== 1 || value.weekStart !== weekStart) return fallback;
       const goals = Array.isArray(value.goals) ? value.goals.slice(0, 4) : [];
       while (goals.length < 4) goals.push(null);
-      return {
+      const normalized = {
         ...fallback,
         ...value,
         goals: goals.map((goal) => this.normalizeGoal(goal)),
@@ -878,6 +1045,21 @@
         records: Array.isArray(value.records) ? value.records.map((record) => this.normalizeRecord(record)).filter(Boolean) : [],
         idealItems: this.normalizeIdealWeek({ schemaVersion: 1, items: value.idealItems }).items
       };
+      this.repairWeekLinks(normalized);
+      return normalized;
+    },
+
+    repairWeekLinks(week) {
+      const tasks = Object.values(week.days).flatMap((day) => [...day.mainTasks, ...day.otherTasks]);
+      const taskById = new Map(tasks.map((task) => [task.id, task]));
+      const recordById = new Map(week.records.map((record) => [record.id, record]));
+      tasks.forEach((task) => {
+        if (!task.scheduleRecordId || !recordById.has(task.scheduleRecordId)) { task.scheduleRecordId = null; return; }
+        recordById.get(task.scheduleRecordId).taskId = task.id;
+      });
+      week.records.forEach((record) => {
+        if (!record.taskId || !taskById.has(record.taskId) || taskById.get(record.taskId).scheduleRecordId !== record.id) record.taskId = null;
+      });
     },
 
     normalizeDay(day, date) {
@@ -1219,13 +1401,19 @@
     draggedRecord: null,
     draggedIdealItem: null,
     scheduleScrolled: false,
+    pendingDataAction: null,
+    backupDownloaded: false,
+    backupFocusedElement: null,
+    corruptDownloaded: false,
+    importCandidate: null,
 
     elements: {},
 
     start() {
       this.cacheElements();
       StorageService.onStatus = (status) => this.renderSaveStatus(status);
-      StorageService.onError = () => this.showToast("toast.saveErrorTitle", "toast.saveErrorCopy", "error", 7000);
+      StorageService.onError = (error) => this.showToast(error?.name === "QuotaExceededError" ? "toast.quotaTitle" : "toast.saveErrorTitle", error?.name === "QuotaExceededError" ? "toast.quotaCopy" : "toast.saveErrorCopy", "error", 7000);
+      StorageService.onUsage = () => this.renderStorageUsage();
       this.state = StorageService.initialize();
       this.state.ui.view = "overview";
       this.state.ui.selectedDate = DateService.todayISO();
@@ -1254,10 +1442,10 @@
 
       this.checkTimeZone();
       if (StorageService.faults.length) {
-        window.setTimeout(() => this.showToast("toast.storageTitle", "toast.storageCopy", "error", 9000), 250);
+        this.showRecoveryScreen();
       }
 
-      if (!this.state.meta.onboardingCompleted) this.showOnboarding(0);
+      if (!StorageService.faults.length && !this.state.meta.onboardingCompleted) this.showOnboarding(0);
     },
 
     cacheElements() {
@@ -1280,6 +1468,19 @@
         soundToggle: byId("soundToggle"),
         settingsSidebarToggle: byId("settingsSidebarToggle"),
         restartOnboarding: byId("restartOnboarding"),
+        exportDataButton: byId("exportDataButton"),
+        importDataButton: byId("importDataButton"),
+        importDataFile: byId("importDataFile"),
+        clearSelectedWeekButton: byId("clearSelectedWeekButton"),
+        clearOldWeeksButton: byId("clearOldWeeksButton"),
+        clearAllDataButton: byId("clearAllDataButton"),
+        oldWeekCutoff: byId("oldWeekCutoff"),
+        oldWeekCount: byId("oldWeekCount"),
+        storageUsageText: byId("storageUsageText"),
+        storageUsageBar: byId("storageUsageBar"),
+        storageSummary: byId("storageSummary"),
+        storageWeekCount: byId("storageWeekCount"),
+        storageWarning: byId("storageWarning"),
         greeting: byId("greeting"),
         dayKicker: byId("dayKicker"),
         dayHeading: byId("dayHeading"),
@@ -1356,6 +1557,19 @@
         confirmText: byId("confirmText"),
         confirmCancel: byId("confirmCancel"),
         confirmAccept: byId("confirmAccept"),
+        backupDialog: byId("backupDialog"),
+        backupDialogText: byId("backupDialogText"),
+        backupDownloadButton: byId("backupDownloadButton"),
+        backupSavedCheck: byId("backupSavedCheck"),
+        backupCancelButton: byId("backupCancelButton"),
+        backupContinueButton: byId("backupContinueButton"),
+        deletePhraseField: byId("deletePhraseField"),
+        deletePhraseInput: byId("deletePhraseInput"),
+        recoveryScreen: byId("recoveryScreen"),
+        downloadCorruptButton: byId("downloadCorruptButton"),
+        retryRecoveryButton: byId("retryRecoveryButton"),
+        recoveryImportButton: byId("recoveryImportButton"),
+        recoveryResetButton: byId("recoveryResetButton"),
         toastRegion: byId("toastRegion")
       };
     },
@@ -1431,6 +1645,22 @@
       this.elements.speechConsentToggle.addEventListener("click", () => this.toggleSpeechConsent());
       this.elements.businessCardForm.addEventListener("submit", (event) => this.saveBusinessCard(event));
       document.querySelectorAll("[data-card-variant]").forEach((button) => button.addEventListener("click", () => { this.state.settings.cardVariant = button.dataset.cardVariant; this.saveSettings(); this.renderBusinessCard(); }));
+      this.elements.exportDataButton.addEventListener("click", () => this.downloadBackup());
+      this.elements.importDataButton.addEventListener("click", () => this.elements.importDataFile.click());
+      this.elements.importDataFile.addEventListener("change", (event) => this.handleImportFile(event));
+      this.elements.oldWeekCutoff.addEventListener("change", () => this.renderStorageUsage());
+      this.elements.clearSelectedWeekButton.addEventListener("click", (event) => this.requestClearSelectedWeek(event.currentTarget));
+      this.elements.clearOldWeeksButton.addEventListener("click", (event) => this.requestClearOldWeeks(event.currentTarget));
+      this.elements.clearAllDataButton.addEventListener("click", (event) => this.requestClearAllData(event.currentTarget));
+      this.elements.backupDownloadButton.addEventListener("click", () => { if (this.downloadBackup()) { this.backupDownloaded = true; this.updateBackupContinue(); this.showToast("backup.downloaded", "backup.downloadedCopy"); } });
+      this.elements.backupSavedCheck.addEventListener("change", () => this.updateBackupContinue());
+      this.elements.deletePhraseInput.addEventListener("input", () => this.updateBackupContinue());
+      this.elements.backupCancelButton.addEventListener("click", () => this.closeBackupWorkflow());
+      this.elements.backupContinueButton.addEventListener("click", () => this.continueBackupWorkflow());
+      this.elements.downloadCorruptButton.addEventListener("click", () => { if (this.downloadJson(StorageService.corruptSnapshot(), `premium-planner-corrupt-${DateService.todayISO()}.json`)) { this.corruptDownloaded = true; this.elements.recoveryResetButton.disabled = false; } });
+      this.elements.retryRecoveryButton.addEventListener("click", () => window.location.reload());
+      this.elements.recoveryImportButton.addEventListener("click", () => this.elements.importDataFile.click());
+      this.elements.recoveryResetButton.addEventListener("click", () => this.requestRecoveryReset());
       this.elements.closeTelegram.addEventListener("click", () => this.closeTelegramPreview());
       this.elements.telegramDone.addEventListener("click", () => this.closeTelegramPreview());
       this.elements.telegramModal.addEventListener("click", (event) => { if (event.target === this.elements.telegramModal) this.closeTelegramPreview(); });
@@ -1467,8 +1697,11 @@
       });
 
       window.addEventListener("keydown", (event) => {
+        const activeDialog = !this.elements.backupDialog.hidden ? this.elements.backupDialog : !this.elements.confirmDialog.hidden ? this.elements.confirmDialog : !this.elements.telegramModal.hidden ? this.elements.telegramModal : !this.elements.recoveryScreen.hidden ? this.elements.recoveryScreen : this.elements.contextPanel.getAttribute("aria-hidden") === "false" ? this.elements.contextPanel : null;
+        if (event.key === "Tab" && activeDialog) { this.trapFocus(event, activeDialog); return; }
         if (event.key !== "Escape") return;
-        if (!this.elements.telegramModal.hidden) this.closeTelegramPreview();
+        if (!this.elements.backupDialog.hidden) this.closeBackupWorkflow();
+        else if (!this.elements.telegramModal.hidden) this.closeTelegramPreview();
         else if (!this.elements.confirmDialog.hidden) this.closeConfirmation();
         else if (this.elements.contextPanel.getAttribute("aria-hidden") === "false") this.closeContextPanel();
       });
@@ -1488,6 +1721,7 @@
       this.renderAriaLabels();
       this.renderSaveStatus("saved");
       this.syncSettingsControls();
+      this.renderStorageUsage();
     },
 
     renderWeekNavigation() {
@@ -2922,7 +3156,9 @@
     },
 
     saveSettings() {
-      StorageService.schedule(StorageService.keys.settings, this.state.settings);
+      const { businessCard, ...settings } = this.state.settings;
+      StorageService.schedule(StorageService.keys.settings, settings);
+      StorageService.schedule(StorageService.keys.businessCard, businessCard);
       this.touchMeta();
     },
 
@@ -2946,6 +3182,242 @@
         this.state.meta.lastKnownTimeZone = current;
         this.touchMeta();
       }
+    },
+
+    renderStorageUsage() {
+      if (!this.elements.storageUsageText) return;
+      let usage;
+      try { usage = StorageService.usage(); } catch (error) { return; }
+      const kilobytes = usage.bytes / 1024;
+      const percent = Math.min(100, Math.round(usage.percent * 10) / 10);
+      this.elements.storageUsageText.textContent = `${kilobytes < 10 ? kilobytes.toFixed(1) : Math.round(kilobytes)} КБ · ${percent}%`;
+      this.elements.storageUsageBar.style.width = `${percent}%`;
+      const meter = this.elements.storageUsageBar.parentElement;
+      meter.setAttribute("aria-valuenow", String(Math.round(percent)));
+      this.elements.storageWeekCount.textContent = I18nService.t("data.weeks", { count: usage.weeks });
+      const warningKey = percent >= 95 ? "data.warning95" : percent >= 80 ? "data.warning80" : null;
+      this.elements.storageWarning.hidden = !warningKey;
+      this.elements.storageWarning.textContent = warningKey ? I18nService.t(warningKey) : "";
+      this.elements.storageSummary.classList.toggle("is-critical", percent >= 95);
+      if (!this.elements.oldWeekCutoff.value) this.elements.oldWeekCutoff.value = this.state?.ui?.selectedWeek || DateService.toISO(DateService.startOfWeek(new Date()));
+      const count = this.oldWeekStarts().length;
+      this.elements.oldWeekCount.textContent = I18nService.t("data.oldWeeks", { count });
+    },
+
+    oldWeekStarts() {
+      const cutoff = this.elements.oldWeekCutoff?.value;
+      if (!DateService.fromISO(cutoff)) return [];
+      const index = StorageService.read(StorageService.keys.weekIndex, []);
+      return (Array.isArray(index) ? index : []).map((item) => item?.weekStart).filter((weekStart) => DateService.fromISO(weekStart) && weekStart < cutoff);
+    },
+
+    downloadJson(value, fileName) {
+      try {
+        const blob = new Blob([JSON.stringify(value, null, 2)], { type: "application/json;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = fileName;
+        document.body.append(link);
+        link.click();
+        link.remove();
+        window.setTimeout(() => URL.revokeObjectURL(url), 0);
+        return true;
+      } catch (error) {
+        this.showToast("toast.saveErrorTitle", "toast.saveErrorCopy", "error", 7000);
+        return false;
+      }
+    },
+
+    backupFileName() {
+      const now = new Date();
+      const date = DateService.toISO(now);
+      const time = `${String(now.getHours()).padStart(2, "0")}${String(now.getMinutes()).padStart(2, "0")}`;
+      return `premium-planner-backup-${date}-${time}.json`;
+    },
+
+    downloadBackup() {
+      try { return this.downloadJson(StorageService.backup(), this.backupFileName()); }
+      catch (error) { this.showToast("toast.saveErrorTitle", "toast.saveErrorCopy", "error", 7000); return false; }
+    },
+
+    openBackupWorkflow(action, options = {}) {
+      this.backupFocusedElement = options.focusTarget || document.activeElement;
+      this.pendingDataAction = action;
+      this.backupDownloaded = false;
+      this.elements.backupSavedCheck.checked = false;
+      this.elements.deletePhraseField.hidden = !options.requireDeletePhrase;
+      this.elements.deletePhraseInput.value = "";
+      this.elements.backupDialogText.textContent = I18nService.t(options.copyKey || "backup.copy");
+      this.elements.backupDialog.hidden = false;
+      this.elements.app.inert = true;
+      this.updateBackupContinue();
+      this.elements.backupDownloadButton.focus();
+    },
+
+    updateBackupContinue() {
+      const expected = this.state.settings.language === "ru" ? "УДАЛИТЬ ВСЕ" : "DELETE ALL";
+      const phraseValid = this.elements.deletePhraseField.hidden || this.elements.deletePhraseInput.value === expected;
+      this.elements.backupContinueButton.disabled = !(this.backupDownloaded && this.elements.backupSavedCheck.checked && phraseValid);
+    },
+
+    closeBackupWorkflow(preserveImport = false) {
+      this.elements.backupDialog.hidden = true;
+      this.elements.app.inert = false;
+      this.pendingDataAction = null;
+      this.backupDownloaded = false;
+      this.elements.backupSavedCheck.checked = false;
+      if (!preserveImport) this.importCandidate = null;
+      const focusTarget = this.backupFocusedElement;
+      this.backupFocusedElement = null;
+      focusTarget?.focus();
+    },
+
+    continueBackupWorkflow() {
+      if (this.elements.backupContinueButton.disabled) return;
+      const action = this.pendingDataAction;
+      this.closeBackupWorkflow(true);
+      action?.();
+    },
+
+    async handleImportFile(event) {
+      const file = event.target.files?.[0];
+      event.target.value = "";
+      if (!file) return;
+      let parsed;
+      try { parsed = JSON.parse(await file.text()); }
+      catch (error) { this.showToast("import.invalidTitle", "import.invalidCopy", "error", 7000); return; }
+      const validation = StorageService.validateBackup(parsed);
+      if (!validation.valid) { this.showToast("import.invalidTitle", "import.invalidCopy", "error", 7000); return; }
+      this.importCandidate = validation.data;
+      if (!this.elements.recoveryScreen.hidden) {
+        if (!this.corruptDownloaded) { this.importCandidate = null; this.showToast("recovery.title", "recovery.copy", "error", 7000); return; }
+        this.confirmImport();
+      } else {
+        this.openBackupWorkflow(() => this.confirmImport());
+      }
+    },
+
+    confirmImport() {
+      this.openConfirmation(() => {
+        const result = StorageService.replaceAll(this.importCandidate);
+        this.importCandidate = null;
+        if (!result.ok) { this.showToast("import.rollbackTitle", "import.rollbackCopy", "error", 8000); return; }
+        this.elements.recoveryScreen.hidden = true;
+        this.reloadFromStorage();
+        this.showToast("import.doneTitle", "import.doneCopy");
+      }, { titleKey: "import.confirmTitle", copyKey: "import.confirmCopy", cancelAction: () => { this.importCandidate = null; } });
+    },
+
+    requestClearSelectedWeek(trigger) {
+      this.openBackupWorkflow(() => this.openConfirmation(() => this.clearSelectedWeek(), { titleKey: "clear.weekTitle", copyKey: "clear.weekCopy" }), { focusTarget: trigger });
+    },
+
+    excludeRecurringWeeks(weekStarts) {
+      weekStarts.forEach((weekStart) => {
+        for (let offset = 0; offset < 7; offset += 1) {
+          const date = DateService.toISO(DateService.addDays(DateService.fromISO(weekStart), offset));
+          this.seriesCollection.items.forEach((series) => { if (RecurrenceService.occurs(series, date)) series.exceptions[date] = { deleted: true }; });
+        }
+      });
+    },
+
+    clearSelectedWeek() {
+      const weekStart = this.state.ui.selectedWeek;
+      const weekKey = StorageService.weekKey(weekStart);
+      const previousRaw = localStorage.getItem(weekKey);
+      const previousIndex = structuredClone(StorageService.read(StorageService.keys.weekIndex, []));
+      const previousSeries = structuredClone(this.seriesCollection);
+      this.excludeRecurringWeeks([weekStart]);
+      const nextIndex = previousIndex.filter((item) => item?.weekStart !== weekStart);
+      if (!StorageService.removeKeys([weekKey])) return;
+      StorageService.writeNow(StorageService.keys.weekIndex, nextIndex);
+      this.saveSeries(true);
+      this.currentWeek = PlannerDataService.emptyWeek(weekStart);
+      this.renderPlannerData();
+      this.renderSearchState();
+      this.renderStorageUsage();
+      this.showUndoToast("clear.weekDoneTitle", "clear.weekDoneCopy", () => {
+        if (previousRaw !== null) StorageService.writeNow(weekKey, JSON.parse(previousRaw));
+        StorageService.writeNow(StorageService.keys.weekIndex, previousIndex);
+        this.seriesCollection = previousSeries;
+        this.saveSeries(true);
+        this.loadWeek(weekStart);
+        this.renderPlannerData();
+        this.renderStorageUsage();
+      });
+    },
+
+    requestClearOldWeeks(trigger) {
+      const weeks = this.oldWeekStarts();
+      if (!weeks.length) { this.showToast("clear.oldEmptyTitle", "clear.oldEmptyCopy"); return; }
+      this.openBackupWorkflow(() => this.openConfirmation(() => this.clearOldWeeks(weeks), { titleKey: "clear.oldTitle", copyKey: "clear.oldCopy" }), { focusTarget: trigger });
+    },
+
+    clearOldWeeks(weeks) {
+      const index = StorageService.read(StorageService.keys.weekIndex, []);
+      this.excludeRecurringWeeks(weeks);
+      if (!StorageService.removeKeys(weeks.map((weekStart) => StorageService.weekKey(weekStart)))) return;
+      StorageService.writeNow(StorageService.keys.weekIndex, index.filter((item) => !weeks.includes(item?.weekStart)));
+      this.saveSeries(true);
+      if (weeks.includes(this.currentWeek.weekStart)) this.currentWeek = PlannerDataService.emptyWeek(this.currentWeek.weekStart);
+      this.renderPlannerData();
+      this.renderSearchState();
+      this.renderStorageUsage();
+    },
+
+    requestClearAllData(trigger) {
+      this.openBackupWorkflow(() => this.openConfirmation(() => this.clearAllData(), { titleKey: "clear.allTitle", copyKey: "clear.allCopy" }), { requireDeletePhrase: true, focusTarget: trigger });
+    },
+
+    clearAllData() {
+      StorageService.queue.clear();
+      if (!StorageService.removeKeys(StorageService.appKeys(true))) return;
+      this.reloadFromStorage();
+      this.showOnboarding(0);
+    },
+
+    showRecoveryScreen() {
+      this.corruptDownloaded = false;
+      this.elements.recoveryResetButton.disabled = true;
+      this.elements.recoveryScreen.hidden = false;
+      this.elements.app.inert = true;
+      this.elements.downloadCorruptButton.focus();
+    },
+
+    requestRecoveryReset() {
+      if (!this.corruptDownloaded) return;
+      this.openConfirmation(() => {
+        StorageService.queue.clear();
+        if (!StorageService.removeKeys(StorageService.appKeys(true))) return;
+        this.elements.recoveryScreen.hidden = true;
+        this.elements.app.inert = false;
+        this.reloadFromStorage();
+        this.showOnboarding(0);
+      }, { titleKey: "recovery.resetTitle", copyKey: "recovery.resetCopy" });
+    },
+
+    reloadFromStorage() {
+      StorageService.faults = [];
+      this.state = StorageService.initialize();
+      this.state.ui.view = "overview";
+      this.state.ui.selectedDate = DateService.todayISO();
+      this.state.ui.selectedWeek = DateService.toISO(DateService.startOfWeek(new Date()));
+      this.habits = PlannerDataService.normalizeHabits(StorageService.read(StorageService.keys.habits, null));
+      this.notes = PlannerDataService.normalizeNotes(StorageService.read(StorageService.keys.notes, null));
+      this.seriesCollection = RecurrenceService.normalize(StorageService.read(StorageService.keys.series, null));
+      this.loadWeek(this.state.ui.selectedWeek);
+      ThemeService.apply(this.state.settings.theme);
+      this.applySidebarState(false);
+      this.renderAll();
+    },
+
+    trapFocus(event, container) {
+      const focusable = [...container.querySelectorAll('button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')].filter((element) => !element.hidden && element.offsetParent !== null);
+      if (!focusable.length) return;
+      const first = focusable[0]; const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
     },
 
     showOnboarding(step = 0) {

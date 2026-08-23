@@ -320,6 +320,25 @@
                 <div class="business-card-preview" id="businessCardPreview"></div>
               </div>
             </article>
+            <article class="panel data-management">
+              <div class="panel-header"><div><span class="panel-number">JSON</span><h3 data-i18n="data.title">Данные и резервные копии</h3></div></div>
+              <p class="data-management-copy" data-i18n="data.copy">Все данные находятся только в этом браузере. Регулярно сохраняйте резервную копию.</p>
+              <div class="storage-summary" id="storageSummary">
+                <div><strong data-i18n="data.storage">Хранилище</strong><span id="storageUsageText">0 КБ · 0%</span></div>
+                <div class="storage-meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="storageUsageBar"></span></div>
+                <small id="storageWeekCount">0 недель</small>
+              </div>
+              <div class="storage-warning" id="storageWarning" role="status" hidden></div>
+              <div class="data-action-grid">
+                <button class="secondary-button" id="exportDataButton" type="button" data-i18n="data.export">Экспортировать JSON</button>
+                <button class="secondary-button" id="importDataButton" type="button" data-i18n="data.import">Импортировать JSON</button>
+                <button class="secondary-button" id="clearSelectedWeekButton" type="button" data-i18n="data.clearWeek">Очистить выбранную неделю</button>
+                <button class="secondary-button" id="clearOldWeeksButton" type="button" data-i18n="data.clearOld">Очистить старые недели</button>
+                <button class="danger-button" id="clearAllDataButton" type="button" data-i18n="data.clearAll">Удалить все данные</button>
+              </div>
+              <label class="old-week-cutoff"><span data-i18n="data.olderThan">Недели старше даты</span><input id="oldWeekCutoff" type="date"><small id="oldWeekCount"></small></label>
+              <input id="importDataFile" type="file" accept="application/json,.json" hidden>
+            </article>
             <article class="panel reset-onboarding">
               <div><h3 data-i18n="settings.onboarding">Приветствие</h3><p data-i18n="settings.onboardingCopy">Посмотрите вводные экраны ещё раз.</p></div>
               <button class="secondary-button" id="restartOnboarding" type="button" data-i18n="settings.restart">Повторить приветствие</button>
@@ -335,6 +354,11 @@
               <article class="help-card"><span>02</span><h3 data-i18n="help.weekTitle">Сначала результат</h3><p data-i18n="help.weekCopy">Неделя держит четыре цели и три привычки в постоянном фокусе.</p></article>
               <article class="help-card"><span>03</span><h3 data-i18n="help.dayTitle">Затем время</h3><p data-i18n="help.dayCopy">День разделяет жёсткие встречи и гибкие дела.</p></article>
               <article class="help-card"><span>04</span><h3 data-i18n="help.privateTitle">Данные остаются здесь</h3><p data-i18n="help.privateCopy">Планировщик хранит информацию только в браузере этого устройства.</p></article>
+              <article class="help-card"><span>05</span><h3 data-i18n="help.goalsTitle">Цели и привычки</h3><p data-i18n="help.goalsCopy">Четыре цели используют ручной прогресс без подзадач и автоматический — с ними. Привычка циклично меняет три состояния.</p></article>
+              <article class="help-card"><span>06</span><h3 data-i18n="help.tasksTitle">Задачи и перенос</h3><p data-i18n="help.tasksCopy">В день помещаются три главные и десять остальных задач. Перетаскивание можно заменить кнопками перемещения.</p></article>
+              <article class="help-card"><span>07</span><h3 data-i18n="help.recurrenceTitle">Повторения и напоминания</h3><p data-i18n="help.recurrenceCopy">Серии бывают ежедневными и еженедельными. Напоминания работают только пока страница открыта.</p></article>
+              <article class="help-card"><span>08</span><h3 data-i18n="help.integrationsTitle">Файлы, Telegram и диктовка</h3><p data-i18n="help.integrationsCopy">Сохраняются только имена файлов, Telegram показывает превью без отправки, а диктовка может обращаться к сервису Chrome.</p></article>
+              <article class="help-card"><span>09</span><h3 data-i18n="help.backupTitle">Резервное копирование</h3><p data-i18n="help.backupCopy">Экспорт сохраняет полный JSON. Импорт и очистка доступны только после подтверждённой резервной копии.</p></article>
             </div>
           </section>
         </div>
@@ -392,6 +416,36 @@
         <div class="confirm-actions">
           <button class="text-button" id="confirmCancel" type="button" data-i18n="actions.cancel">Отмена</button>
           <button class="primary-button" id="confirmAccept" type="button" data-i18n="actions.continue">Продолжить</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="confirm-dialog" id="backupDialog" role="dialog" aria-modal="true" aria-labelledby="backupDialogTitle" hidden>
+      <div class="confirm-card backup-card">
+        <span class="confirm-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14"/></svg></span>
+        <h2 id="backupDialogTitle" data-i18n="backup.title">Сначала сохраните копию</h2>
+        <p id="backupDialogText" data-i18n="backup.copy">Перед необратимым действием скачайте полный JSON-файл.</p>
+        <button class="secondary-button full-width" id="backupDownloadButton" type="button" data-i18n="backup.download">Скачать текущую копию</button>
+        <label class="backup-confirm"><input id="backupSavedCheck" type="checkbox"><span data-i18n="backup.saved">Резервная копия сохранена</span></label>
+        <label class="delete-phrase" id="deletePhraseField" hidden><span data-i18n="backup.deletePhrase">Введите «УДАЛИТЬ ВСЕ»</span><input id="deletePhraseInput" autocomplete="off"></label>
+        <div class="confirm-actions">
+          <button class="text-button" id="backupCancelButton" type="button" data-i18n="actions.cancel">Отмена</button>
+          <button class="primary-button" id="backupContinueButton" type="button" data-i18n="actions.continue" disabled>Продолжить</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="recovery-screen" id="recoveryScreen" role="dialog" aria-modal="true" aria-labelledby="recoveryTitle" hidden>
+      <div class="recovery-card">
+        <span class="confirm-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 2.8 19h18.4L12 3Zm0 6v4m0 3.2v.1"/></svg></span>
+        <p class="section-kicker" data-i18n="recovery.kicker">Безопасное восстановление</p>
+        <h1 id="recoveryTitle" data-i18n="recovery.title">Локальные данные повреждены</h1>
+        <p data-i18n="recovery.copy">Планировщик не заменил повреждённые данные. Скачайте исходную копию или восстановите корректный JSON.</p>
+        <div class="recovery-actions">
+          <button class="secondary-button" id="downloadCorruptButton" type="button" data-i18n="recovery.download">Скачать повреждённую копию</button>
+          <button class="secondary-button" id="retryRecoveryButton" type="button" data-i18n="recovery.retry">Повторить попытку</button>
+          <button class="secondary-button" id="recoveryImportButton" type="button" data-i18n="data.import">Импортировать JSON</button>
+          <button class="danger-button" id="recoveryResetButton" type="button" data-i18n="recovery.reset">Начать заново</button>
         </div>
       </div>
     </div>
