@@ -2676,6 +2676,10 @@ svg {
   margin-top: 18px;
 }
 
+#view-notes .notes-panel {
+  margin-top: 0;
+}
+
 .notes-intro {
   margin: -5px 0 16px;
   color: var(--text-muted);

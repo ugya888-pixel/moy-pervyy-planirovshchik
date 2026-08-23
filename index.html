@@ -43,6 +43,10 @@
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 1.7 5.2H19l-4.3 3.1 1.7 5.2-4.4-3.2-4.4 3.2 1.7-5.2L5 8.2h5.3L12 3ZM5 20h14"/></svg>
             <span data-i18n="nav.ideal">Идеальная неделя</span>
           </button>
+          <button class="nav-item" type="button" data-view-target="notes">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg>
+            <span data-i18n="nav.notes">Заметки</span>
+          </button>
           <button class="nav-item" type="button" data-view-target="search">
             <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
             <span data-i18n="nav.search">Поиск</span>
@@ -231,8 +235,15 @@
                 <div class="ideal-message" id="idealEmpty"><span class="metric-icon gold"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 1.7 5.2H19l-4.3 3.1 1.7 5.2-4.4-3.2-4.4 3.2 1.7-5.2L5 8.2h5.3L12 3Z"/></svg></span><strong data-i18n="ideal.emptyTitle">Создайте эталонный ритм</strong><p data-i18n="ideal.emptyCopy">План этой недели не изменяет предыдущие и будущие недели.</p></div>
               </div>
             </article>
+          </section>
+
+          <section class="view" id="view-notes" data-view="notes" aria-labelledby="viewTitle">
+            <div class="section-heading-row">
+              <div><p class="section-kicker" data-i18n="notes.kicker">Общее пространство</p><h2 data-i18n="notes.title">Заметки</h2></div>
+              <button class="primary-button" id="addNoteButton" type="button"><span data-i18n="notes.add">Добавить заметку</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
             <article class="panel notes-panel">
-              <div class="panel-header"><div><span class="panel-number">∞</span><h3 data-i18n="notes.title">Заметки</h3></div><button class="mini-add-button" id="addNoteButton" type="button" data-i18n-aria="notes.add">+</button></div>
+              <div class="panel-header"><div><span class="panel-number">∞</span><h3 data-i18n="notes.listTitle">Все заметки</h3></div></div>
               <p class="notes-intro" data-i18n="notes.copy">Общие заметки для всего приложения — без ограничения по количеству.</p>
               <div class="notes-list" id="notesList"></div>
               <button class="notes-empty" id="notesEmpty" type="button"><span data-i18n="notes.empty">Добавьте первую заметку</span><strong data-i18n="notes.add">Добавить заметку</strong></button>
@@ -245,10 +256,10 @@
               <h2 data-i18n="search.title">Найдите нужное мгновенно</h2>
               <label class="search-field">
                 <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
-                <input id="searchInput" type="search" data-i18n-placeholder="search.placeholder" placeholder="Задачи, цели, записи и хэштеги">
+                <input id="searchInput" type="search" data-i18n-placeholder="search.placeholder" placeholder="Задачи, цели, заметки и хэштеги">
               </label>
               <div class="search-filters" aria-label="Фильтры поиска">
-                <label><span data-i18n="search.type">Тип</span><select id="searchType"><option value="all" data-i18n="search.allTypes">Все типы</option><option value="goal" data-i18n="search.goals">Цели</option><option value="subtask" data-i18n="search.subtasks">Подзадачи</option><option value="habit" data-i18n="search.habits">Привычки</option><option value="task" data-i18n="search.tasks">Задачи</option><option value="fixed" data-i18n="search.meetings">Встречи</option><option value="flexible" data-i18n="search.flexible">Гибкие дела</option><option value="note" data-i18n="search.notes">Записи</option><option value="ideal" data-i18n="search.ideal">Идеальная неделя</option><option value="series" data-i18n="search.series">Серии</option></select></label>
+                <label><span data-i18n="search.type">Тип</span><select id="searchType"><option value="all" data-i18n="search.allTypes">Все типы</option><option value="goal" data-i18n="search.goals">Цели</option><option value="subtask" data-i18n="search.subtasks">Подзадачи</option><option value="habit" data-i18n="search.habits">Привычки</option><option value="task" data-i18n="search.tasks">Задачи</option><option value="fixed" data-i18n="search.meetings">Встречи</option><option value="flexible" data-i18n="search.flexible">Гибкие дела</option><option value="note" data-i18n="search.notes">Заметки</option><option value="ideal" data-i18n="search.ideal">Идеальная неделя</option><option value="series" data-i18n="search.series">Серии</option></select></label>
                 <label><span data-i18n="search.completion">Выполнение</span><select id="searchCompletion"><option value="all" data-i18n="search.all">Все</option><option value="done" data-i18n="search.done">Выполнено</option><option value="open" data-i18n="search.open">Не выполнено</option></select></label>
                 <label><span data-i18n="search.dateFrom">С даты</span><input id="searchDateFrom" type="date"></label>
                 <label><span data-i18n="search.dateTo">По дату</span><input id="searchDateTo" type="date"></label>

@@ -68,7 +68,7 @@
       "ideal.emptyCopy": "План этой недели не изменяет предыдущие и будущие недели.",
       "search.kicker": "Все недели",
       "search.title": "Найдите нужное мгновенно",
-      "search.placeholder": "Задачи, цели, записи и хэштеги",
+      "search.placeholder": "Задачи, цели, заметки и хэштеги",
       "search.emptyTitle": "Пока искать нечего",
       "search.emptyCopy": "Когда в планировщике появятся данные, поиск соберёт их здесь.",
       "search.noResultsTitle": "Данных пока нет",
@@ -297,6 +297,7 @@
   };
 
   Object.assign(TRANSLATIONS.ru, {
+    "nav.notes": "Заметки",
     "actions.addGoal": "Добавить цель",
     "actions.addHabit": "Добавить привычку",
     "actions.addSubtask": "Добавить подзадачу",
@@ -518,7 +519,7 @@
     "recurrence.noEnd": "Без даты окончания", "recurrence.errorUntil": "Дата окончания не может быть раньше первой записи.", "recurrence.scopeTitle": "Какие записи изменить?",
     "recurrence.scopeCopy": "Выберите область действия для повторяющейся серии.", "recurrence.this": "Только эту", "recurrence.following": "Эту и последующие", "recurrence.all": "Всю серию",
     "recurrence.deleteTitle": "Удалить повторяющуюся запись?", "recurrence.seriesLabel": "Серия: {rule}",
-    "search.type": "Тип", "search.allTypes": "Все типы", "search.goals": "Цели", "search.subtasks": "Подзадачи", "search.habits": "Привычки", "search.tasks": "Задачи", "search.meetings": "Встречи", "search.flexible": "Гибкие дела", "search.notes": "Записи", "search.ideal": "Идеальная неделя", "search.series": "Серии",
+    "search.type": "Тип", "search.allTypes": "Все типы", "search.goals": "Цели", "search.subtasks": "Подзадачи", "search.habits": "Привычки", "search.tasks": "Задачи", "search.meetings": "Встречи", "search.flexible": "Гибкие дела", "search.notes": "Заметки", "search.ideal": "Идеальная неделя", "search.series": "Серии",
     "search.completion": "Выполнение", "search.all": "Все", "search.done": "Выполнено", "search.open": "Не выполнено", "search.dateFrom": "С даты", "search.dateTo": "По дату", "search.tags": "Хэштеги", "search.results": "Найдено: {count}", "search.noMatches": "Ничего не найдено", "search.recent": "Все сохранённые данные",
     "settings.dictation": "Диктовка", "settings.dictationCopy": "Язык и согласие на распознавание браузером.", "settings.dictationLanguage": "Язык диктовки", "settings.giveConsent": "Дать согласие", "settings.revokeConsent": "Отозвать согласие",
     "speech.button": "Диктовать", "speech.stop": "Остановить диктовку", "speech.consentTitle": "Разрешить диктовку?", "speech.consentCopy": "Chrome может передавать голос сервису распознавания браузера. Аудио не сохраняется в планировщике.",
@@ -544,16 +545,17 @@
     "ideal.kicker": "Выбранная календарная неделя", "ideal.copyToWeek": "Скопировать в будущую неделю", "ideal.emptyCopy": "План этой недели не изменяет предыдущие и будущие недели.",
     "ideal.copyConfirm": "Все элементы этой идеальной недели будут добавлены в выбранную будущую идеальную неделю.", "ideal.copyDuplicate": "В выбранной идеальной неделе уже есть элементы. К ним будут добавлены новые.", "ideal.copyFutureError": "Выберите неделю позже текущей.",
     "panel.ideal.1.title": "Отдельная неделя", "panel.ideal.1.copy": "Идеальная неделя относится только к выбранной календарной неделе.", "panel.ideal.3.copy": "Все элементы можно вручную скопировать в одну выбранную будущую идеальную неделю.",
-    "notes.title": "Заметки", "notes.copy": "Общие заметки для всего приложения — без ограничения по количеству.", "notes.add": "Добавить заметку", "notes.empty": "Добавьте первую заметку",
+    "notes.title": "Заметки", "notes.kicker": "Общее пространство", "notes.listTitle": "Все заметки", "notes.copy": "Общие заметки для всего приложения — без ограничения по количеству.", "notes.add": "Добавить заметку", "notes.empty": "Добавьте первую заметку",
     "notes.new": "Новая заметка", "notes.edit": "Редактирование заметки", "notes.noteTitle": "Заголовок", "notes.description": "Описание", "notes.tags": "Хэштеги", "notes.deleteTitle": "Удалить заметку?", "notes.deleteCopy": "Заметка будет удалена. Отмена доступна в течение 7 секунд.", "notes.deletedTitle": "Заметка удалена", "notes.deletedCopy": "Удаление можно отменить в течение 7 секунд."
   });
 
   Object.assign(TRANSLATIONS.en, {
+    "nav.notes": "Notes",
     "schedule.flexible": "Flexible activities",
     "ideal.kicker": "Selected calendar week", "ideal.copyToWeek": "Copy to a future week", "ideal.emptyCopy": "This week's plan does not affect previous or future weeks.",
     "ideal.copyConfirm": "All items from this ideal week will be added to the selected future ideal week.", "ideal.copyDuplicate": "The selected ideal week already has items. New ones will be added.", "ideal.copyFutureError": "Choose a week later than the current one.",
     "panel.ideal.1.title": "One calendar week", "panel.ideal.1.copy": "The ideal week belongs only to the selected calendar week.", "panel.ideal.3.copy": "All items can be copied manually into one selected future ideal week.",
-    "notes.title": "Notes", "notes.copy": "Shared notes for the whole app, with no item limit.", "notes.add": "Add note", "notes.empty": "Add your first note",
+    "notes.title": "Notes", "notes.kicker": "Shared space", "notes.listTitle": "All notes", "notes.copy": "Shared notes for the whole app, with no item limit.", "notes.add": "Add note", "notes.empty": "Add your first note",
     "notes.new": "New note", "notes.edit": "Edit note", "notes.noteTitle": "Title", "notes.description": "Description", "notes.tags": "Hashtags", "notes.deleteTitle": "Delete note?", "notes.deleteCopy": "The note will be deleted. Undo is available for 7 seconds.", "notes.deletedTitle": "Note deleted", "notes.deletedCopy": "Deletion can be undone for 7 seconds."
   });
 
@@ -2735,7 +2737,7 @@
     handleSearchResultClick(event) {
       const tag = event.target.closest("[data-search-tag]"); if (tag) { this.elements.searchTags.value = tag.dataset.searchTag; this.scheduleSearch(); return; }
       const button = event.target.closest("[data-result-id]"); if (!button) return; const { resultType: type, resultId: id, resultDate: date, resultWeek: weekStart, resultScope: scope } = button.dataset;
-      if (scope === "global-note") { const note = this.notes.items.find((item) => item.id === id); if (note) { this.showView("ideal"); this.openGlobalNoteEditor(note, button); } return; }
+      if (scope === "global-note") { const note = this.notes.items.find((item) => item.id === id); if (note) { this.showView("notes"); this.openGlobalNoteEditor(note, button); } return; }
       if (date && DateService.fromISO(date)) this.selectDate(date); else if (weekStart && DateService.fromISO(weekStart)) this.selectDate(weekStart);
       if (type === "task") { const found = this.findTask(id); if (found) { this.showView("day"); this.openTaskEditor(found.task, found.list, button); } }
       else if (["fixed", "flexible", "note"].includes(type)) { const record = this.currentWeek.records.find((item) => item.id === id); if (record) { if (type !== "note") this.showView("day"); this.openRecordEditor(record, type === "note" ? { type: "note" } : null, button); } }
@@ -2841,7 +2843,7 @@
     },
 
     showView(view, save = true) {
-      const allowed = ["overview", "week", "day", "ideal", "search", "settings", "help"];
+      const allowed = ["overview", "week", "day", "ideal", "notes", "search", "settings", "help"];
       const target = allowed.includes(view) ? view : "overview";
       const previous = this.state.ui.view;
       this.state.ui.view = target;
