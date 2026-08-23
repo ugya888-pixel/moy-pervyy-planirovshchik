@@ -545,7 +545,7 @@
     "ideal.kicker": "Выбранная календарная неделя", "ideal.copyToWeek": "Скопировать в будущую неделю", "ideal.emptyCopy": "План этой недели не изменяет предыдущие и будущие недели.",
     "ideal.copyConfirm": "Все элементы этой идеальной недели будут добавлены в выбранную будущую идеальную неделю.", "ideal.copyDuplicate": "В выбранной идеальной неделе уже есть элементы. К ним будут добавлены новые.", "ideal.copyFutureError": "Выберите неделю позже текущей.",
     "panel.ideal.1.title": "Отдельная неделя", "panel.ideal.1.copy": "Идеальная неделя относится только к выбранной календарной неделе.", "panel.ideal.3.copy": "Все элементы можно вручную скопировать в одну выбранную будущую идеальную неделю.",
-    "notes.title": "Заметки", "notes.kicker": "Общее пространство", "notes.listTitle": "Все заметки", "notes.copy": "Общие заметки для всего приложения — без ограничения по количеству.", "notes.add": "Добавить заметку", "notes.empty": "Добавьте первую заметку",
+    "notes.title": "Заметки", "notes.kicker": "Общее пространство", "notes.listTitle": "Все заметки", "notes.add": "Добавить заметку", "notes.empty": "Добавьте первую заметку",
     "notes.new": "Новая заметка", "notes.edit": "Редактирование заметки", "notes.noteTitle": "Заголовок", "notes.description": "Описание", "notes.tags": "Хэштеги", "notes.deleteTitle": "Удалить заметку?", "notes.deleteCopy": "Заметка будет удалена. Отмена доступна в течение 7 секунд.", "notes.deletedTitle": "Заметка удалена", "notes.deletedCopy": "Удаление можно отменить в течение 7 секунд.",
     "data.title": "Данные и резервные копии", "data.copy": "Все данные находятся только в этом браузере. Регулярно сохраняйте резервную копию.", "data.storage": "Хранилище", "data.export": "Экспортировать JSON", "data.import": "Импортировать JSON", "data.clearWeek": "Очистить выбранную неделю", "data.clearOld": "Очистить старые недели", "data.clearAll": "Удалить все данные", "data.olderThan": "Недели старше даты", "data.weeks": "{count} недель", "data.oldWeeks": "Будет удалено: {count}", "data.warning80": "Хранилище заполнено на 80%. Сохраните копию и очистите старые недели.", "data.warning95": "Хранилище почти заполнено. Новые длинные записи могут не сохраниться.",
     "backup.title": "Сначала сохраните копию", "backup.copy": "Перед необратимым действием скачайте полный JSON-файл.", "backup.download": "Скачать текущую копию", "backup.saved": "Резервная копия сохранена", "backup.deletePhrase": "Введите «УДАЛИТЬ ВСЕ»", "backup.downloaded": "Скачивание запущено", "backup.downloadedCopy": "Проверьте файл и подтвердите его сохранение.",
@@ -562,7 +562,7 @@
     "ideal.kicker": "Selected calendar week", "ideal.copyToWeek": "Copy to a future week", "ideal.emptyCopy": "This week's plan does not affect previous or future weeks.",
     "ideal.copyConfirm": "All items from this ideal week will be added to the selected future ideal week.", "ideal.copyDuplicate": "The selected ideal week already has items. New ones will be added.", "ideal.copyFutureError": "Choose a week later than the current one.",
     "panel.ideal.1.title": "One calendar week", "panel.ideal.1.copy": "The ideal week belongs only to the selected calendar week.", "panel.ideal.3.copy": "All items can be copied manually into one selected future ideal week.",
-    "notes.title": "Notes", "notes.kicker": "Shared space", "notes.listTitle": "All notes", "notes.copy": "Shared notes for the whole app, with no item limit.", "notes.add": "Add note", "notes.empty": "Add your first note",
+    "notes.title": "Notes", "notes.kicker": "Shared space", "notes.listTitle": "All notes", "notes.add": "Add note", "notes.empty": "Add your first note",
     "notes.new": "New note", "notes.edit": "Edit note", "notes.noteTitle": "Title", "notes.description": "Description", "notes.tags": "Hashtags", "notes.deleteTitle": "Delete note?", "notes.deleteCopy": "The note will be deleted. Undo is available for 7 seconds.", "notes.deletedTitle": "Note deleted", "notes.deletedCopy": "Deletion can be undone for 7 seconds.",
     "data.title": "Data and backups", "data.copy": "All data stays in this browser. Save a backup regularly.", "data.storage": "Storage", "data.export": "Export JSON", "data.import": "Import JSON", "data.clearWeek": "Clear selected week", "data.clearOld": "Clear old weeks", "data.clearAll": "Delete all data", "data.olderThan": "Weeks older than", "data.weeks": "{count} weeks", "data.oldWeeks": "Will be deleted: {count}", "data.warning80": "Storage is 80% full. Save a backup and clear old weeks.", "data.warning95": "Storage is almost full. New long entries may not be saved.",
     "backup.title": "Save a backup first", "backup.copy": "Download a complete JSON file before this irreversible action.", "backup.download": "Download current backup", "backup.saved": "The backup is saved", "backup.deletePhrase": "Enter “DELETE ALL”", "backup.downloaded": "Download started", "backup.downloadedCopy": "Check the file and confirm that it was saved.",
@@ -757,6 +757,7 @@
     },
 
     read(key, fallback) {
+      if (this.queue.has(key)) return structuredClone(this.queue.get(key));
       let raw;
       try {
         raw = localStorage.getItem(key);
@@ -1498,6 +1499,8 @@
         overviewGoalsEmpty: byId("overviewGoalsEmpty"),
         overviewHabitList: byId("overviewHabitList"),
         overviewHabitsEmpty: byId("overviewHabitsEmpty"),
+        overviewDayList: byId("overviewDayList"),
+        overviewDayEmpty: byId("overviewDayEmpty"),
         goalBoard: byId("goalBoard"),
         habitTable: byId("habitTable"),
         addHabitButton: byId("addHabitButton"),
@@ -2048,7 +2051,11 @@
       this.elements.habitsMetric.textContent = analytics.habitsHaveData ? `${analytics.habitProgress}%` : "—";
 
       const today = DateService.todayISO();
-      const todayData = this.currentWeek.days?.[today] || {};
+      const todayWeekStart = DateService.toISO(DateService.startOfWeek(DateService.fromISO(today)));
+      const todayWeek = todayWeekStart === this.currentWeek.weekStart
+        ? this.currentWeek
+        : PlannerDataService.normalizeWeek(StorageService.read(StorageService.weekKey(todayWeekStart), null), todayWeekStart);
+      const todayData = todayWeek.days?.[today] || {};
       const todayTasks = [
         ...(Array.isArray(todayData.mainTasks) ? todayData.mainTasks : []),
         ...(Array.isArray(todayData.otherTasks) ? todayData.otherTasks : [])
@@ -2063,6 +2070,40 @@
       this.elements.meetingsMetric.textContent = String(schedule.meetings);
       this.elements.plannedMetric.textContent = `${this.formatHours(schedule.plannedHours)} ${hoursSuffix}`;
       this.elements.freeMetric.textContent = `${this.formatHours(schedule.freeHours)} ${hoursSuffix}`;
+
+      this.elements.overviewDayList.replaceChildren();
+      const taskIds = new Set(todayTasks.map((task) => task.id));
+      const previewItems = [
+        ...todayTasks.map((task) => ({
+          kind: "task", title: task.title, completed: task.isCompleted,
+          label: I18nService.t(task.list === "main" ? "day.mainTasks" : "day.otherTasks"), time: ""
+        })),
+        ...todayRecords.filter((record) => !record.taskId || !taskIds.has(record.taskId)).map((record) => ({
+          kind: "event", title: record.title, completed: false,
+          label: I18nService.t(record.column === "fixed" ? "schedule.fixed" : "schedule.flexible"),
+          time: record.startTime ? `${record.startTime}–${record.endTime}` : ""
+        }))
+      ];
+      this.elements.overviewDayEmpty.hidden = previewItems.length > 0;
+      previewItems.forEach((item) => {
+        const row = document.createElement("article");
+        row.className = `overview-day-item${item.completed ? " is-completed" : ""}`;
+        const marker = document.createElement("span");
+        marker.className = `overview-day-marker${item.kind === "event" ? " is-event" : ""}`;
+        marker.textContent = item.kind === "event" ? "•" : item.completed ? "✓" : "";
+        marker.setAttribute("aria-hidden", "true");
+        const copy = document.createElement("div");
+        copy.className = "overview-day-item-copy";
+        const title = document.createElement("strong");
+        title.textContent = item.title;
+        const label = document.createElement("span");
+        label.textContent = item.label;
+        copy.append(title, label);
+        const time = document.createElement("small");
+        time.textContent = item.time;
+        row.append(marker, copy, time);
+        this.elements.overviewDayList.append(row);
+      });
 
       this.elements.overviewGoalList.replaceChildren();
       const activeGoals = this.currentWeek.goals.filter(Boolean);
@@ -2626,6 +2667,7 @@
     },
 
     setupUniversalFields(form, entity = {}) {
+      entity = entity || {};
       form.elements.hashtags.value = (entity.hashtags || []).map((tag) => `#${tag.replace(/^#/, "")}`).join(" ");
       form.dataset.fileNames = JSON.stringify((entity.fileNames || []).slice(0, 10));
       const renderFiles = () => {

@@ -180,7 +180,8 @@
                   <div><span class="panel-number">03</span><h3 data-i18n="overview.dayTitle">Сегодня</h3></div>
                   <button class="ghost-button" type="button" data-navigate="day" data-i18n="actions.open">Открыть</button>
                 </div>
-                <div class="timeline-empty">
+                <div class="overview-day-list" id="overviewDayList"></div>
+                <div class="timeline-empty" id="overviewDayEmpty">
                   <span class="timeline-line"></span>
                   <div>
                     <strong data-i18n="overview.dayEmptyTitle">День свободен</strong>
@@ -240,11 +241,9 @@
           <section class="view" id="view-notes" data-view="notes" aria-labelledby="viewTitle">
             <div class="section-heading-row">
               <div><p class="section-kicker" data-i18n="notes.kicker">Общее пространство</p><h2 data-i18n="notes.title">Заметки</h2></div>
-              <button class="primary-button" id="addNoteButton" type="button"><span data-i18n="notes.add">Добавить заметку</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
             </div>
-            <article class="panel notes-panel">
-              <div class="panel-header"><div><span class="panel-number">∞</span><h3 data-i18n="notes.listTitle">Все заметки</h3></div></div>
-              <p class="notes-intro" data-i18n="notes.copy">Общие заметки для всего приложения — без ограничения по количеству.</p>
+            <article class="panel notes-panel task-style-panel">
+              <div class="panel-header"><div><span class="panel-number">∞</span><h3 data-i18n="notes.listTitle">Все заметки</h3></div><button class="mini-add-button" id="addNoteButton" type="button" data-i18n-aria="notes.add">+</button></div>
               <div class="notes-list" id="notesList"></div>
               <button class="notes-empty" id="notesEmpty" type="button"><span data-i18n="notes.empty">Добавьте первую заметку</span><strong data-i18n="notes.add">Добавить заметку</strong></button>
             </article>
@@ -306,7 +305,7 @@
                 <button class="secondary-button" id="speechConsentToggle" type="button" data-i18n="settings.giveConsent">Дать согласие</button>
               </article>
             </div>
-            <article class="panel business-card-settings">
+            <article class="panel business-card-settings task-style-panel">
               <div class="panel-header"><div><span class="panel-number">VIP</span><h3 data-i18n="card.title">Премиальная визитка</h3></div><div class="card-variant-switch"><button type="button" data-card-variant="light" data-i18n="theme.light">Светлая</button><button type="button" data-card-variant="dark" data-i18n="theme.dark">Тёмная</button></div></div>
               <div class="business-card-layout">
                 <form class="business-card-form" id="businessCardForm" novalidate>
@@ -320,7 +319,7 @@
                 <div class="business-card-preview" id="businessCardPreview"></div>
               </div>
             </article>
-            <article class="panel data-management">
+            <article class="panel data-management task-style-panel">
               <div class="panel-header"><div><span class="panel-number">JSON</span><h3 data-i18n="data.title">Данные и резервные копии</h3></div></div>
               <p class="data-management-copy" data-i18n="data.copy">Все данные находятся только в этом браузере. Регулярно сохраняйте резервную копию.</p>
               <div class="storage-summary" id="storageSummary">
