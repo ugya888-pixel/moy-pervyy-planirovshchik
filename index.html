@@ -108,33 +108,44 @@
                 <p class="section-kicker" id="greeting">Доброе утро</p>
                 <h2 data-i18n="overview.title">Спокойная ясность на всю неделю</h2>
                 <p class="hero-copy" data-i18n="overview.copy">Здесь появится целостная картина ваших целей, привычек и расписания. Начните с недельного обзора.</p>
-                <button class="primary-button" type="button" data-navigate="week">
-                  <span data-i18n="overview.openWeek">Открыть неделю</span>
-                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>
-                </button>
+                <div class="hero-actions">
+                  <button class="primary-button" id="quickAddGoal" type="button">
+                    <span data-i18n="actions.addGoal">Добавить цель</span>
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  </button>
+                  <button class="text-button" type="button" data-navigate="week" data-i18n="overview.openWeek">Открыть неделю</button>
+                </div>
               </div>
-              <div class="progress-orbit" aria-label="Общий прогресс недели: 0 процентов">
-                <span class="orbit-value">0%</span>
-                <span class="orbit-caption" data-i18n="overview.progress">Прогресс недели</span>
+              <div class="progress-orbit" id="weekProgressOrbit" aria-label="Общий прогресс недели: 0 процентов">
+                <span class="orbit-value" id="weekProgressValue">0%</span>
+                <span class="orbit-caption" id="weekProgressCaption" data-i18n="overview.progress">Прогресс недели</span>
               </div>
             </div>
 
             <div class="metric-grid" aria-label="Сводные показатели">
               <article class="metric-card">
                 <span class="metric-icon gold"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7L12 3Z"/></svg></span>
-                <div><strong>0 / 4</strong><span data-i18n="metrics.goals">Цели недели</span></div>
+                <div><strong id="goalsMetric">0%</strong><span data-i18n="metrics.goals">Прогресс целей</span></div>
               </article>
               <article class="metric-card">
                 <span class="metric-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 12.5 10 16l8-9"/></svg></span>
-                <div><strong>0 / 3</strong><span data-i18n="metrics.habits">Привычки сегодня</span></div>
+                <div><strong id="habitsMetric">—</strong><span data-i18n="metrics.habits">Выполнение привычек</span></div>
+              </article>
+              <article class="metric-card">
+                <span class="metric-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 12.5 10 16l8-9M5 5h14M5 19h14"/></svg></span>
+                <div><strong id="todayTasksMetric">0 из 0</strong><span data-i18n="metrics.tasksToday">Задачи сегодня</span></div>
+              </article>
+              <article class="metric-card">
+                <span class="metric-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 7h14v12H5zM8 4v6m8-6v6"/></svg></span>
+                <div><strong id="meetingsMetric">0</strong><span data-i18n="metrics.meetings">Встречи сегодня</span></div>
               </article>
               <article class="metric-card">
                 <span class="metric-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-                <div><strong>0 h</strong><span data-i18n="metrics.planned">Запланировано</span></div>
+                <div><strong id="plannedMetric">0 ч</strong><span data-i18n="metrics.planned">Запланировано</span></div>
               </article>
               <article class="metric-card">
                 <span class="metric-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4v3m14-3v3M3 9h18M5 6h14a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/></svg></span>
-                <div><strong>18 h</strong><span data-i18n="metrics.free">Свободное время</span></div>
+                <div><strong id="freeMetric">18 ч</strong><span data-i18n="metrics.free">Свободное время</span></div>
               </article>
             </div>
 
@@ -144,10 +155,8 @@
                   <div><span class="panel-number">01</span><h3 data-i18n="overview.goalsTitle">Фокус недели</h3></div>
                   <button class="ghost-button" type="button" data-navigate="week" data-i18n="actions.open">Открыть</button>
                 </div>
-                <div class="goal-slots" aria-hidden="true">
-                  <span></span><span></span><span></span><span></span>
-                </div>
-                <div class="soft-empty">
+                <div class="overview-goal-list" id="overviewGoalList"></div>
+                <div class="soft-empty" id="overviewGoalsEmpty">
                   <p data-i18n="overview.goalsEmpty">Четыре главные цели помогут сохранить фокус на результате.</p>
                 </div>
               </article>
@@ -157,10 +166,8 @@
                   <div><span class="panel-number">02</span><h3 data-i18n="overview.habitsTitle">Ритм привычек</h3></div>
                   <button class="ghost-button" type="button" data-navigate="week" data-i18n="actions.open">Открыть</button>
                 </div>
-                <div class="habit-placeholder" aria-hidden="true">
-                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                </div>
-                <div class="soft-empty">
+                <div class="overview-habit-list" id="overviewHabitList"></div>
+                <div class="soft-empty" id="overviewHabitsEmpty">
                   <p data-i18n="overview.habitsEmpty">Три привычки и семь спокойных отметок на каждую неделю.</p>
                 </div>
               </article>
@@ -186,16 +193,11 @@
               <div><p class="section-kicker" data-i18n="week.kicker">Стратегический обзор</p><h2 data-i18n="week.title">Неделя в одном фокусе</h2></div>
               <button class="secondary-button" type="button" data-panel="week"><span data-i18n="actions.howItWorks">Как это работает</span></button>
             </div>
-            <div class="goal-board" aria-label="Четыре цели недели">
-              <article class="empty-goal-card"><span>01</span><div><h3 data-i18n="week.goalPlaceholder">Цель недели</h3><p data-i18n="week.goalHint">Место для результата и его декомпозиции.</p></div></article>
-              <article class="empty-goal-card"><span>02</span><div><h3 data-i18n="week.goalPlaceholder">Цель недели</h3><p data-i18n="week.goalHint">Место для результата и его декомпозиции.</p></div></article>
-              <article class="empty-goal-card"><span>03</span><div><h3 data-i18n="week.goalPlaceholder">Цель недели</h3><p data-i18n="week.goalHint">Место для результата и его декомпозиции.</p></div></article>
-              <article class="empty-goal-card"><span>04</span><div><h3 data-i18n="week.goalPlaceholder">Цель недели</h3><p data-i18n="week.goalHint">Место для результата и его декомпозиции.</p></div></article>
-            </div>
+            <div class="goal-board" id="goalBoard" aria-label="Четыре цели недели"></div>
             <article class="panel habit-board">
-              <div class="panel-header"><div><span class="panel-number">03</span><h3 data-i18n="week.habitsTitle">Полезные привычки</h3></div></div>
-              <div class="habit-table" id="habitTablePlaceholder" aria-hidden="true"></div>
-              <p class="board-note" data-i18n="week.emptyNote">Неделя пока не заполнена. Здесь появятся четыре цели и три привычки.</p>
+              <div class="panel-header"><div><span class="panel-number">03</span><h3 data-i18n="week.habitsTitle">Полезные привычки</h3></div><button class="ghost-button" id="addHabitButton" type="button" data-i18n="actions.addHabit">Добавить привычку</button></div>
+              <div class="habit-table" id="habitTable"></div>
+              <p class="board-note" id="weekBoardNote" data-i18n="week.emptyNote">Неделя пока не заполнена. Здесь появятся четыре цели и три привычки.</p>
             </article>
           </section>
 
@@ -304,7 +306,7 @@
         </div>
         <div class="context-panel-body" id="contextPanelBody"></div>
         <div class="context-panel-footer">
-          <button class="primary-button full-width" id="contextPanelDone" type="button" data-i18n="actions.understood">Понятно</button>
+          <button class="primary-button full-width" id="contextPanelDone" type="button"><span data-i18n="actions.understood">Понятно</span></button>
         </div>
       </aside>
     </div>

@@ -296,6 +296,190 @@
     }
   };
 
+  Object.assign(TRANSLATIONS.ru, {
+    "actions.addGoal": "Добавить цель",
+    "actions.addHabit": "Добавить привычку",
+    "actions.addSubtask": "Добавить подзадачу",
+    "actions.edit": "Редактировать",
+    "actions.delete": "Удалить",
+    "actions.clear": "Очистить",
+    "actions.save": "Сохранить",
+    "actions.undo": "Отменить",
+    "actions.moveLeft": "Переместить влево",
+    "actions.moveRight": "Переместить вправо",
+    "actions.moveUp": "Переместить выше",
+    "actions.moveDown": "Переместить ниже",
+    "metrics.goals": "Прогресс целей",
+    "metrics.habits": "Выполнение привычек",
+    "metrics.tasksToday": "Задачи сегодня",
+    "metrics.meetings": "Встречи сегодня",
+    "week.goalProgress": "Прогресс",
+    "week.manualProgress": "Ручной прогресс",
+    "week.subtasks": "Подзадачи",
+    "week.addGoalSlot": "Заполнить карточку",
+    "week.habit": "Привычка",
+    "week.weekResult": "Итог недели",
+    "week.addHabitSlot": "Добавить привычку",
+    "week.habitSummary": "{done} из {available}",
+    "week.noData": "Нет данных",
+    "week.noGoals": "Нет целей",
+    "week.noTasks": "Нет задач",
+    "week.noSubtasks": "Добавьте первый конкретный шаг.",
+    "week.autoProgress": "Рассчитывается по подзадачам",
+    "goal.editorNew": "Новая цель",
+    "goal.editorEdit": "Редактирование цели",
+    "goal.title": "Название",
+    "goal.description": "Описание",
+    "goal.color": "Цвет",
+    "goal.titleHint": "От 1 до 120 символов",
+    "goal.descriptionHint": "До 2000 символов",
+    "goal.progressHint": "От 0 до 100%",
+    "goal.errorTitle": "Введите название цели",
+    "goal.errorTitleLong": "Название должно быть не длиннее 120 символов",
+    "goal.errorDescriptionLong": "Описание должно быть не длиннее 2000 символов",
+    "goal.limitTitle": "Четыре цели уже заданы",
+    "goal.limitCopy": "На неделю доступно четыре цели.",
+    "goal.clearTitle": "Очистить эту цель?",
+    "goal.clearCopy": "Цель и её подзадачи будут удалены. Связанные записи сохранятся без связи с целью.",
+    "goal.clearedTitle": "Цель очищена",
+    "goal.clearedCopy": "После закрытия страницы отмена будет недоступна.",
+    "goal.restoredTitle": "Цель восстановлена",
+    "goal.restoredCopy": "Карточка и её подзадачи снова на месте.",
+    "subtask.editorNew": "Новая подзадача",
+    "subtask.editorEdit": "Редактирование подзадачи",
+    "subtask.text": "Текст",
+    "subtask.tags": "Хэштеги",
+    "subtask.tagsHint": "Введите через пробел: #работа #фокус",
+    "subtask.errorText": "Введите текст подзадачи",
+    "subtask.errorLong": "Текст должен быть не длиннее 300 символов",
+    "subtask.deleteTitle": "Удалить подзадачу?",
+    "subtask.deleteCopy": "Она исчезнет из цели. Действие можно отменить в течение 7 секунд.",
+    "subtask.deletedTitle": "Подзадача удалена",
+    "subtask.deletedCopy": "После закрытия страницы отмена будет недоступна.",
+    "habit.editorNew": "Новая привычка",
+    "habit.editorEdit": "Название привычки",
+    "habit.name": "Название",
+    "habit.versionNote": "Изменение действует с выбранной недели. Прошлые недели сохранят прежнее название.",
+    "habit.errorName": "Введите название привычки",
+    "habit.errorLong": "Название должно быть не длиннее 120 символов",
+    "habit.clear": "Очистить с этой недели",
+    "habit.clearTitle": "Очистить привычку с этой недели?",
+    "habit.clearCopy": "Прошлая история сохранится, а в выбранной и следующих неделях позиция станет пустой до новой версии.",
+    "habit.limitTitle": "Три привычки уже заданы",
+    "habit.limitCopy": "В планировщике доступно три постоянные позиции привычек.",
+    "habit.state.unmarked": "Не отмечено",
+    "habit.state.done": "Выполнено",
+    "habit.state.missed": "Не выполнено",
+    "habit.future": "Будущие даты пока недоступны",
+    "confirm.unsavedTitle": "Закрыть без сохранения?",
+    "confirm.unsavedCopy": "Внесённые в форму изменения будут потеряны.",
+    "overview.progressAria": "Общий прогресс недели: {value} процентов",
+    "overview.addData": "Добавьте первые данные",
+    "overview.goalsCount": "Заполнено {count} из 4",
+    "toast.savedTitle": "Изменения сохранены",
+    "toast.savedCopy": "Данные этой недели обновлены.",
+    "color.royalIndigo": "Королевский индиго",
+    "color.emeraldSilk": "Изумрудный шёлк",
+    "color.matteBurgundy": "Матовый бордо",
+    "color.spicedSaffron": "Пряный шафран",
+    "color.terracottaSuede": "Терракотовый замш",
+    "color.midnightPurple": "Полуночный пурпур",
+    "color.bitterChocolate": "Горький шоколад",
+    "color.nobleSage": "Благородный шалфей"
+  });
+
+  Object.assign(TRANSLATIONS.en, {
+    "actions.addGoal": "Add goal",
+    "actions.addHabit": "Add habit",
+    "actions.addSubtask": "Add subtask",
+    "actions.edit": "Edit",
+    "actions.delete": "Delete",
+    "actions.clear": "Clear",
+    "actions.save": "Save",
+    "actions.undo": "Undo",
+    "actions.moveLeft": "Move left",
+    "actions.moveRight": "Move right",
+    "actions.moveUp": "Move up",
+    "actions.moveDown": "Move down",
+    "metrics.goals": "Goal progress",
+    "metrics.habits": "Habit completion",
+    "metrics.tasksToday": "Tasks today",
+    "metrics.meetings": "Meetings today",
+    "week.goalProgress": "Progress",
+    "week.manualProgress": "Manual progress",
+    "week.subtasks": "Subtasks",
+    "week.addGoalSlot": "Fill this card",
+    "week.habit": "Habit",
+    "week.weekResult": "Week total",
+    "week.addHabitSlot": "Add habit",
+    "week.habitSummary": "{done} of {available}",
+    "week.noData": "No data",
+    "week.noGoals": "No goals",
+    "week.noTasks": "No tasks",
+    "week.noSubtasks": "Add the first concrete step.",
+    "week.autoProgress": "Calculated from subtasks",
+    "goal.editorNew": "New goal",
+    "goal.editorEdit": "Edit goal",
+    "goal.title": "Title",
+    "goal.description": "Description",
+    "goal.color": "Colour",
+    "goal.titleHint": "1 to 120 characters",
+    "goal.descriptionHint": "Up to 2,000 characters",
+    "goal.progressHint": "0 to 100%",
+    "goal.errorTitle": "Enter a goal title",
+    "goal.errorTitleLong": "The title must be no longer than 120 characters",
+    "goal.errorDescriptionLong": "The description must be no longer than 2,000 characters",
+    "goal.limitTitle": "All four goals are set",
+    "goal.limitCopy": "Four goals are available for each week.",
+    "goal.clearTitle": "Clear this goal?",
+    "goal.clearCopy": "The goal and its subtasks will be removed. Linked items will remain without the goal link.",
+    "goal.clearedTitle": "Goal cleared",
+    "goal.clearedCopy": "Undo will be unavailable after closing the page.",
+    "goal.restoredTitle": "Goal restored",
+    "goal.restoredCopy": "The card and its subtasks are back in place.",
+    "subtask.editorNew": "New subtask",
+    "subtask.editorEdit": "Edit subtask",
+    "subtask.text": "Text",
+    "subtask.tags": "Hashtags",
+    "subtask.tagsHint": "Separate with spaces: #work #focus",
+    "subtask.errorText": "Enter subtask text",
+    "subtask.errorLong": "The text must be no longer than 300 characters",
+    "subtask.deleteTitle": "Delete this subtask?",
+    "subtask.deleteCopy": "It will be removed from the goal. You can undo for 7 seconds.",
+    "subtask.deletedTitle": "Subtask deleted",
+    "subtask.deletedCopy": "Undo will be unavailable after closing the page.",
+    "habit.editorNew": "New habit",
+    "habit.editorEdit": "Habit name",
+    "habit.name": "Name",
+    "habit.versionNote": "The change applies from the selected week. Earlier weeks keep the previous name.",
+    "habit.errorName": "Enter a habit name",
+    "habit.errorLong": "The name must be no longer than 120 characters",
+    "habit.clear": "Clear from this week",
+    "habit.clearTitle": "Clear this habit from this week?",
+    "habit.clearCopy": "Earlier history stays intact. This and later weeks will be empty until a new version is added.",
+    "habit.limitTitle": "All three habits are set",
+    "habit.limitCopy": "The planner has three permanent habit positions.",
+    "habit.state.unmarked": "Not marked",
+    "habit.state.done": "Completed",
+    "habit.state.missed": "Not completed",
+    "habit.future": "Future dates are not available yet",
+    "confirm.unsavedTitle": "Close without saving?",
+    "confirm.unsavedCopy": "Changes made in the form will be lost.",
+    "overview.progressAria": "Overall week progress: {value} percent",
+    "overview.addData": "Add the first data",
+    "overview.goalsCount": "{count} of 4 filled",
+    "toast.savedTitle": "Changes saved",
+    "toast.savedCopy": "This week's data has been updated.",
+    "color.royalIndigo": "Royal indigo",
+    "color.emeraldSilk": "Emerald silk",
+    "color.matteBurgundy": "Matte burgundy",
+    "color.spicedSaffron": "Spiced saffron",
+    "color.terracottaSuede": "Terracotta suede",
+    "color.midnightPurple": "Midnight purple",
+    "color.bitterChocolate": "Bitter chocolate",
+    "color.nobleSage": "Noble sage"
+  });
+
   const I18nService = {
     language: "ru",
 
@@ -406,7 +590,8 @@
       meta: "premiumPlanner.meta",
       settings: "premiumPlanner.settings",
       ui: "premiumPlanner.ui",
-      weekIndex: "premiumPlanner.weekIndex"
+      weekIndex: "premiumPlanner.weekIndex",
+      habits: "premiumPlanner.habits"
     },
     queue: new Map(),
     timer: null,
@@ -499,6 +684,23 @@
       this.timer = window.setTimeout(() => this.flush(), 220);
     },
 
+    writeNow(key, value) {
+      this.queue.delete(key);
+      try {
+        localStorage.setItem(key, JSON.stringify(value));
+        this.onStatus("saved");
+        return true;
+      } catch (error) {
+        this.onStatus("error");
+        this.onError(error);
+        return false;
+      }
+    },
+
+    weekKey(weekStart) {
+      return `premiumPlanner.week.${weekStart}`;
+    },
+
     flush() {
       if (!this.queue.size) return true;
       clearTimeout(this.timer);
@@ -531,11 +733,209 @@
     }
   };
 
+  const PlannerDataService = {
+    palette: ["royalIndigo", "emeraldSilk", "matteBurgundy", "spicedSaffron", "terracottaSuede", "midnightPurple", "bitterChocolate", "nobleSage"],
+    legacyColors: {
+      gold: "royalIndigo",
+      champagne: "emeraldSilk",
+      bronze: "matteBurgundy",
+      sand: "spicedSaffron",
+      sage: "terracottaSuede",
+      blue: "midnightPurple",
+      plum: "bitterChocolate",
+      graphite: "nobleSage"
+    },
+
+    id() {
+      if (typeof crypto?.randomUUID === "function") return crypto.randomUUID();
+      return `local-${Date.now()}-${Math.random().toString(36).slice(2, 11)}`;
+    },
+
+    emptyWeek(weekStart) {
+      return {
+        schemaVersion: 1,
+        weekStart,
+        goals: [null, null, null, null],
+        habitMarks: {},
+        days: {},
+        records: [],
+        updatedAt: null
+      };
+    },
+
+    normalizeWeek(value, weekStart) {
+      const fallback = this.emptyWeek(weekStart);
+      if (!value || value.schemaVersion !== 1 || value.weekStart !== weekStart) return fallback;
+      const goals = Array.isArray(value.goals) ? value.goals.slice(0, 4) : [];
+      while (goals.length < 4) goals.push(null);
+      return {
+        ...fallback,
+        ...value,
+        goals: goals.map((goal) => this.normalizeGoal(goal)),
+        habitMarks: value.habitMarks && typeof value.habitMarks === "object" ? value.habitMarks : {},
+        days: value.days && typeof value.days === "object" ? value.days : {},
+        records: Array.isArray(value.records) ? value.records : []
+      };
+    },
+
+    normalizeGoal(goal) {
+      if (!goal || typeof goal !== "object" || typeof goal.title !== "string") return null;
+      const subtasks = Array.isArray(goal.subtasks) ? goal.subtasks : [];
+      return {
+        id: typeof goal.id === "string" ? goal.id : this.id(),
+        title: goal.title.slice(0, 120),
+        description: typeof goal.description === "string" ? goal.description.slice(0, 2000) : "",
+        color: this.palette.includes(this.legacyColors[goal.color] || goal.color)
+          ? (this.legacyColors[goal.color] || goal.color)
+          : "royalIndigo",
+        manualProgress: this.clampProgress(goal.manualProgress),
+        subtasks: subtasks.map((item, index) => ({
+          id: typeof item?.id === "string" ? item.id : this.id(),
+          text: typeof item?.text === "string" ? item.text.slice(0, 300) : "",
+          isCompleted: Boolean(item?.isCompleted),
+          hashtags: Array.isArray(item?.hashtags) ? item.hashtags.filter((tag) => typeof tag === "string") : [],
+          position: index
+        })).filter((item) => item.text.trim()),
+        createdAt: goal.createdAt || new Date().toISOString(),
+        updatedAt: goal.updatedAt || new Date().toISOString()
+      };
+    },
+
+    emptyHabits() {
+      return {
+        schemaVersion: 1,
+        slots: Array.from({ length: 3 }, () => ({ id: this.id(), versions: [] }))
+      };
+    },
+
+    normalizeHabits(value) {
+      const fallback = this.emptyHabits();
+      if (!value || value.schemaVersion !== 1 || !Array.isArray(value.slots)) return fallback;
+      const slots = value.slots.slice(0, 3).map((slot, index) => ({
+        id: typeof slot?.id === "string" ? slot.id : fallback.slots[index].id,
+        versions: Array.isArray(slot?.versions)
+          ? slot.versions.filter((version) => DateService.fromISO(version?.weekStart) && typeof version?.name === "string")
+            .map((version) => ({ weekStart: version.weekStart, name: version.name.slice(0, 120) }))
+            .sort((a, b) => a.weekStart.localeCompare(b.weekStart))
+          : []
+      }));
+      while (slots.length < 3) slots.push(fallback.slots[slots.length]);
+      return { schemaVersion: 1, slots };
+    },
+
+    effectiveHabitName(slot, weekStart) {
+      return slot.versions.reduce((name, version) => version.weekStart <= weekStart ? version.name : name, "");
+    },
+
+    setHabitVersion(slot, weekStart, name) {
+      const versions = slot.versions.filter((version) => version.weekStart !== weekStart);
+      versions.push({ weekStart, name });
+      versions.sort((a, b) => a.weekStart.localeCompare(b.weekStart));
+      slot.versions = versions;
+    },
+
+    clampProgress(value) {
+      const number = Number(value);
+      if (!Number.isFinite(number)) return 0;
+      return Math.max(0, Math.min(100, Math.round(number)));
+    },
+
+    goalProgress(goal) {
+      if (!goal) return 0;
+      if (!goal.subtasks.length) return this.clampProgress(goal.manualProgress);
+      return Math.round(goal.subtasks.filter((item) => item.isCompleted).length / goal.subtasks.length * 100);
+    },
+
+    normalizeHashtags(raw) {
+      const seen = new Set();
+      return String(raw || "").split(/\s+/).map((tag) => tag.replace(/^#+/, "").trim())
+        .filter((tag) => /^[\p{L}\d_]+$/u.test(tag))
+        .map((tag) => `#${tag.toLocaleLowerCase()}`)
+        .filter((tag) => !seen.has(tag) && seen.add(tag));
+    },
+
+    habitAvailability(weekStart) {
+      const today = DateService.todayISO();
+      const end = DateService.toISO(DateService.addDays(DateService.fromISO(weekStart), 6));
+      if (weekStart > today) return [];
+      const last = end < today ? end : today;
+      const days = [];
+      for (let date = DateService.fromISO(weekStart); DateService.toISO(date) <= last; date = DateService.addDays(date, 1)) {
+        days.push(DateService.toISO(date));
+      }
+      return days;
+    },
+
+    timeToMinutes(value) {
+      const match = /^(\d{2}):(\d{2})$/.exec(value || "");
+      return match ? Number(match[1]) * 60 + Number(match[2]) : NaN;
+    },
+
+    scheduleSummary(records, date, currentTime) {
+      const todayRecords = records.filter((record) => record.date === date);
+      const meetings = todayRecords.filter((record) => (record.column === "fixed" || record.type === "meeting") && record.endTime > currentTime).length;
+      const intervals = todayRecords.map((record) => [this.timeToMinutes(record.startTime), this.timeToMinutes(record.endTime)])
+        .filter(([start, end]) => Number.isFinite(start) && Number.isFinite(end) && end > start)
+        .map(([start, end]) => [Math.max(360, start), Math.min(1440, end)])
+        .filter(([start, end]) => end > start)
+        .sort((a, b) => a[0] - b[0]);
+      const merged = [];
+      intervals.forEach((interval) => {
+        const last = merged[merged.length - 1];
+        if (!last || interval[0] > last[1]) merged.push([...interval]);
+        else last[1] = Math.max(last[1], interval[1]);
+      });
+      const plannedHours = merged.reduce((sum, [start, end]) => sum + end - start, 0) / 60;
+      return { meetings, plannedHours, freeHours: Math.max(0, 18 - plannedHours) };
+    },
+
+    analytics(week, habits) {
+      const goals = week.goals.filter(Boolean);
+      const goalsProgress = Math.round(week.goals.reduce((sum, goal) => sum + this.goalProgress(goal), 0) / 4);
+      const tasks = Object.values(week.days || {}).flatMap((day) => [
+        ...(Array.isArray(day?.mainTasks) ? day.mainTasks : []),
+        ...(Array.isArray(day?.otherTasks) ? day.otherTasks : [])
+      ]);
+      const taskProgress = tasks.length ? Math.round(tasks.filter((task) => task.isCompleted).length / tasks.length * 100) : 0;
+      const availableDays = this.habitAvailability(week.weekStart);
+      const activeHabits = habits.slots.filter((slot) => this.effectiveHabitName(slot, week.weekStart).trim());
+      const availableMarks = activeHabits.length * availableDays.length;
+      const doneMarks = activeHabits.reduce((sum, slot) => sum + availableDays.filter((date) => week.habitMarks?.[slot.id]?.[date] === "done").length, 0);
+      const habitProgress = availableMarks ? Math.round(doneMarks / availableMarks * 100) : 0;
+      const categories = [];
+      if (goals.length) categories.push(goalsProgress);
+      if (tasks.length) categories.push(taskProgress);
+      if (activeHabits.length && availableDays.length) categories.push(habitProgress);
+      return {
+        goalsProgress,
+        goalsHaveData: goals.length > 0,
+        taskProgress,
+        tasksHaveData: tasks.length > 0,
+        habitProgress,
+        habitsHaveData: activeHabits.length > 0 && availableDays.length > 0,
+        overallProgress: categories.length ? Math.round(categories.reduce((sum, value) => sum + value, 0) / categories.length) : 0,
+        availableDays,
+        activeHabits,
+        doneMarks,
+        availableMarks,
+        tasks
+      };
+    }
+  };
+
   const AppController = {
     state: null,
     onboardingStep: 0,
     lastFocusedElement: null,
     confirmationAction: null,
+    confirmationCancelAction: null,
+    confirmationFocusedElement: null,
+    panelAction: null,
+    panelDirty: false,
+    draggedGoalIndex: null,
+    draggedSubtask: null,
+    habits: null,
+    currentWeek: null,
 
     elements: {},
 
@@ -547,6 +947,8 @@
       this.state.ui.view = "overview";
       this.state.ui.selectedDate = DateService.todayISO();
       this.state.ui.selectedWeek = DateService.toISO(DateService.startOfWeek(new Date()));
+      this.habits = PlannerDataService.normalizeHabits(StorageService.read(StorageService.keys.habits, null));
+      this.loadWeek(this.state.ui.selectedWeek);
 
       I18nService.setLanguage(this.state.settings.language);
       ThemeService.apply(this.state.settings.theme);
@@ -588,7 +990,24 @@
         greeting: byId("greeting"),
         dayKicker: byId("dayKicker"),
         dayHeading: byId("dayHeading"),
-        habitTablePlaceholder: byId("habitTablePlaceholder"),
+        quickAddGoal: byId("quickAddGoal"),
+        weekProgressOrbit: byId("weekProgressOrbit"),
+        weekProgressValue: byId("weekProgressValue"),
+        weekProgressCaption: byId("weekProgressCaption"),
+        goalsMetric: byId("goalsMetric"),
+        habitsMetric: byId("habitsMetric"),
+        todayTasksMetric: byId("todayTasksMetric"),
+        meetingsMetric: byId("meetingsMetric"),
+        plannedMetric: byId("plannedMetric"),
+        freeMetric: byId("freeMetric"),
+        overviewGoalList: byId("overviewGoalList"),
+        overviewGoalsEmpty: byId("overviewGoalsEmpty"),
+        overviewHabitList: byId("overviewHabitList"),
+        overviewHabitsEmpty: byId("overviewHabitsEmpty"),
+        goalBoard: byId("goalBoard"),
+        habitTable: byId("habitTable"),
+        addHabitButton: byId("addHabitButton"),
+        weekBoardNote: byId("weekBoardNote"),
         schedulePlaceholder: byId("schedulePlaceholder"),
         idealHead: byId("idealHead"),
         idealGridPlaceholder: byId("idealGridPlaceholder"),
@@ -611,6 +1030,8 @@
         onboardingTheme: byId("onboardingTheme"),
         onboardingSound: byId("onboardingSound"),
         confirmDialog: byId("confirmDialog"),
+        confirmTitle: byId("confirmTitle"),
+        confirmText: byId("confirmText"),
         confirmCancel: byId("confirmCancel"),
         confirmAccept: byId("confirmAccept"),
         toastRegion: byId("toastRegion")
@@ -618,14 +1039,6 @@
     },
 
     buildStaticPreviews() {
-      this.elements.habitTablePlaceholder.replaceChildren();
-      for (let rowIndex = 0; rowIndex < 3; rowIndex += 1) {
-        const row = document.createElement("div");
-        row.className = "habit-row-placeholder";
-        for (let cellIndex = 0; cellIndex < 8; cellIndex += 1) row.append(document.createElement("span"));
-        this.elements.habitTablePlaceholder.append(row);
-      }
-
       this.buildTimeGrid(this.elements.schedulePlaceholder, "schedule-row", 2);
       this.buildTimeGrid(this.elements.idealGridPlaceholder, "ideal-grid-row", 7);
     },
@@ -665,6 +1078,15 @@
       document.querySelectorAll("[data-panel]").forEach((button) => {
         button.addEventListener("click", () => this.openContextPanel(button.dataset.panel, button));
       });
+      this.elements.quickAddGoal.addEventListener("click", () => this.addGoalFromFirstEmpty(this.elements.quickAddGoal));
+      this.elements.addHabitButton.addEventListener("click", () => this.addHabitFromFirstEmpty(this.elements.addHabitButton));
+      this.elements.goalBoard.addEventListener("click", (event) => this.handleGoalBoardClick(event));
+      this.elements.habitTable.addEventListener("click", (event) => this.handleHabitTableClick(event));
+      this.elements.goalBoard.addEventListener("dragstart", (event) => this.handlePlannerDragStart(event));
+      this.elements.goalBoard.addEventListener("dragover", (event) => this.handlePlannerDragOver(event));
+      this.elements.goalBoard.addEventListener("dragleave", (event) => event.target.closest(".is-drop-target")?.classList.remove("is-drop-target"));
+      this.elements.goalBoard.addEventListener("drop", (event) => this.handlePlannerDrop(event));
+      this.elements.goalBoard.addEventListener("dragend", () => this.clearPlannerDragState());
 
       this.elements.previousWeek.addEventListener("click", () => this.moveWeek(-7));
       this.elements.nextWeek.addEventListener("click", () => this.moveWeek(7));
@@ -690,7 +1112,11 @@
       this.elements.restartOnboarding.addEventListener("click", () => {
         this.openConfirmation(() => this.showOnboarding(0));
       });
-      this.elements.confirmCancel.addEventListener("click", () => this.closeConfirmation());
+      this.elements.confirmCancel.addEventListener("click", () => {
+        const cancelAction = this.confirmationCancelAction;
+        this.closeConfirmation();
+        cancelAction?.();
+      });
       this.elements.confirmAccept.addEventListener("click", () => {
         const action = this.confirmationAction;
         this.closeConfirmation();
@@ -698,7 +1124,7 @@
       });
 
       this.elements.closeContextPanel.addEventListener("click", () => this.closeContextPanel());
-      this.elements.contextPanelDone.addEventListener("click", () => this.closeContextPanel());
+      this.elements.contextPanelDone.addEventListener("click", () => this.panelAction?.());
       this.elements.panelScrim.addEventListener("click", () => this.closeContextPanel());
 
       this.elements.onboardingBack.addEventListener("click", () => this.renderOnboardingStep(this.onboardingStep - 1));
@@ -717,7 +1143,7 @@
       window.addEventListener("keydown", (event) => {
         if (event.key !== "Escape") return;
         if (!this.elements.confirmDialog.hidden) this.closeConfirmation();
-        else if (!this.elements.contextPanel.getAttribute("aria-hidden").includes("true")) this.closeContextPanel();
+        else if (this.elements.contextPanel.getAttribute("aria-hidden") === "false") this.closeContextPanel();
       });
       window.addEventListener("beforeunload", () => StorageService.flush());
     },
@@ -728,6 +1154,7 @@
       this.renderGreeting();
       this.renderDayHeading();
       this.renderIdealHead();
+      this.renderPlannerData();
       this.showView(this.state.ui.view, false);
       this.renderAriaLabels();
       this.renderSaveStatus("saved");
@@ -790,6 +1217,709 @@
       }
     },
 
+    loadWeek(weekStart) {
+      const key = StorageService.weekKey(weekStart);
+      this.currentWeek = PlannerDataService.normalizeWeek(StorageService.read(key, null), weekStart);
+    },
+
+    saveWeek(immediate = false) {
+      this.currentWeek.updatedAt = new Date().toISOString();
+      const key = StorageService.weekKey(this.currentWeek.weekStart);
+      const weekIndex = StorageService.read(StorageService.keys.weekIndex, []);
+      const normalizedIndex = Array.isArray(weekIndex) ? weekIndex.filter((item) => typeof item?.weekStart === "string") : [];
+      const existing = normalizedIndex.find((item) => item.weekStart === this.currentWeek.weekStart);
+      if (existing) existing.updatedAt = this.currentWeek.updatedAt;
+      else normalizedIndex.push({ weekStart: this.currentWeek.weekStart, updatedAt: this.currentWeek.updatedAt });
+      normalizedIndex.sort((a, b) => a.weekStart.localeCompare(b.weekStart));
+      if (!existing) {
+        if (immediate) StorageService.writeNow(StorageService.keys.weekIndex, normalizedIndex);
+        else StorageService.schedule(StorageService.keys.weekIndex, normalizedIndex);
+      }
+      if (immediate) StorageService.writeNow(key, this.currentWeek);
+      else StorageService.schedule(key, this.currentWeek);
+    },
+
+    saveHabits() {
+      StorageService.schedule(StorageService.keys.habits, this.habits);
+    },
+
+    renderPlannerData() {
+      this.renderGoals();
+      this.renderHabits();
+      this.renderOverview();
+      const hasGoals = this.currentWeek.goals.some(Boolean);
+      const hasHabits = this.habits.slots.some((slot) => PlannerDataService.effectiveHabitName(slot, this.currentWeek.weekStart).trim());
+      this.elements.weekBoardNote.hidden = hasGoals || hasHabits;
+    },
+
+    createIconButton(action, labelKey, path, disabled = false) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "mini-icon-button";
+      button.dataset.action = action;
+      button.disabled = disabled;
+      button.setAttribute("aria-label", I18nService.t(labelKey));
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("aria-hidden", "true");
+      svg.setAttribute("viewBox", "0 0 24 24");
+      const iconPath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      iconPath.setAttribute("d", path);
+      svg.append(iconPath);
+      button.append(svg);
+      return button;
+    },
+
+    renderGoals() {
+      this.elements.goalBoard.replaceChildren();
+      this.currentWeek.goals.forEach((goal, index) => {
+        if (!goal) {
+          const card = document.createElement("article");
+          card.className = "empty-goal-card";
+          card.dataset.goalIndex = String(index);
+          card.draggable = true;
+          const number = document.createElement("span");
+          number.textContent = String(index + 1).padStart(2, "0");
+          const content = document.createElement("div");
+          const title = document.createElement("h3");
+          title.textContent = I18nService.t("week.goalPlaceholder");
+          const text = document.createElement("p");
+          text.textContent = I18nService.t("week.goalHint");
+          const add = document.createElement("button");
+          add.type = "button";
+          add.className = "primary-button";
+          add.dataset.action = "add-goal";
+          add.textContent = I18nService.t("week.addGoalSlot");
+          content.append(title, text, add);
+          card.append(number, content);
+          this.elements.goalBoard.append(card);
+          return;
+        }
+
+        const card = document.createElement("article");
+        card.className = "goal-card";
+        card.dataset.goalIndex = String(index);
+        card.dataset.color = goal.color;
+        card.draggable = true;
+
+        const head = document.createElement("div");
+        head.className = "goal-card-head";
+        const number = document.createElement("span");
+        number.className = "goal-card-index";
+        number.textContent = String(index + 1).padStart(2, "0");
+        const menu = document.createElement("div");
+        menu.className = "goal-card-menu";
+        menu.append(
+          this.createIconButton("goal-left", "actions.moveLeft", "m14 6-6 6 6 6", index === 0),
+          this.createIconButton("goal-right", "actions.moveRight", "m10 6 6 6-6 6", index === 3),
+          this.createIconButton("edit-goal", "actions.edit", "M4 20h4L19 9l-4-4L4 16v4Zm9-13 4 4"),
+          this.createIconButton("clear-goal", "actions.clear", "M4 7h16M9 7V4h6v3m-8 0 1 13h8l1-13")
+        );
+        head.append(number, menu);
+
+        const title = document.createElement("h3");
+        title.textContent = goal.title;
+        const description = document.createElement("p");
+        description.className = "goal-description";
+        description.textContent = goal.description || (goal.subtasks.length ? "" : I18nService.t("week.noSubtasks"));
+        const progress = PlannerDataService.goalProgress(goal);
+        const progressRow = document.createElement("div");
+        progressRow.className = "goal-progress-row";
+        const progressLabel = document.createElement("span");
+        progressLabel.textContent = I18nService.t("week.goalProgress");
+        const progressValue = document.createElement("strong");
+        progressValue.textContent = `${progress}%`;
+        progressRow.append(progressLabel, progressValue);
+        const progressBar = document.createElement("div");
+        progressBar.className = "goal-progress";
+        progressBar.setAttribute("role", "progressbar");
+        progressBar.setAttribute("aria-valuenow", String(progress));
+        progressBar.setAttribute("aria-valuemin", "0");
+        progressBar.setAttribute("aria-valuemax", "100");
+        const progressFill = document.createElement("span");
+        progressFill.style.width = `${progress}%`;
+        progressBar.append(progressFill);
+
+        const list = document.createElement("ul");
+        list.className = "subtask-list";
+        goal.subtasks.forEach((subtask, subtaskIndex) => {
+          const item = document.createElement("li");
+          item.className = "subtask-item";
+          item.dataset.goalIndex = String(index);
+          item.dataset.subtaskIndex = String(subtaskIndex);
+          item.draggable = true;
+          const check = document.createElement("button");
+          check.type = "button";
+          check.className = `subtask-check${subtask.isCompleted ? " is-complete" : ""}`;
+          check.dataset.action = "toggle-subtask";
+          check.setAttribute("aria-label", `${subtask.text}: ${I18nService.t(subtask.isCompleted ? "habit.state.done" : "habit.state.unmarked")}`);
+          if (subtask.isCompleted) {
+            const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            svg.setAttribute("aria-hidden", "true");
+            svg.setAttribute("viewBox", "0 0 24 24");
+            const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            path.setAttribute("d", "m5 12 4 4L19 6");
+            svg.append(path);
+            check.append(svg);
+          }
+          const copy = document.createElement("div");
+          copy.className = `subtask-copy${subtask.isCompleted ? " is-complete" : ""}`;
+          copy.textContent = subtask.text;
+          if (subtask.hashtags.length) {
+            const tags = document.createElement("span");
+            tags.className = "subtask-tags";
+            tags.textContent = subtask.hashtags.join(" ");
+            copy.append(tags);
+          }
+          const controls = document.createElement("div");
+          controls.className = "subtask-controls";
+          controls.append(
+            this.createIconButton("subtask-up", "actions.moveUp", "m6 14 6-6 6 6", subtaskIndex === 0),
+            this.createIconButton("subtask-down", "actions.moveDown", "m6 10 6 6 6-6", subtaskIndex === goal.subtasks.length - 1),
+            this.createIconButton("edit-subtask", "actions.edit", "M4 20h4L19 9l-4-4L4 16v4"),
+            this.createIconButton("delete-subtask", "actions.delete", "M5 7h14M9 7V4h6v3m-8 0 1 13h8l1-13")
+          );
+          item.append(check, copy, controls);
+          list.append(item);
+        });
+        const addSubtask = document.createElement("button");
+        addSubtask.type = "button";
+        addSubtask.className = "goal-add-subtask";
+        addSubtask.dataset.action = "add-subtask";
+        addSubtask.textContent = `+ ${I18nService.t("actions.addSubtask")}`;
+        card.append(head, title, description, progressRow, progressBar, list, addSubtask);
+        this.elements.goalBoard.append(card);
+      });
+    },
+
+    renderHabits() {
+      const table = this.elements.habitTable;
+      table.replaceChildren();
+      const language = this.state.settings.language;
+      const locale = language === "ru" ? "ru-RU" : "en-US";
+      const days = DateService.weekDays(DateService.fromISO(this.currentWeek.weekStart));
+      const head = document.createElement("div");
+      head.className = "habit-table-head";
+      const habitHead = document.createElement("span");
+      habitHead.textContent = I18nService.t("week.habit");
+      head.append(habitHead);
+      days.forEach((date) => {
+        const label = document.createElement("span");
+        const weekday = new Intl.DateTimeFormat(locale, { weekday: "short" }).format(date).replace(".", "");
+        label.textContent = `${weekday} ${date.getDate()}`;
+        head.append(label);
+      });
+      const total = document.createElement("span");
+      total.textContent = I18nService.t("week.weekResult");
+      head.append(total);
+      table.append(head);
+
+      const availableDays = PlannerDataService.habitAvailability(this.currentWeek.weekStart);
+      this.habits.slots.forEach((slot, slotIndex) => {
+        const name = PlannerDataService.effectiveHabitName(slot, this.currentWeek.weekStart).trim();
+        const row = document.createElement("div");
+        row.className = "habit-data-row";
+        row.dataset.habitIndex = String(slotIndex);
+        const nameButton = document.createElement("button");
+        nameButton.type = "button";
+        nameButton.className = `habit-name-button${name ? "" : " is-empty"}`;
+        nameButton.dataset.action = "edit-habit";
+        nameButton.textContent = name || I18nService.t("week.addHabitSlot");
+        row.append(nameButton);
+
+        days.forEach((date) => {
+          const iso = DateService.toISO(date);
+          const state = this.currentWeek.habitMarks?.[slot.id]?.[iso] || "unmarked";
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = `habit-mark is-${state}`;
+          button.dataset.action = "cycle-habit";
+          button.dataset.date = iso;
+          button.disabled = !name || iso > DateService.todayISO();
+          const stateLabel = I18nService.t(`habit.state.${state}`);
+          button.title = button.disabled && iso > DateService.todayISO() ? I18nService.t("habit.future") : stateLabel;
+          button.setAttribute("aria-label", `${name || I18nService.t("week.habit")} · ${DateService.dayHeading(date, language)} · ${stateLabel}`);
+          if (state !== "unmarked") {
+            const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            svg.setAttribute("aria-hidden", "true");
+            svg.setAttribute("viewBox", "0 0 24 24");
+            const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            path.setAttribute("d", state === "done" ? "m5 12 4 4L19 6" : "m7 7 10 10M17 7 7 17");
+            svg.append(path);
+            button.append(svg);
+          }
+          row.append(button);
+        });
+
+        const done = name ? availableDays.filter((date) => this.currentWeek.habitMarks?.[slot.id]?.[date] === "done").length : 0;
+        const summary = document.createElement("span");
+        summary.className = "habit-summary";
+        summary.textContent = name && availableDays.length
+          ? I18nService.t("week.habitSummary", { done, available: availableDays.length })
+          : I18nService.t("week.noData");
+        row.append(summary);
+        table.append(row);
+      });
+    },
+
+    renderOverview() {
+      const analytics = PlannerDataService.analytics(this.currentWeek, this.habits);
+      const language = this.state.settings.language;
+      const hoursSuffix = language === "ru" ? "ч" : "h";
+      this.elements.weekProgressValue.textContent = `${analytics.overallProgress}%`;
+      this.elements.weekProgressOrbit.setAttribute("aria-label", I18nService.t("overview.progressAria", { value: analytics.overallProgress }));
+      this.elements.weekProgressCaption.textContent = analytics.goalsHaveData || analytics.tasksHaveData || analytics.habitsHaveData
+        ? I18nService.t("overview.progress")
+        : I18nService.t("overview.addData");
+      this.elements.goalsMetric.textContent = `${analytics.goalsProgress}%`;
+      this.elements.habitsMetric.textContent = analytics.habitsHaveData ? `${analytics.habitProgress}%` : "—";
+
+      const today = DateService.todayISO();
+      const todayData = this.currentWeek.days?.[today] || {};
+      const todayTasks = [
+        ...(Array.isArray(todayData.mainTasks) ? todayData.mainTasks : []),
+        ...(Array.isArray(todayData.otherTasks) ? todayData.otherTasks : [])
+      ];
+      const completedToday = todayTasks.filter((task) => task.isCompleted).length;
+      this.elements.todayTasksMetric.textContent = language === "ru" ? `${completedToday} из ${todayTasks.length}` : `${completedToday} of ${todayTasks.length}`;
+
+      const todayRecords = this.currentWeek.weekStart <= today && DateService.toISO(DateService.addDays(DateService.fromISO(this.currentWeek.weekStart), 6)) >= today
+        ? this.currentWeek.records.filter((record) => record.date === today)
+        : [];
+      const now = new Date();
+      const currentTime = `${DateService.pad(now.getHours())}:${DateService.pad(now.getMinutes())}`;
+      const schedule = PlannerDataService.scheduleSummary(todayRecords, today, currentTime);
+      this.elements.meetingsMetric.textContent = String(schedule.meetings);
+      this.elements.plannedMetric.textContent = `${this.formatHours(schedule.plannedHours)} ${hoursSuffix}`;
+      this.elements.freeMetric.textContent = `${this.formatHours(schedule.freeHours)} ${hoursSuffix}`;
+
+      this.elements.overviewGoalList.replaceChildren();
+      const activeGoals = this.currentWeek.goals.filter(Boolean);
+      this.elements.overviewGoalsEmpty.hidden = activeGoals.length > 0;
+      activeGoals.forEach((goal) => {
+        const row = document.createElement("div");
+        row.className = "overview-summary-row";
+        row.style.setProperty("--goal-accent", this.goalColorValue(goal.color));
+        const copy = document.createElement("div");
+        copy.className = "overview-summary-copy";
+        const title = document.createElement("strong");
+        title.textContent = goal.title;
+        const bar = document.createElement("div");
+        bar.className = "mini-progress";
+        const fill = document.createElement("span");
+        const progress = PlannerDataService.goalProgress(goal);
+        fill.style.width = `${progress}%`;
+        bar.append(fill);
+        copy.append(title, bar);
+        const value = document.createElement("span");
+        value.textContent = `${progress}%`;
+        row.append(copy, value);
+        this.elements.overviewGoalList.append(row);
+      });
+
+      this.elements.overviewHabitList.replaceChildren();
+      this.elements.overviewHabitsEmpty.hidden = analytics.activeHabits.length > 0;
+      analytics.activeHabits.forEach((slot) => {
+        const row = document.createElement("div");
+        row.className = "overview-summary-row";
+        const name = document.createElement("strong");
+        name.textContent = PlannerDataService.effectiveHabitName(slot, this.currentWeek.weekStart);
+        const done = analytics.availableDays.filter((date) => this.currentWeek.habitMarks?.[slot.id]?.[date] === "done").length;
+        const value = document.createElement("span");
+        value.textContent = analytics.availableDays.length
+          ? I18nService.t("week.habitSummary", { done, available: analytics.availableDays.length })
+          : I18nService.t("week.noData");
+        row.append(name, value);
+        this.elements.overviewHabitList.append(row);
+      });
+    },
+
+    goalColorValue(color) {
+      return ({
+        royalIndigo: "#2E4272",
+        emeraldSilk: "#0B5345",
+        matteBurgundy: "#6B1D2F",
+        spicedSaffron: "#D4AC0D",
+        terracottaSuede: "#BA5A31",
+        midnightPurple: "#4A235A",
+        bitterChocolate: "#4A3B32",
+        nobleSage: "#7D9D86"
+      })[color] || "#2E4272";
+    },
+
+    formatHours(value) {
+      return Number.isInteger(value) ? String(value) : value.toFixed(1).replace(".", this.state.settings.language === "ru" ? "," : ".");
+    },
+
+    addGoalFromFirstEmpty(trigger) {
+      const index = this.currentWeek.goals.findIndex((goal) => !goal);
+      if (index === -1) {
+        this.showToast("goal.limitTitle", "goal.limitCopy");
+        return;
+      }
+      this.openGoalEditor(index, trigger);
+    },
+
+    addHabitFromFirstEmpty(trigger) {
+      const index = this.habits.slots.findIndex((slot) => !PlannerDataService.effectiveHabitName(slot, this.currentWeek.weekStart).trim());
+      if (index === -1) {
+        this.showToast("habit.limitTitle", "habit.limitCopy");
+        return;
+      }
+      this.openHabitEditor(index, trigger);
+    },
+
+    handleGoalBoardClick(event) {
+      const button = event.target.closest("button[data-action]");
+      if (!button) return;
+      const card = button.closest("[data-goal-index]");
+      const goalIndex = Number(card?.dataset.goalIndex);
+      const subtaskItem = button.closest("[data-subtask-index]");
+      const subtaskIndex = Number(subtaskItem?.dataset.subtaskIndex);
+      const action = button.dataset.action;
+      if (action === "add-goal") this.openGoalEditor(goalIndex, button);
+      else if (action === "edit-goal") this.openGoalEditor(goalIndex, button);
+      else if (action === "clear-goal") this.confirmClearGoal(goalIndex);
+      else if (action === "goal-left") this.moveGoal(goalIndex, -1);
+      else if (action === "goal-right") this.moveGoal(goalIndex, 1);
+      else if (action === "add-subtask") this.openSubtaskEditor(goalIndex, -1, button);
+      else if (action === "toggle-subtask") this.toggleSubtask(goalIndex, subtaskIndex);
+      else if (action === "edit-subtask") this.openSubtaskEditor(goalIndex, subtaskIndex, button);
+      else if (action === "delete-subtask") this.confirmDeleteSubtask(goalIndex, subtaskIndex);
+      else if (action === "subtask-up") this.moveSubtask(goalIndex, subtaskIndex, subtaskIndex - 1);
+      else if (action === "subtask-down") this.moveSubtask(goalIndex, subtaskIndex, subtaskIndex + 1);
+    },
+
+    handleHabitTableClick(event) {
+      const button = event.target.closest("button[data-action]");
+      if (!button) return;
+      const row = button.closest("[data-habit-index]");
+      const index = Number(row?.dataset.habitIndex);
+      if (button.dataset.action === "edit-habit") this.openHabitEditor(index, button);
+      else if (button.dataset.action === "cycle-habit") this.cycleHabit(index, button.dataset.date);
+    },
+
+    moveGoal(index, delta) {
+      const target = index + delta;
+      if (target < 0 || target > 3) return;
+      [this.currentWeek.goals[index], this.currentWeek.goals[target]] = [this.currentWeek.goals[target], this.currentWeek.goals[index]];
+      this.saveWeek();
+      this.renderPlannerData();
+    },
+
+    moveSubtask(goalIndex, fromIndex, toIndex) {
+      const goal = this.currentWeek.goals[goalIndex];
+      if (!goal || toIndex < 0 || toIndex >= goal.subtasks.length || fromIndex === toIndex) return;
+      const [item] = goal.subtasks.splice(fromIndex, 1);
+      goal.subtasks.splice(toIndex, 0, item);
+      goal.subtasks.forEach((subtask, index) => { subtask.position = index; });
+      goal.updatedAt = new Date().toISOString();
+      this.saveWeek();
+      this.renderPlannerData();
+    },
+
+    toggleSubtask(goalIndex, subtaskIndex) {
+      const subtask = this.currentWeek.goals[goalIndex]?.subtasks[subtaskIndex];
+      if (!subtask) return;
+      subtask.isCompleted = !subtask.isCompleted;
+      this.currentWeek.goals[goalIndex].updatedAt = new Date().toISOString();
+      this.saveWeek();
+      this.renderPlannerData();
+    },
+
+    cycleHabit(index, date) {
+      const slot = this.habits.slots[index];
+      const name = PlannerDataService.effectiveHabitName(slot, this.currentWeek.weekStart).trim();
+      if (!name || date > DateService.todayISO()) return;
+      const states = ["unmarked", "done", "missed"];
+      const current = this.currentWeek.habitMarks?.[slot.id]?.[date] || "unmarked";
+      const next = states[(states.indexOf(current) + 1) % states.length];
+      if (!this.currentWeek.habitMarks[slot.id]) this.currentWeek.habitMarks[slot.id] = {};
+      if (next === "unmarked") delete this.currentWeek.habitMarks[slot.id][date];
+      else this.currentWeek.habitMarks[slot.id][date] = next;
+      this.saveWeek();
+      this.renderPlannerData();
+    },
+
+    handlePlannerDragStart(event) {
+      const subtask = event.target.closest(".subtask-item");
+      if (subtask) {
+        this.draggedSubtask = { goalIndex: Number(subtask.dataset.goalIndex), subtaskIndex: Number(subtask.dataset.subtaskIndex) };
+        subtask.classList.add("is-dragging");
+        event.dataTransfer.effectAllowed = "move";
+        event.stopPropagation();
+        return;
+      }
+      const card = event.target.closest("[data-goal-index]");
+      if (!card) return;
+      this.draggedGoalIndex = Number(card.dataset.goalIndex);
+      card.classList.add("is-dragging");
+      event.dataTransfer.effectAllowed = "move";
+    },
+
+    handlePlannerDragOver(event) {
+      const target = this.draggedSubtask ? event.target.closest(".subtask-item") : event.target.closest("[data-goal-index]");
+      if (!target) return;
+      if (this.draggedSubtask && Number(target.dataset.goalIndex) !== this.draggedSubtask.goalIndex) return;
+      event.preventDefault();
+      this.elements.goalBoard.querySelectorAll(".is-drop-target").forEach((item) => item.classList.remove("is-drop-target"));
+      target.classList.add("is-drop-target");
+    },
+
+    handlePlannerDrop(event) {
+      event.preventDefault();
+      if (this.draggedSubtask) {
+        const target = event.target.closest(".subtask-item");
+        if (target && Number(target.dataset.goalIndex) === this.draggedSubtask.goalIndex) {
+          this.moveSubtask(this.draggedSubtask.goalIndex, this.draggedSubtask.subtaskIndex, Number(target.dataset.subtaskIndex));
+        }
+      } else if (this.draggedGoalIndex !== null) {
+        const target = event.target.closest("[data-goal-index]");
+        const targetIndex = Number(target?.dataset.goalIndex);
+        if (Number.isInteger(targetIndex) && targetIndex !== this.draggedGoalIndex) {
+          const [goal] = this.currentWeek.goals.splice(this.draggedGoalIndex, 1);
+          this.currentWeek.goals.splice(targetIndex, 0, goal);
+          this.saveWeek();
+          this.renderPlannerData();
+        }
+      }
+      this.clearPlannerDragState();
+    },
+
+    clearPlannerDragState() {
+      this.elements.goalBoard.querySelectorAll(".is-dragging, .is-drop-target").forEach((item) => item.classList.remove("is-dragging", "is-drop-target"));
+      this.draggedGoalIndex = null;
+      this.draggedSubtask = null;
+    },
+
+    openGoalEditor(index, trigger) {
+      const goal = this.currentWeek.goals[index];
+      this.prepareEditor(goal ? "goal.editorEdit" : "goal.editorNew", trigger);
+      const form = document.createElement("form");
+      form.className = "editor-form";
+      form.noValidate = true;
+      form.innerHTML = `
+        <label class="form-field"><span>${I18nService.t("goal.title")}</span><input name="title" maxlength="120" required><small>${I18nService.t("goal.titleHint")}</small><span class="form-error" data-error="title"></span></label>
+        <label class="form-field"><span>${I18nService.t("goal.description")}</span><textarea name="description" maxlength="2000"></textarea><small>${I18nService.t("goal.descriptionHint")}</small><span class="form-error" data-error="description"></span></label>
+        <fieldset class="color-palette"><legend>${I18nService.t("goal.color")}</legend></fieldset>
+        <label class="form-field" data-manual-progress><span>${I18nService.t("week.manualProgress")}</span><input name="manualProgress" type="number" min="0" max="100" step="1"><small>${I18nService.t("goal.progressHint")}</small></label>`;
+      form.elements.title.value = goal?.title || "";
+      form.elements.description.value = goal?.description || "";
+      form.elements.manualProgress.value = String(goal?.manualProgress || 0);
+      form.querySelector("[data-manual-progress]").hidden = Boolean(goal?.subtasks.length);
+      const palette = form.querySelector(".color-palette");
+      PlannerDataService.palette.forEach((color) => {
+        const label = document.createElement("label");
+        label.className = "color-choice";
+        label.title = I18nService.t(`color.${color}`);
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.name = "color";
+        input.value = color;
+        input.checked = color === (goal?.color || "royalIndigo");
+        input.setAttribute("aria-label", I18nService.t(`color.${color}`));
+        const swatch = document.createElement("span");
+        swatch.style.setProperty("--choice-color", this.goalColorValue(color));
+        label.append(input, swatch);
+        palette.append(label);
+      });
+      form.addEventListener("input", () => { this.panelDirty = true; });
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const title = form.elements.title.value.trim();
+        const description = form.elements.description.value.trim();
+        form.querySelectorAll(".form-error").forEach((item) => { item.textContent = ""; });
+        if (!title) {
+          form.querySelector('[data-error="title"]').textContent = I18nService.t("goal.errorTitle");
+          form.elements.title.focus();
+          return;
+        }
+        if (title.length > 120) {
+          form.querySelector('[data-error="title"]').textContent = I18nService.t("goal.errorTitleLong");
+          return;
+        }
+        if (description.length > 2000) {
+          form.querySelector('[data-error="description"]').textContent = I18nService.t("goal.errorDescriptionLong");
+          return;
+        }
+        const now = new Date().toISOString();
+        this.currentWeek.goals[index] = {
+          id: goal?.id || PlannerDataService.id(),
+          title,
+          description,
+          color: form.elements.color.value,
+          manualProgress: goal?.subtasks.length ? goal.manualProgress : PlannerDataService.clampProgress(form.elements.manualProgress.value),
+          subtasks: goal?.subtasks || [],
+          createdAt: goal?.createdAt || now,
+          updatedAt: now
+        };
+        this.saveWeek();
+        this.renderPlannerData();
+        this.panelDirty = false;
+        this.closeContextPanel(true);
+      });
+      this.elements.contextPanelBody.append(form);
+      this.panelAction = () => form.requestSubmit();
+      window.setTimeout(() => form.elements.title.focus(), 0);
+    },
+
+    openSubtaskEditor(goalIndex, subtaskIndex, trigger) {
+      const goal = this.currentWeek.goals[goalIndex];
+      if (!goal) return;
+      const subtask = subtaskIndex >= 0 ? goal.subtasks[subtaskIndex] : null;
+      this.prepareEditor(subtask ? "subtask.editorEdit" : "subtask.editorNew", trigger);
+      const form = document.createElement("form");
+      form.className = "editor-form";
+      form.noValidate = true;
+      form.innerHTML = `
+        <label class="form-field"><span>${I18nService.t("subtask.text")}</span><textarea name="text" maxlength="300" required></textarea><span class="form-error" data-error="text"></span></label>
+        <label class="form-field"><span>${I18nService.t("subtask.tags")}</span><input name="tags" maxlength="500"><small>${I18nService.t("subtask.tagsHint")}</small></label>`;
+      form.elements.text.value = subtask?.text || "";
+      form.elements.tags.value = subtask?.hashtags.join(" ") || "";
+      form.addEventListener("input", () => { this.panelDirty = true; });
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const text = form.elements.text.value.trim();
+        const error = form.querySelector('[data-error="text"]');
+        error.textContent = "";
+        if (!text) {
+          error.textContent = I18nService.t("subtask.errorText");
+          form.elements.text.focus();
+          return;
+        }
+        if (text.length > 300) {
+          error.textContent = I18nService.t("subtask.errorLong");
+          return;
+        }
+        const value = {
+          id: subtask?.id || PlannerDataService.id(),
+          text,
+          isCompleted: Boolean(subtask?.isCompleted),
+          hashtags: PlannerDataService.normalizeHashtags(form.elements.tags.value),
+          position: subtask ? subtaskIndex : goal.subtasks.length
+        };
+        if (subtask) goal.subtasks[subtaskIndex] = value;
+        else goal.subtasks.push(value);
+        goal.subtasks.forEach((item, index) => { item.position = index; });
+        goal.updatedAt = new Date().toISOString();
+        this.saveWeek();
+        this.renderPlannerData();
+        this.panelDirty = false;
+        this.closeContextPanel(true);
+      });
+      this.elements.contextPanelBody.append(form);
+      this.panelAction = () => form.requestSubmit();
+      window.setTimeout(() => form.elements.text.focus(), 0);
+    },
+
+    openHabitEditor(index, trigger) {
+      const slot = this.habits.slots[index];
+      const currentName = PlannerDataService.effectiveHabitName(slot, this.currentWeek.weekStart);
+      this.prepareEditor(currentName ? "habit.editorEdit" : "habit.editorNew", trigger);
+      const form = document.createElement("form");
+      form.className = "editor-form";
+      form.noValidate = true;
+      form.innerHTML = `
+        <label class="form-field"><span>${I18nService.t("habit.name")}</span><input name="name" maxlength="120" required><span class="form-error" data-error="name"></span></label>
+        <p class="editor-note">${I18nService.t("habit.versionNote")}</p>`;
+      form.elements.name.value = currentName;
+      if (currentName) {
+        const clear = document.createElement("button");
+        clear.type = "button";
+        clear.className = "editor-danger";
+        clear.textContent = I18nService.t("habit.clear");
+        clear.addEventListener("click", () => this.openConfirmation(() => {
+          PlannerDataService.setHabitVersion(slot, this.currentWeek.weekStart, "");
+          this.saveHabits();
+          this.renderPlannerData();
+          this.panelDirty = false;
+          this.closeContextPanel(true);
+        }, { titleKey: "habit.clearTitle", copyKey: "habit.clearCopy" }));
+        form.append(clear);
+      }
+      form.addEventListener("input", () => { this.panelDirty = true; });
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = form.elements.name.value.trim();
+        const error = form.querySelector('[data-error="name"]');
+        error.textContent = "";
+        if (!name) {
+          error.textContent = I18nService.t("habit.errorName");
+          form.elements.name.focus();
+          return;
+        }
+        if (name.length > 120) {
+          error.textContent = I18nService.t("habit.errorLong");
+          return;
+        }
+        PlannerDataService.setHabitVersion(slot, this.currentWeek.weekStart, name);
+        this.saveHabits();
+        this.renderPlannerData();
+        this.panelDirty = false;
+        this.closeContextPanel(true);
+      });
+      this.elements.contextPanelBody.append(form);
+      this.panelAction = () => form.requestSubmit();
+      window.setTimeout(() => form.elements.name.focus(), 0);
+    },
+
+    prepareEditor(titleKey, trigger) {
+      this.lastFocusedElement = trigger || document.activeElement;
+      this.panelDirty = false;
+      this.elements.contextPanelTitle.textContent = I18nService.t(titleKey);
+      this.elements.contextPanelBody.replaceChildren();
+      this.elements.contextPanelDone.querySelector("span").textContent = I18nService.t("actions.save");
+      this.elements.panelScrim.hidden = false;
+      this.elements.contextPanel.classList.add("is-open");
+      this.elements.contextPanel.setAttribute("aria-hidden", "false");
+      document.querySelector(".sidebar").inert = true;
+      document.querySelector(".workspace").inert = true;
+    },
+
+    confirmClearGoal(index) {
+      const goal = this.currentWeek.goals[index];
+      if (!goal) return;
+      this.openConfirmation(() => {
+        const snapshot = structuredClone(this.currentWeek);
+        this.currentWeek.goals[index] = null;
+        Object.values(this.currentWeek.days || {}).forEach((day) => {
+          ["mainTasks", "otherTasks"].forEach((listName) => {
+            if (Array.isArray(day?.[listName])) day[listName].forEach((task) => { if (task.goalId === goal.id) task.goalId = null; });
+          });
+        });
+        this.currentWeek.records.forEach((record) => { if (record.goalId === goal.id) record.goalId = null; });
+        this.saveWeek(true);
+        this.renderPlannerData();
+        this.showUndoToast("goal.clearedTitle", "goal.clearedCopy", () => {
+          if (this.currentWeek.weekStart !== snapshot.weekStart) return;
+          this.currentWeek = snapshot;
+          this.saveWeek(true);
+          this.renderPlannerData();
+          this.showToast("goal.restoredTitle", "goal.restoredCopy");
+        });
+      }, { titleKey: "goal.clearTitle", copyKey: "goal.clearCopy" });
+    },
+
+    confirmDeleteSubtask(goalIndex, subtaskIndex) {
+      const goal = this.currentWeek.goals[goalIndex];
+      if (!goal?.subtasks[subtaskIndex]) return;
+      this.openConfirmation(() => {
+        const snapshot = structuredClone(this.currentWeek);
+        const previousProgress = PlannerDataService.goalProgress(goal);
+        goal.subtasks.splice(subtaskIndex, 1);
+        goal.subtasks.forEach((item, index) => { item.position = index; });
+        if (!goal.subtasks.length) goal.manualProgress = previousProgress;
+        goal.updatedAt = new Date().toISOString();
+        this.saveWeek(true);
+        this.renderPlannerData();
+        this.showUndoToast("subtask.deletedTitle", "subtask.deletedCopy", () => {
+          if (this.currentWeek.weekStart !== snapshot.weekStart) return;
+          this.currentWeek = snapshot;
+          this.saveWeek(true);
+          this.renderPlannerData();
+        });
+      }, { titleKey: "subtask.deleteTitle", copyKey: "subtask.deleteCopy" });
+    },
+
     renderSearchState() {
       const hasQuery = this.elements.searchInput.value.trim().length > 0;
       const title = this.elements.searchEmpty.querySelector("h3");
@@ -843,10 +1973,13 @@
     selectDate(iso) {
       const date = DateService.fromISO(iso);
       if (!date) return;
+      const previousWeek = this.state.ui.selectedWeek;
       this.state.ui.selectedDate = iso;
       this.state.ui.selectedWeek = DateService.toISO(DateService.startOfWeek(date));
+      if (previousWeek !== this.state.ui.selectedWeek) this.loadWeek(this.state.ui.selectedWeek);
       this.renderWeekNavigation();
       this.renderDayHeading();
+      this.renderPlannerData();
       this.saveUI();
     },
 
@@ -979,6 +2112,9 @@
         list.append(item);
       }
       this.elements.contextPanelBody.replaceChildren(list);
+      this.panelDirty = false;
+      this.panelAction = () => this.closeContextPanel(true);
+      this.elements.contextPanelDone.querySelector("span").textContent = I18nService.t("actions.understood");
       this.elements.panelScrim.hidden = false;
       this.elements.contextPanel.classList.add("is-open");
       this.elements.contextPanel.setAttribute("aria-hidden", "false");
@@ -987,18 +2123,31 @@
       this.elements.closeContextPanel.focus();
     },
 
-    closeContextPanel() {
+    closeContextPanel(force = false) {
+      if (this.panelDirty && !force) {
+        this.openConfirmation(() => this.closeContextPanel(true), {
+          titleKey: "confirm.unsavedTitle",
+          copyKey: "confirm.unsavedCopy"
+        });
+        return;
+      }
       this.elements.contextPanel.classList.remove("is-open");
       this.elements.contextPanel.setAttribute("aria-hidden", "true");
       this.elements.panelScrim.hidden = true;
       document.querySelector(".sidebar").inert = false;
       document.querySelector(".workspace").inert = false;
+      this.panelAction = null;
+      this.panelDirty = false;
       this.lastFocusedElement?.focus();
     },
 
-    openConfirmation(action) {
+    openConfirmation(action, options = {}) {
       this.confirmationAction = action;
-      this.lastFocusedElement = document.activeElement;
+      this.confirmationCancelAction = options.cancelAction || null;
+      this.confirmationFocusedElement = document.activeElement;
+      this.elements.confirmTitle.textContent = I18nService.t(options.titleKey || "confirm.restartTitle");
+      this.elements.confirmText.textContent = I18nService.t(options.copyKey || "confirm.restartCopy");
+      this.elements.confirmAccept.textContent = I18nService.t(options.acceptKey || "actions.continue");
       this.elements.confirmDialog.hidden = false;
       this.elements.app.inert = true;
       this.elements.confirmCancel.focus();
@@ -1007,8 +2156,15 @@
     closeConfirmation() {
       this.elements.confirmDialog.hidden = true;
       this.elements.app.inert = false;
+      if (this.elements.contextPanel.getAttribute("aria-hidden") === "false") {
+        document.querySelector(".sidebar").inert = true;
+        document.querySelector(".workspace").inert = true;
+      }
       this.confirmationAction = null;
-      this.lastFocusedElement?.focus();
+      this.confirmationCancelAction = null;
+      const focusTarget = this.confirmationFocusedElement;
+      this.confirmationFocusedElement = null;
+      focusTarget?.focus();
     },
 
     showToast(titleKey, copyKey, type = "info", duration = 5000) {
@@ -1029,6 +2185,40 @@
       toast.append(copy, close);
       this.elements.toastRegion.append(toast);
       window.setTimeout(() => toast.remove(), duration);
+    },
+
+    showUndoToast(titleKey, copyKey, callback) {
+      const toast = document.createElement("div");
+      toast.className = "toast has-action";
+      toast.setAttribute("role", "status");
+      const copy = document.createElement("div");
+      const title = document.createElement("strong");
+      title.textContent = I18nService.t(titleKey);
+      const text = document.createElement("p");
+      text.textContent = I18nService.t(copyKey);
+      const actions = document.createElement("div");
+      actions.className = "toast-action-row";
+      const undo = document.createElement("button");
+      undo.type = "button";
+      undo.className = "toast-action";
+      undo.textContent = I18nService.t("actions.undo");
+      const close = document.createElement("button");
+      close.type = "button";
+      close.setAttribute("aria-label", I18nService.t("actions.close"));
+      close.textContent = "×";
+      let active = true;
+      undo.addEventListener("click", () => {
+        if (!active) return;
+        active = false;
+        toast.remove();
+        callback();
+      });
+      close.addEventListener("click", () => { active = false; toast.remove(); });
+      actions.append(undo, close);
+      copy.append(title, text, actions);
+      toast.append(copy);
+      this.elements.toastRegion.append(toast);
+      window.setTimeout(() => { active = false; toast.remove(); }, 7000);
     }
   };
 
