@@ -262,7 +262,6 @@
                 <label><span data-i18n="search.completion">Выполнение</span><select id="searchCompletion"><option value="all" data-i18n="search.all">Все</option><option value="done" data-i18n="search.done">Выполнено</option><option value="open" data-i18n="search.open">Не выполнено</option></select></label>
                 <label><span data-i18n="search.dateFrom">С даты</span><input id="searchDateFrom" type="date"></label>
                 <label><span data-i18n="search.dateTo">По дату</span><input id="searchDateTo" type="date"></label>
-                <label class="search-tag-filter"><span data-i18n="search.tags">Хэштеги</span><input id="searchTags" type="text" placeholder="#фокус"></label>
                 <label><span data-i18n="search.chooseTag">Выбрать хэштег</span><select id="searchTagSelect"><option value="" data-i18n="search.chooseTagPlaceholder">Из сохранённых</option></select></label>
               </div>
               <div class="search-results" id="searchResults"></div>
@@ -302,11 +301,11 @@
               </article>
             </div>
             <article class="panel business-card-settings task-style-panel">
-              <div class="panel-header"><div><span class="panel-number">VIP</span><h3 data-i18n="card.title">Премиальная визитка</h3></div><div class="card-variant-switch"><button type="button" data-card-variant="light" data-i18n="theme.light">Светлая</button><button type="button" data-card-variant="dark" data-i18n="theme.dark">Тёмная</button></div></div>
+              <div class="panel-header"><div><span class="panel-number">VIP</span><h3 data-i18n="card.title">Визитка</h3></div><div class="card-variant-switch"><button type="button" data-card-variant="light" data-i18n="theme.light">Светлая</button><button type="button" data-card-variant="dark" data-i18n="theme.dark">Тёмная</button></div></div>
               <div class="business-card-layout">
                 <form class="business-card-form" id="businessCardForm" novalidate>
                   <label><span data-i18n="card.name">Имя</span><input name="name" maxlength="120" required></label>
-                  <label><span data-i18n="card.company">Компания</span><input name="company" maxlength="160" required></label>
+                  <label class="business-card-about"><span data-i18n="card.company">Любая дополнительная информация о Вас</span><textarea name="company" maxlength="20000" rows="9" required></textarea></label>
                   <label><span>Telegram</span><input name="telegram" maxlength="100" required placeholder="@username"></label>
                   <label><span>Email</span><input name="email" type="email" maxlength="254" required></label>
                   <span class="form-error" id="businessCardError"></span>
